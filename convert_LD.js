@@ -3,10 +3,15 @@ const util = require('util');
 const request = require('request');
 const path = require("path");
 const commander = require('commander');
-const program = new commander.Command();
+
+global.program = new commander.Command();
 program.version('0.0.1');
-program.option('-o, --output-folder <folder>', 'The folder to store the parking files.');
+program.option('-o, --output-folder <folder>', 'The folder to store the parking files.')
+    .option('-l, --live', 'The project is live. This is used to select the proper MongoDB connection string.');
 program.parse(process.argv);
+
+const dbAdapter = require('./database-adapter');
+
 const outputFolder = program.outputFolder || 'output/parkings/';
 if(!fs.existsSync(outputFolder)){
     console.error('the specified folder does not exist.', outputFolder);
@@ -30,6 +35,9 @@ async function run() {
     profilePromise.catch(error => {
         console.error(error);
     });
+
+    await dbAdapter.initDbAdapter();
+    await dbAdapter.insertCompany('NMBS', function(){});
 
     profilePromise.then(jsonLD => {
         for (i in jsonContent) {
@@ -64,12 +72,27 @@ async function run() {
                 parkings[id].postalCode = value.postalCode;
                 //insert parking values in jsonLD
                 let jsonLDResult = insertValuesInJsonLD(parkings[id], jsonLD);
-                writeFile(path.join(outputFolder, (encodeURIComponent((parkings[id].organizationName1 || 'NMBS') + '_' + parkings[id].localIdentifier) + '.jsonld')), JSON.stringify(jsonLDResult), 'utf8');
+
+                let fileName = (jsonLDResult['ownedBy']['companyName'] + '_' + jsonLDResult['identifier']).replace(/\s/g, '-') + '.jsonld';
+                let location;
+                try {
+                    location = {
+                        type: "Point",
+                        coordinates: extractLocationFromJsonld(jsonLDResult)
+                    };
+                } catch (e) {
+                    console.error("Could not extract location from parking." + e);
+                }
+
+                writeFile(path.join(outputFolder, fileName), JSON.stringify(jsonLDResult), 'utf8');
+                dbAdapter.updateOrCreateParking(encodeURIComponent(jsonLDResult['@id']), fileName, false, location, function(){});
+                dbAdapter.updateCompanyParkingIDs('NMBS', encodeURIComponent(jsonLDResult['@id']), function(){});
                 counter--;
                 console.log(id + "\tDone\t(", counter, "left)");
                 if (counter <= 0) {
                     var hrend = process.hrtime(hrstart);
                     console.info("\nFINISHED! took %ds %dms", hrend[0], hrend[1] / 1000000);
+                    //TODO: close db
                 }
             }).catch((error) => {
                 console.error(error);
@@ -77,6 +100,7 @@ async function run() {
                 if (counter <= 0) {
                     var hrend = process.hrtime(hrstart);
                     console.info("\nFINISHED! took %ds %dms", hrend[0], hrend[1] / 1000000);
+                    //TODO: close db
                 }
             });
 
@@ -85,11 +109,23 @@ async function run() {
     });
 }
 
+function extractLocationFromJsonld(jsonld) {
+    let geo = jsonld['@graph'][0]["geo"];
+    let lonlat = [];
+    for (let i = 0; i < geo.length; i++) {
+        if (geo[i]["@type"] === "GeoCoordinates") {
+            lonlat[0] = geo[i]["longitude"];
+            lonlat[1] = geo[i]["latitude"];
+        }
+    }
+    return lonlat;
+}
+
 function insertValuesInJsonLD(parkingData, applicationProfileString) {
     let jsonLD = JSON.parse(applicationProfileString);
     jsonLD.identifier = parkingData.localIdentifier;
     jsonLD.name = [{"@value": parkingData.name, "@language": "nl"}];
-    jsonLD.ownedBy.companyName = parkingData.organizationName1;
+    jsonLD.ownedBy.companyName = 'NMBS';//parkingData.organizationName1;
     jsonLD.operatedBy.companyName = parkingData.organizationName2;
     jsonLD.address.postalCode = parkingData.postalCode;
     jsonLD.address.streetAddress = parkingData.address;
