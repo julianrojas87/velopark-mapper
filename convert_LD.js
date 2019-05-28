@@ -20,38 +20,38 @@ async function run() {
         console.error(error);
     });
 
-    //for (i in jsonContent) {
-    let i = 0;
-    {
-        promises[i] = [];
-        parkings[i] = {};
+    profilePromise.then(jsonLD => {
+        for (i in jsonContent) {
+            //let i = 0;
+            //{
+            promises[i] = [];
+            parkings[i] = {};
 
-        promises[i].push(getAddressHERE(i, jsonContent[i]['latitude'], jsonContent[i]['longitude']));
-        //promises[i].push(getPostalCode(i, jsonContent[i]['tblalgemenegegevens.Naam']));
+            promises[i].push(getAddressHERE(i, jsonContent[i]['latitude'], jsonContent[i]['longitude']));
+            //promises[i].push(getPostalCode(i, jsonContent[i]['tblalgemenegegevens.Naam']));
 
-        parkings[i].name = jsonContent[i]['tblalgemenegegevens.Naam'] + " " + jsonContent[i]['tblintermodaliteitfietsenstalling.Naam'];
-        parkings[i].localIdentifier = jsonContent[i]['ID fietsenstalling'];
-        parkings[i].initialOpening = (new Date("01/01/2000")).toISOString();
-        parkings[i].country = "Belgium";
-        parkings[i].organizationName1 = (jsonContent[i]['Eigenaar terrein'] === "Derde" || !jsonContent[i]['Eigenaar terrein']) ? jsonContent[i]['Eigenaar derde'] : jsonContent[i]['Eigenaar terrein'];
-        parkings[i].organizationName2 = jsonContent[i]['Exploitant'] || parkings[i].organizationName1;
-        parkings[i].maximumParkingDuration = 30;
-        parkings[i].openingTime = "00:00";
-        parkings[i].closingTime = "23:59";
-        parkings[i].latitude = jsonContent[i]['latitude'];
-        parkings[i].longitude = jsonContent[i]['longitude'];
-        parkings[i].capacity = jsonContent[i]['Plaatsen totaal fiets'];
+            parkings[i].name = jsonContent[i]['tblalgemenegegevens.Naam'] + " " + jsonContent[i]['tblintermodaliteitfietsenstalling.Naam'];
+            parkings[i].localIdentifier = jsonContent[i]['ID fietsenstalling'];
+            parkings[i].initialOpening = (new Date("01/01/2000")).toISOString();
+            parkings[i].country = "Belgium";
+            parkings[i].organizationName1 = (jsonContent[i]['Eigenaar terrein'] === "Derde" || !jsonContent[i]['Eigenaar terrein']) ? jsonContent[i]['Eigenaar derde'] : jsonContent[i]['Eigenaar terrein'];
+            parkings[i].organizationName2 = jsonContent[i]['Exploitant'] || parkings[i].organizationName1;
+            parkings[i].maximumParkingDuration = 30;
+            parkings[i].openingTime = "00:00";
+            parkings[i].closingTime = "23:59";
+            parkings[i].latitude = jsonContent[i]['latitude'];
+            parkings[i].longitude = jsonContent[i]['longitude'];
+            parkings[i].capacity = jsonContent[i]['Plaatsen totaal fiets'];
 
-        //Promise.all(promises[i]).then((values) => {
-        profilePromise.then(jsonLD => {
+            //Promise.all(promises[i]).then((values) => {
+
             promises[i][0].then(value => {
                 let id = value.id;
                 parkings[id].address = value.address;
                 parkings[id].postalCode = value.postalCode;
                 //insert parking values in jsonLD
                 let jsonLDResult = insertValuesInJsonLD(parkings[id], jsonLD);
-                console.log(JSON.stringify(jsonLDResult));
-                writeFile('output/parkings/' + parkings[id].localIdentifier + '.jsonld', JSON.stringify(jsonLDResult), 'utf8');
+                writeFile('output/parkings/' + encodeURIComponent((parkings[id].organizationName1 || 'NMBS') + '_' + parkings[id].localIdentifier) + '.jsonld', JSON.stringify(jsonLDResult), 'utf8');
                 counter--;
                 console.log(id + "\tDone\t(", counter, "left)");
                 if (counter <= 0) {
@@ -66,9 +66,10 @@ async function run() {
                     console.info("\nFINISHED! took %ds %dms", hrend[0], hrend[1] / 1000000);
                 }
             });
-        });
-    }
-    console.log("SHOTS FIRED\n");
+
+        }
+        console.log("SHOTS FIRED\n");
+    });
 }
 
 function insertValuesInJsonLD(parkingData, applicationProfileString) {
