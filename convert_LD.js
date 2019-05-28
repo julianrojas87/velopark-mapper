@@ -42,6 +42,8 @@ async function run() {
             parkings[i].latitude = jsonContent[i]['latitude'];
             parkings[i].longitude = jsonContent[i]['longitude'];
             parkings[i].capacity = jsonContent[i]['Plaatsen totaal fiets'];
+            parkings[i].free = jsonContent[i]['Betalend?'] !== "1";
+            parkings[i].cameraSurveillance = jsonContent[i]['Camerabewaking'] === "1";
 
             //Promise.all(promises[i]).then((values) => {
 
@@ -126,6 +128,56 @@ function insertValuesInJsonLD(parkingData, applicationProfileString) {
     jsonLD['@graph'][0]['allows'][0]['bicyclesAmount'] = parkingData.capacity;
     jsonLD['@graph'][0]['geo'][0]['latitude'] = parkingData.latitude;
     jsonLD['@graph'][0]['geo'][0]['longitude'] = parkingData.longitude;
+    jsonLD['@graph'][0]['priceSpecification'][0]['freeOfCharge'] = parkingData.free;
+    if(parkingData.cameraSurveillance){
+        jsonLD['@graph'][0]['amenityFeature'][0] = {
+            "@type": "https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance",
+            "hoursAvailable": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "http://schema.org/Monday",
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "http://schema.org/Tuesday",
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "http://schema.org/Wednesday",
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "http://schema.org/Thursday",
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "http://schema.org/Friday",
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "http://schema.org/Saturday",
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "http://schema.org/Sunday",
+                    "opens": "00:00",
+                    "closes": "23:59"
+                }
+            ]
+        }
+    }
 
     //Auto fill
     jsonLD['@id'] = 'https://velopark.ilabt.imec.be/data/' + encodeURIComponent(parkingData.organizationName1) + '_' + encodeURIComponent(parkingData.localIdentifier);
