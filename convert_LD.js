@@ -1,6 +1,17 @@
 const fs = require('fs');
 const util = require('util');
 const request = require('request');
+const path = require("path");
+const commander = require('commander');
+const program = new commander.Command();
+program.version('0.0.1');
+program.option('-o, --output-folder <folder>', 'The folder to store the parking files.');
+program.parse(process.argv);
+const outputFolder = program.outputFolder || 'output/parkings/';
+if(!fs.existsSync(outputFolder)){
+    console.error('the specified folder does not exist.', outputFolder);
+    process.exit(1);
+}
 
 const writeFile = util.promisify(fs.writeFile);
 
@@ -53,7 +64,7 @@ async function run() {
                 parkings[id].postalCode = value.postalCode;
                 //insert parking values in jsonLD
                 let jsonLDResult = insertValuesInJsonLD(parkings[id], jsonLD);
-                writeFile('output/parkings/' + encodeURIComponent((parkings[id].organizationName1 || 'NMBS') + '_' + parkings[id].localIdentifier) + '.jsonld', JSON.stringify(jsonLDResult), 'utf8');
+                writeFile(path.join(outputFolder, (encodeURIComponent((parkings[id].organizationName1 || 'NMBS') + '_' + parkings[id].localIdentifier) + '.jsonld')), JSON.stringify(jsonLDResult), 'utf8');
                 counter--;
                 console.log(id + "\tDone\t(", counter, "left)");
                 if (counter <= 0) {
