@@ -94,7 +94,7 @@ function insertValuesInJsonLD(parkingData, applicationProfileString) {
     jsonLD.address.postalCode = results.length ? results[results.length-1] : '';
     jsonLD.address.streetAddress = parkingData.legacy_address;
     jsonLD.address.country = 'Belgium';
-    jsonLD.startDate = parkingData.instalation_date;
+    jsonLD.startDate = parkingData.installation_date;
     jsonLD['@graph'][0]['@type'] = "https://velopark.ilabt.imec.be/openvelopark/terms#PublicBicycleParking";
     jsonLD['@graph'][0]["openingHoursSpecification"] = [
         {
@@ -137,8 +137,11 @@ function insertValuesInJsonLD(parkingData, applicationProfileString) {
     jsonLD['@graph'][0]['maximumParkingDuration'] = formatValue('maximumParkingDuration', 30, jsonLD['@context']);
     jsonLD['@graph'][0]['allows'][0]['bicycleType'] = "https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle";
     jsonLD['@graph'][0]['allows'][0]['bicyclesAmount'] = parkingData.capacity_classic;
-    jsonLD['@graph'][0]['allows'][0]['bicycleType'] = "https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle";
-    jsonLD['@graph'][0]['allows'][0]['bicyclesAmount'] = parkingData.capacity_cargo;
+    if(parkingData.capacity_cargo > 0) {
+        jsonLD['@graph'][0]['allows'][1] = {};
+        jsonLD['@graph'][0]['allows'][1]['bicycleType'] = "https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle";
+        jsonLD['@graph'][0]['allows'][1]['bicyclesAmount'] = parkingData.capacity_cargo;
+    }
     jsonLD['@graph'][0]['geo'][0]['latitude'] = parkingData.latitude;
     jsonLD['@graph'][0]['geo'][0]['longitude'] = parkingData.longitude;
     jsonLD['@graph'][0]['priceSpecification'][0]['freeOfCharge'] = !parkingData.mobib;
