@@ -325,7 +325,7 @@ function cleanEmptyValues(obj) {
 function getApplicationProfile() {
     return new Promise((resolve, reject) => {
         request({
-            url: 'https://velopark.ilabt.imec.be/openvelopark/application-profile',
+            url: 'http://velopark.ilabt.imec.be/openvelopark/application-profile',
             rejectUnauthorized: false
         }, (error, response, body) => {
             if (error) {
