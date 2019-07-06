@@ -85,7 +85,7 @@ async function run() {
                 }
 
                 writeFile(path.join(outputFolder, fileName), JSON.stringify(jsonLDResult), 'utf8');
-                dbAdapter.updateOrCreateParking(encodeURIComponent(jsonLDResult['@id']), fileName, false, location, function(){});
+                dbAdapter.updateOrCreateParking(encodeURIComponent(jsonLDResult['@id']), fileName, true, location, function(){});
                 dbAdapter.updateCompanyParkingIDs('NMBS', encodeURIComponent(jsonLDResult['@id']), function(){});
                 counter--;
                 console.log(id + "\tDone\t(", counter, "left)");
