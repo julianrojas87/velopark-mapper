@@ -227,7 +227,7 @@ function insertValuesInJsonLD(parkingData, applicationProfileString) {
     }
 
     //Auto fill
-    jsonLD['@id'] = 'https://velopark.ilabt.imec.be/data/' + encodeURIComponent(parkingData.organizationName1) + '_' + encodeURIComponent(parkingData.localIdentifier);
+    jsonLD['@id'] = 'https://velopark.ilabt.imec.be/data/NMBS_' + encodeURIComponent(parkingData.localIdentifier);
     jsonLD.dateModified = (new Date()).toISOString();
     // Set values for each parking section
     for (let i = 0; i < jsonLD['@graph'].length; i++) {
