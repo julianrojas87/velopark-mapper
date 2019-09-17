@@ -75,8 +75,8 @@ function extractLocationFromJsonld(jsonld) {
     let lonlat = [];
     for (let i = 0; i < geo.length; i++) {
         if (geo[i]["@type"] === "GeoCoordinates") {
-            lonlat[0] = geo[i]["longitude"];
-            lonlat[1] = geo[i]["latitude"];
+            lonlat[0] = parseFloat(geo[i]["longitude"]);
+            lonlat[1] = parseFloat(geo[i]["latitude"]);
         }
     }
     return lonlat;
@@ -142,8 +142,8 @@ function insertValuesInJsonLD(parkingData, applicationProfileString) {
         jsonLD['@graph'][0]['allows'][1]['bicycleType'] = "https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle";
         jsonLD['@graph'][0]['allows'][1]['bicyclesAmount'] = parkingData.capacity_cargo;
     }
-    jsonLD['@graph'][0]['geo'][0]['latitude'] = parkingData.latitude;
-    jsonLD['@graph'][0]['geo'][0]['longitude'] = parkingData.longitude;
+    jsonLD['@graph'][0]['geo'][0]['latitude'] = parseFloat(parkingData.latitude);
+    jsonLD['@graph'][0]['geo'][0]['longitude'] = parseFloat(parkingData.longitude);
     jsonLD['@graph'][0]['priceSpecification'][0]['freeOfCharge'] = !parkingData.mobib;
 
     //Auto fill

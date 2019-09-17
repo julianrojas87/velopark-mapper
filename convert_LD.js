@@ -58,8 +58,8 @@ async function run() {
             parkings[i].maximumParkingDuration = 30;
             parkings[i].openingTime = "00:00";
             parkings[i].closingTime = "23:59";
-            parkings[i].latitude = jsonContent[i]['latitude'];
-            parkings[i].longitude = jsonContent[i]['longitude'];
+            parkings[i].latitude = parseFloat(jsonContent[i]['latitude']);
+            parkings[i].longitude = parseFloat(jsonContent[i]['longitude']);
             parkings[i].capacity = jsonContent[i]['Plaatsen totaal fiets'];
             parkings[i].free = jsonContent[i]['Betalend?'] !== "1";
             parkings[i].cameraSurveillance = jsonContent[i]['Camerabewaking'] === "1";
@@ -114,8 +114,8 @@ function extractLocationFromJsonld(jsonld) {
     let lonlat = [];
     for (let i = 0; i < geo.length; i++) {
         if (geo[i]["@type"] === "GeoCoordinates") {
-            lonlat[0] = geo[i]["longitude"];
-            lonlat[1] = geo[i]["latitude"];
+            lonlat[0] = parseFloat(geo[i]["longitude"]);
+            lonlat[1] = parseFloat(geo[i]["latitude"]);
         }
     }
     return lonlat;
