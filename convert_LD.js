@@ -185,13 +185,13 @@ function insertValuesInJsonLD(parkingData, applicationProfileString) {
     jsonLD['@graph'][0]['priceSpecification'][0]['freeOfCharge'] = parkingData.free;
     jsonLD['@graph'][0]['allows'] = [];
     if(parkingData.regularBikes) {
-        jsonLD['@graph'][0]['allows'].push({ "bicycleType": "https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle", "bicyclesAmount": parkingData.regularBikes });
+        jsonLD['@graph'][0]['allows'].push({ "@type": "AllowedBicycle", "bicycleType": "https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle", "bicyclesAmount": parkingData.regularBikes });
     }
     if(parkingData.cargoBikes) {
-        jsonLD['@graph'][0]['allows'].push({ "bicycleType": "https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle", "bicyclesAmount": parkingData.cargoBikes });
+        jsonLD['@graph'][0]['allows'].push({ "@type": "AllowedBicycle", "bicycleType": "https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle", "bicyclesAmount": parkingData.cargoBikes });
     }
     if(parkingData.electricBikes) {
-        jsonLD['@graph'][0]['allows'].push({ "bicycleType": "https://velopark.ilabt.imec.be/openvelopark/terms#ElectricBicycle", "bicyclesAmount": parkingData.electricBikes });
+        jsonLD['@graph'][0]['allows'].push({ "@type": "AllowedBicycle", "bicycleType": "https://velopark.ilabt.imec.be/openvelopark/terms#ElectricBicycle", "bicyclesAmount": parkingData.electricBikes });
     }
 
     jsonLD['@graph'][0]['amenityFeature'] = [];
