@@ -41,8 +41,6 @@ async function run() {
 
     profilePromise.then(jsonLD => {
         for (i in jsonContent) {
-            //let i = 0;
-            //{
             promises[i] = [];
             parkings[i] = {};
 
@@ -51,7 +49,6 @@ async function run() {
 
             parkings[i].name = jsonContent[i]['tblalgemenegegevens.Naam'] + " " + jsonContent[i]['tblintermodaliteitfietsenstalling.Naam'];
             parkings[i].localIdentifier = jsonContent[i]['ID fietsenstalling'];
-            parkings[i].initialOpening = (new Date("01/01/2000")).toISOString();
             parkings[i].country = "Belgium";
             parkings[i].organizationName1 = (jsonContent[i]['Eigenaar terrein'] === "Derde" || !jsonContent[i]['Eigenaar terrein']) ? jsonContent[i]['Eigenaar derde'] : jsonContent[i]['Eigenaar terrein'];
             parkings[i].organizationName2 = jsonContent[i]['Exploitant'] || parkings[i].organizationName1;
@@ -60,9 +57,20 @@ async function run() {
             parkings[i].closingTime = "23:59";
             parkings[i].latitude = parseFloat(jsonContent[i]['latitude']);
             parkings[i].longitude = parseFloat(jsonContent[i]['longitude']);
-            parkings[i].capacity = jsonContent[i]['Plaatsen totaal fiets'];
             parkings[i].free = jsonContent[i]['Betalend?'] !== "1";
             parkings[i].cameraSurveillance = jsonContent[i]['Camerabewaking'] === "1";
+            parkings[i].electronicAccess = jsonContent[i]['Toegangscontrole?'] === "1";
+            parkings[i].description = jsonContent[i]['Positie'];
+
+            if(parseInt(jsonContent[i]['Plaatsen bakfiets overdekt']) > 0 || parseInt(jsonContent[i]['Plaatsen bakfiets openlucht']) > 0) {
+                parkings[i].cargoBikes = parseInt(jsonContent[i]['Plaatsen bakfiets overdekt']) + parseInt(jsonContent[i]['Plaatsen bakfiets openlucht']);
+            }
+            if(parseInt(jsonContent[i]['Plaatsen elektrische fiets overdekt']) > 0 || parseInt(jsonContent[i]['Plaatsen elektrische fiets openlucht']) > 0) {
+                parkings[i].electricBikes = parseInt(jsonContent[i]['Plaatsen elektrische fiets overdekt']) + parseInt(jsonContent[i]['Plaatsen elektrische fiets openlucht']);
+            }
+            if(parseInt(jsonContent[i]['Plaatsen fietsen overdekt']) > 0 || parseInt(jsonContent[i]['Plaatsen fietsen openlucht']) > 0) {
+                parkings[i].regularBikes = parseInt(jsonContent[i]['Plaatsen fietsen overdekt']) + parseInt(jsonContent[i]['Plaatsen fietsen openlucht']);
+            }
 
             //Promise.all(promises[i]).then((values) => {
 
@@ -130,6 +138,7 @@ function insertValuesInJsonLD(parkingData, applicationProfileString) {
     jsonLD.address.postalCode = parkingData.postalCode;
     jsonLD.address.streetAddress = parkingData.address;
     jsonLD.address.country = parkingData.country;
+    jsonLD.address.description = [{"@value": parkingData.description, "@language": "nl"}];
     jsonLD.startDate = parkingData.initialOpening;
     jsonLD['@graph'][0]['@type'] = "https://velopark.ilabt.imec.be/openvelopark/terms#PublicBicycleParking";
     jsonLD['@graph'][0]["openingHoursSpecification"] = [
@@ -171,13 +180,23 @@ function insertValuesInJsonLD(parkingData, applicationProfileString) {
         }
     ];
     jsonLD['@graph'][0]['maximumParkingDuration'] = formatValue('maximumParkingDuration', parkingData.maximumParkingDuration, jsonLD['@context']);
-    jsonLD['@graph'][0]['allows'][0]['bicycleType'] = "https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle";
-    jsonLD['@graph'][0]['allows'][0]['bicyclesAmount'] = parkingData.capacity;
     jsonLD['@graph'][0]['geo'][0]['latitude'] = parkingData.latitude;
     jsonLD['@graph'][0]['geo'][0]['longitude'] = parkingData.longitude;
     jsonLD['@graph'][0]['priceSpecification'][0]['freeOfCharge'] = parkingData.free;
+    jsonLD['@graph'][0]['allows'] = [];
+    if(parkingData.regularBikes) {
+        jsonLD['@graph'][0]['allows'].push({ "bicycleType": "https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle", "bicyclesAmount": parkingData.regularBikes });
+    }
+    if(parkingData.cargoBikes) {
+        jsonLD['@graph'][0]['allows'].push({ "bicycleType": "https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle", "bicyclesAmount": parkingData.cargoBikes });
+    }
+    if(parkingData.electricBikes) {
+        jsonLD['@graph'][0]['allows'].push({ "bicycleType": "https://velopark.ilabt.imec.be/openvelopark/terms#ElectricBicycle", "bicyclesAmount": parkingData.electricBikes });
+    }
+
+    jsonLD['@graph'][0]['amenityFeature'] = [];
     if(parkingData.cameraSurveillance){
-        jsonLD['@graph'][0]['amenityFeature'][0] = {
+        jsonLD['@graph'][0]['amenityFeature'].push({
             "@type": "https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance",
             "hoursAvailable": [
                 {
@@ -223,7 +242,56 @@ function insertValuesInJsonLD(parkingData, applicationProfileString) {
                     "closes": "23:59"
                 }
             ]
-        }
+        });
+    }
+    if(parkingData.electronicAccess){
+        jsonLD['@graph'][0]['amenityFeature'].push({
+            "@type": "https://velopark.ilabt.imec.be/openvelopark/terms#ElectronicAccess",
+            "hoursAvailable": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "http://schema.org/Monday",
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "http://schema.org/Tuesday",
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "http://schema.org/Wednesday",
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "http://schema.org/Thursday",
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "http://schema.org/Friday",
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "http://schema.org/Saturday",
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "http://schema.org/Sunday",
+                    "opens": "00:00",
+                    "closes": "23:59"
+                }
+            ]
+        });
     }
 
     //Auto fill
