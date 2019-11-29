@@ -11,6 +11,7 @@
   "dependencies": {
     "commander": "^2.20.0",
     "fast-csv": "^2.5.0",
+    "geolib": "^3.1.0",
     "mongodb": "^3.2.6",
     "request": "^2.88.0"
   }

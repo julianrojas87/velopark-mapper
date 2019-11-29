@@ -36,7 +36,8 @@ exports.insertCompany = function (companyName, callback) {
         {name: companyName},
         {
             $set: {
-                name: companyName
+                name: companyName,
+                parkingIDs: []
             }
         },
         {upsert: true},
@@ -51,8 +52,14 @@ exports.insertCompany = function (companyName, callback) {
         });
 };
 
-exports.updateCompanyParkingIDs = function (companyName, parkingID, callback) {
-    companies.findOneAndUpdate(
+exports.deleteAllFromCompany = company => {
+    return parkings.deleteMany({
+        'parkingID': { $regex: ".*" + company + ".*" },
+    });
+};
+
+exports.updateCompanyParkingIDs = function (companyName, parkingID) {
+    return companies.findOneAndUpdate(
         {
             name: companyName
         },
@@ -63,13 +70,12 @@ exports.updateCompanyParkingIDs = function (companyName, parkingID, callback) {
         },
         {
             returnOriginal: false
-        },
-        callback
+        }
     );
 };
 
-exports.updateOrCreateParking = function (id, filename, approvedStatus, location, callback) {
-    parkings.findOneAndUpdate(
+exports.updateOrCreateParking = function (id, filename, approvedStatus, location) {
+    return parkings.findOneAndUpdate(
         {
             parkingID: id
         },
@@ -83,12 +89,5 @@ exports.updateOrCreateParking = function (id, filename, approvedStatus, location
         {
             returnOriginal: false,
             upsert: true
-        },
-        function (e, o) {
-            if (o.value != null) {
-                callback(null, o.value);
-            } else {
-                callback(e);
-            }
         });
 };

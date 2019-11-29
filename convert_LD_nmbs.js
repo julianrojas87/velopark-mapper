@@ -12,109 +12,107 @@ program.parse(process.argv);
 
 const dbAdapter = require('./database-adapter');
 
-const outputFolder = program.outputFolder || 'output/parkings/';
-if(!fs.existsSync(outputFolder)){
+const outputFolder = program.outputFolder || 'output/';
+if (!fs.existsSync(outputFolder)) {
     console.error('the specified folder does not exist.', outputFolder);
     process.exit(1);
 }
 
-const writeFile = util.promisify(fs.writeFile);
+const writeFile = util.promisify(fs.writeFile); 
 
 async function run() {
     var hrstart = process.hrtime();
     console.log("STARTING");
     // Get content from file
-    var contents = fs.readFileSync("output/nmbs_parkings_geolocated.json");
+    var contents = fs.readFileSync("data/new_nmbs_epsg3857.json");
     // Define to JSON type
-    var jsonContent = JSON.parse(contents);
+    var jsonContent = JSON.parse(contents).features;
     let counter = jsonContent.length;
     // Get Value from JSON
     let promises = [];
     let parkings = [];
-    let profilePromise = getApplicationProfile();
-    profilePromise.catch(error => {
-        console.error(error);
-    });
+    let parkingIDs = new Set();
 
     await dbAdapter.initDbAdapter();
-    await dbAdapter.insertCompany('NMBS', function(){});
+    await dbAdapter.insertCompany('NMBS', function () { });
+    await dbAdapter.deleteAllFromCompany('NMBS');
 
-    profilePromise.then(jsonLD => {
-        for (i in jsonContent) {
-            promises[i] = [];
+    let jsonLD = await getApplicationProfile();
+    let i = 0;
+
+    for (let rp of jsonContent) {
+        let p = rp['properties'];
+        if (!parkingIDs.has(p['IDfietsens'])) {
+            parkingIDs.add(p['IDfietsens']);
             parkings[i] = {};
 
-            promises[i].push(getAddressHERE(i, jsonContent[i]['latitude'], jsonContent[i]['longitude']));
-            //promises[i].push(getPostalCode(i, jsonContent[i]['tblalgemenegegevens.Naam']));
+            let lat = rp['geometry']['coordinates'][1];
+            let lon = rp['geometry']['coordinates'][0];
+            let address = await getAddressHERE(i, lat, lon);
 
-            parkings[i].name = jsonContent[i]['tblalgemenegegevens.Naam'] + " " + jsonContent[i]['tblintermodaliteitfietsenstalling.Naam'];
-            parkings[i].localIdentifier = jsonContent[i]['ID fietsenstalling'];
+            parkings[i].name = p['tblalgemen'] + " " + p['tblintermo'];
+            parkings[i].localIdentifier = p['IDfietsens'];
+            parkings[i].address = address.address.split(',')[0];
+            parkings[i].postalCode = address.postalCode;
             parkings[i].country = "Belgium";
-            parkings[i].organizationName1 = (jsonContent[i]['Eigenaar terrein'] === "Derde" || !jsonContent[i]['Eigenaar terrein']) ? jsonContent[i]['Eigenaar derde'] : jsonContent[i]['Eigenaar terrein'];
-            parkings[i].organizationName2 = jsonContent[i]['Exploitant'] || parkings[i].organizationName1;
+            parkings[i].organizationName1 = (p['Eigenaarte'] === "Derde" || !p['Eigenaarte']) ? p['Eigenaarde'] : p['Eigenaarte'];
+            parkings[i].organizationName2 = p['Exploitant'] ? (p['Exploita_1'] ? p['Exploitant'] + ' - ' + p['Exploita_1'] : p['Exploitant']) : parkings[i].organizationName1;
             parkings[i].maximumParkingDuration = 30;
             parkings[i].openingTime = "00:00";
             parkings[i].closingTime = "23:59";
-            parkings[i].latitude = parseFloat(jsonContent[i]['latitude']);
-            parkings[i].longitude = parseFloat(jsonContent[i]['longitude']);
-            parkings[i].free = jsonContent[i]['Betalend?'] !== "1";
-            parkings[i].cameraSurveillance = jsonContent[i]['Camerabewaking'] === "1";
-            parkings[i].electronicAccess = jsonContent[i]['Toegangscontrole?'] === "1";
-            parkings[i].description = jsonContent[i]['Positie'];
+            parkings[i].latitude = lat;
+            parkings[i].longitude = lon;
+            parkings[i].free = p['Betalend'] !== "1";
+            parkings[i].cameraSurveillance = p['Camerabewa'] === "1";
+            parkings[i].electronicAccess = p['Toegangsco'] === "1";
+            parkings[i].description = p['Positie'];
 
-            if(parseInt(jsonContent[i]['Plaatsen bakfiets overdekt']) > 0 || parseInt(jsonContent[i]['Plaatsen bakfiets openlucht']) > 0) {
-                parkings[i].cargoBikes = parseInt(jsonContent[i]['Plaatsen bakfiets overdekt']) + parseInt(jsonContent[i]['Plaatsen bakfiets openlucht']);
-            }
-            if(parseInt(jsonContent[i]['Plaatsen elektrische fiets overdekt']) > 0 || parseInt(jsonContent[i]['Plaatsen elektrische fiets openlucht']) > 0) {
-                parkings[i].electricBikes = parseInt(jsonContent[i]['Plaatsen elektrische fiets overdekt']) + parseInt(jsonContent[i]['Plaatsen elektrische fiets openlucht']);
-            }
-            if(parseInt(jsonContent[i]['Plaatsen fietsen overdekt']) > 0 || parseInt(jsonContent[i]['Plaatsen fietsen openlucht']) > 0) {
-                parkings[i].regularBikes = parseInt(jsonContent[i]['Plaatsen fietsen overdekt']) + parseInt(jsonContent[i]['Plaatsen fietsen openlucht']);
+            // See if there are covered parking places
+            if (p['Plaatsenfi'] > 0 || p['Plaatsenba'] > 0 || p['Plaatsenel'] > 0) {
+                parkings[i].covered = true;
+            } else {
+                parkings[i].covered = false;
             }
 
-            //Promise.all(promises[i]).then((values) => {
+            if (parseInt(p['Plaatsenba']) > 0 || parseInt(0['Plaatsen_2']) > 0) {
+                parkings[i].cargoBikes = parseInt(p['Plaatsenba']) + parseInt(p['Plaatsen_2']);
+            }
+            if (parseInt(p['Plaatsenel']) > 0 || parseInt(p['Plaatsen_4']) > 0) {
+                parkings[i].electricBikes = parseInt(p['Plaatsenel']) + parseInt(p['Plaatsen_4']);
+            }
+            if (parseInt(p['Plaatsenfi']) > 0 || parseInt(p['Plaatsen_1']) > 0) {
+                parkings[i].regularBikes = parseInt(p['Plaatsenfi']) + parseInt(p['Plaatsen_1']);
+            }
 
-            promises[i][0].then(value => {
-                let id = value.id;
-                parkings[id].address = value.address;
-                parkings[id].postalCode = value.postalCode;
-                //insert parking values in jsonLD
-                let jsonLDResult = insertValuesInJsonLD(parkings[id], jsonLD);
+            //insert parking values in jsonLD
+            let jsonLDResult = insertValuesInJsonLD(parkings[i], jsonLD);
 
-                let fileName = (jsonLDResult['ownedBy']['companyName'] + '_' + jsonLDResult['identifier']).replace(/\s/g, '-') + '.jsonld';
-                let location;
-                try {
-                    location = {
-                        type: "Point",
-                        coordinates: extractLocationFromJsonld(jsonLDResult)
-                    };
-                } catch (e) {
-                    console.error("Could not extract location from parking." + e);
-                }
+            let fileName = (jsonLDResult['ownedBy']['companyName'] + '_' + jsonLDResult['identifier']).replace(/\s/g, '-') + '.jsonld';
+            let location;
+            try {
+                location = {
+                    type: "Point",
+                    coordinates: extractLocationFromJsonld(jsonLDResult)
+                };
+            } catch (e) {
+                console.error("Could not extract location from parking." + e);
+            }
 
-                writeFile(path.join(outputFolder, fileName), JSON.stringify(jsonLDResult), 'utf8');
-                dbAdapter.updateOrCreateParking(encodeURIComponent(jsonLDResult['@id']), fileName, true, location, function(){});
-                dbAdapter.updateCompanyParkingIDs('NMBS', encodeURIComponent(jsonLDResult['@id']), function(){});
-                counter--;
-                console.log(id + "\tDone\t(", counter, "left)");
-                if (counter <= 0) {
-                    var hrend = process.hrtime(hrstart);
-                    console.info("\nFINISHED! took %ds %dms", hrend[0], hrend[1] / 1000000);
-                    //TODO: close db
-                }
-            }).catch((error) => {
-                console.error(error);
-                counter--;
-                if (counter <= 0) {
-                    var hrend = process.hrtime(hrstart);
-                    console.info("\nFINISHED! took %ds %dms", hrend[0], hrend[1] / 1000000);
-                    //TODO: close db
-                }
-            });
-
+            await writeFile(path.join(outputFolder, fileName), JSON.stringify(jsonLDResult), 'utf8');
+            await dbAdapter.updateOrCreateParking(encodeURIComponent(jsonLDResult['@id']), fileName, true, location);
+            await dbAdapter.updateCompanyParkingIDs('NMBS', encodeURIComponent(jsonLDResult['@id']));
+        } else {
+            console.log('Parking ID already exists:' + p['IDfietsens']);
         }
-        console.log("SHOTS FIRED\n");
-    });
+        counter--;
+        console.log(i + "\tDone\t(", counter, "left)");
+        i++;
+    }
+
+    var hrend = process.hrtime(hrstart);
+    console.info("\nFINISHED! took %ds %dms", hrend[0], hrend[1] / 1000000);
+    //TODO: close db
+    process.exit();
 }
 
 function extractLocationFromJsonld(jsonld) {
@@ -132,15 +130,16 @@ function extractLocationFromJsonld(jsonld) {
 function insertValuesInJsonLD(parkingData, applicationProfileString) {
     let jsonLD = JSON.parse(applicationProfileString);
     jsonLD.identifier = parkingData.localIdentifier;
-    jsonLD.name = [{"@value": parkingData.name, "@language": "nl"}];
-    jsonLD.ownedBy.companyName = 'NMBS';//parkingData.organizationName1;
+    jsonLD.name = [{ "@value": parkingData.name, "@language": "nl" }];
+    jsonLD.ownedBy.companyName = 'NMBS';
     jsonLD.operatedBy.companyName = parkingData.organizationName2;
     jsonLD.address.postalCode = parkingData.postalCode;
     jsonLD.address.streetAddress = parkingData.address;
     jsonLD.address.country = parkingData.country;
-    jsonLD.address.description = [{"@value": parkingData.description, "@language": "nl"}];
+    jsonLD.address.description = [{ "@value": parkingData.description, "@language": "nl" }];
     jsonLD.startDate = parkingData.initialOpening;
     jsonLD['@graph'][0]['@type'] = "https://velopark.ilabt.imec.be/openvelopark/terms#PublicBicycleParking";
+    jsonLD['@graph'][0]['covered'] = parkingData.covered;
     jsonLD['@graph'][0]["openingHoursSpecification"] = [
         {
             "@type": "OpeningHoursSpecification",
@@ -184,18 +183,18 @@ function insertValuesInJsonLD(parkingData, applicationProfileString) {
     jsonLD['@graph'][0]['geo'][0]['longitude'] = parkingData.longitude;
     jsonLD['@graph'][0]['priceSpecification'][0]['freeOfCharge'] = parkingData.free;
     jsonLD['@graph'][0]['allows'] = [];
-    if(parkingData.regularBikes) {
+    if (parkingData.regularBikes) {
         jsonLD['@graph'][0]['allows'].push({ "@type": "AllowedBicycle", "bicycleType": "https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle", "bicyclesAmount": parkingData.regularBikes });
     }
-    if(parkingData.cargoBikes) {
+    if (parkingData.cargoBikes) {
         jsonLD['@graph'][0]['allows'].push({ "@type": "AllowedBicycle", "bicycleType": "https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle", "bicyclesAmount": parkingData.cargoBikes });
     }
-    if(parkingData.electricBikes) {
+    if (parkingData.electricBikes) {
         jsonLD['@graph'][0]['allows'].push({ "@type": "AllowedBicycle", "bicycleType": "https://velopark.ilabt.imec.be/openvelopark/terms#ElectricBicycle", "bicyclesAmount": parkingData.electricBikes });
     }
 
     jsonLD['@graph'][0]['amenityFeature'] = [];
-    if(parkingData.cameraSurveillance){
+    if (parkingData.cameraSurveillance) {
         jsonLD['@graph'][0]['amenityFeature'].push({
             "@type": "https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance",
             "hoursAvailable": [
@@ -244,7 +243,7 @@ function insertValuesInJsonLD(parkingData, applicationProfileString) {
             ]
         });
     }
-    if(parkingData.electronicAccess){
+    if (parkingData.electronicAccess) {
         jsonLD['@graph'][0]['amenityFeature'].push({
             "@type": "https://velopark.ilabt.imec.be/openvelopark/terms#ElectronicAccess",
             "hoursAvailable": [
@@ -312,6 +311,7 @@ function insertValuesInJsonLD(parkingData, applicationProfileString) {
         "@type": "Map",
         "url": 'https://www.openstreetmap.org/#map=18/' + lonlat[1] + '/' + lonlat[0]
     };
+
     cleanEmptyValues(jsonLD);
     return jsonLD;
 }
@@ -516,7 +516,7 @@ function getAddressGoogle(i, lat, lon, attempts = 3) {
                         console.log("postcode:", postalCode);
                     }
 
-                    resolve({id: i, address: address, postalCode: postalCode});
+                    resolve({ id: i, address: address, postalCode: postalCode });
                 } catch (e) {
                     console.log(i, "Request failed, attempts left: ", attempts);
                     if (attempts > 0) {
@@ -564,7 +564,7 @@ function getAddressNominatim(i, lat, lon, attempts = 10) {
                 try {
                     //console.log(body);
                     let bodyObj = JSON.parse(body);
-                    resolve({id: i, address: bodyObj.display_name, postalCode: bodyObj.address.postcode});
+                    resolve({ id: i, address: bodyObj.display_name, postalCode: bodyObj.address.postcode });
                 } catch (e) {
                     console.log(i, "Request failed, attempts left: ", attempts);
                     if (attempts > 0) {
