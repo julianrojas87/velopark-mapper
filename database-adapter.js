@@ -3,19 +3,13 @@ const MongoClient = require('mongodb').MongoClient;
 process.env.DB_HOST = process.env.DB_HOST || 'localhost'
 process.env.DB_PORT = process.env.DB_PORT || 27017;
 process.env.DB_NAME = process.env.DB_NAME || 'node-login';
-
-if (!global.program.live){
-    process.env.DB_URL = 'mongodb://'+process.env.DB_HOST+':'+process.env.DB_PORT;
-}	else {
-// prepend url with authentication credentials //
-    process.env.DB_URL = 'mongodb://'+process.env.DB_USER+':'+process.env.DB_PASS+'@'+process.env.DB_HOST+':'+process.env.DB_PORT;
-}
+process.env.DB_URL = 'mongodb://' + process.env.DB_HOST + ':' + process.env.DB_PORT;
 
 var db, parkings, companies;
 
 exports.initDbAdapter = function () {
     return new Promise((resolve, reject) => {
-        MongoClient.connect(process.env.DB_URL, {useNewUrlParser: true}, function (e, client) {
+        MongoClient.connect(process.env.DB_URL, { useNewUrlParser: true }, function (e, client) {
             if (e) {
                 console.error(e);
             } else {
@@ -31,25 +25,16 @@ exports.initDbAdapter = function () {
     });
 };
 
-exports.insertCompany = function (companyName, callback) {
-    companies.findOneAndUpdate(
-        {name: companyName},
+exports.insertCompany = function (companyName) {
+    return companies.findOneAndUpdate(
+        { name: companyName },
         {
             $set: {
                 name: companyName,
                 parkingIDs: []
             }
         },
-        {upsert: true},
-        function (error, result) {
-            if (error != null) {
-                callback(error);
-            } else if (result.value == null) {
-                callback(null, true);
-            } else {
-                callback("Company existed already.");
-            }
-        });
+        { upsert: true });
 };
 
 exports.deleteAllFromCompany = company => {

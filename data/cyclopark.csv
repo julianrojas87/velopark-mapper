@@ -1,0 +1,318 @@
+id,address_id,parking_type_name,latitude,longitude,box_number,status,created_at,updated_at,is_all_access,wow_id,name,legacy_address,installation_date,capacity_classic,capacity_cargo,limit_sub_number,code,active,mobib,is_group
+337,,BigParking,50.816373,4.289144,,,2019-05-16T14:49:30Z,2019-05-21T10:11:31Z,false,,Ceria,"(M) Ceria, 1080 Grands Parkings",2019-05-15T00:00:00Z,300,0,,GP03,true,false,false
+329,,BigParking,50.85136,4.35284,,,2019-04-09T12:44:19Z,2019-05-21T10:11:31Z,false,,De Brouckère,"(M) DE BROUCKÈRE, 1000 Grands Parkings",2019-03-28T00:00:00Z,304,0,,GP02,true,false,false
+162,,PrivateParkings,50.872583,4.323861,,,2019-02-05T11:01:51Z,2019-05-21T10:12:07Z,false,,Spiegel,"Place Reine Astrid, 1090 Jette",1970-01-01T00:00:00Z,38,0,,PP01,false,false,false
+317,,Big100,50.850982,4.352033,,,2019-02-27T08:31:37Z,2019-02-27T08:46:15Z,true,35257,Brouckère Big gate 2,"Parking De Brouckère, 1000 Bruxelles",2019-02-26T00:00:00Z,100,0,,Brouckère 1.2.2,false,true,false
+316,,Big100,50.850982,4.352033,,,2019-02-27T08:31:37Z,2019-02-27T08:46:15Z,true,35256,Brouckère Big gate 1,"Parking De Brouckère, 1000 Bruxelles",2019-02-26T00:00:00Z,100,0,,Brouckère 1.2.1,false,true,false
+318,,Big100,50.850982,4.352033,,,2019-02-27T08:31:37Z,2019-02-27T08:46:15Z,true,35258,Brouckère Big gate 3,"Parking De Brouckère, 1000 Bruxelles",2019-02-26T00:00:00Z,100,0,,Brouckère 1.2.3,false,true,false
+194,,Box,50.86697,4.332,,,2019-02-05T11:01:55Z,2019-04-11T12:50:37Z,false,35110,Carton,", 1090 Jette",2019-01-18T00:00:00Z,5,0,,JT33,true,true,false
+257,,Box,50.8503,4.3517,,,2019-02-05T11:02:04Z,2019-05-15T13:19:21Z,false,,st,"Quai des Charbonnages 30-34 - CyCLO Buro, 1070 Anderlecht",1970-01-01T00:00:00Z,1,0,,CY00,false,false,false
+339,,Big100,50.816373,4.289144,,,2019-05-16T14:49:31Z,2019-05-17T07:52:10Z,true,104825,Ceria Big Parking,"Ceria, 1070 ",2018-05-15T00:00:00Z,300,0,,Ceria dag uit,false,true,false
+340,,Big100,50.816373,4.289144,,,2019-05-16T14:49:31Z,2019-05-17T07:52:10Z,true,104826,Ceria Big Parking,"Ceria, 1070 ",2018-05-15T00:00:00Z,300,0,,Ceria nacht in,false,true,false
+341,,Big100,50.816373,4.289144,,,2019-05-16T14:49:31Z,2019-05-17T07:52:10Z,true,104827,Ceria Big Parking,"Ceria, 1070 ",2018-05-15T00:00:00Z,300,0,,Ceria nacht uit,false,true,false
+338,,Big100,50.816373,4.289144,,,2019-05-16T14:49:30Z,2019-05-17T07:52:10Z,true,104824,Ceria Big Parking,"Ceria, 1070 ",2018-05-15T00:00:00Z,300,0,,Ceria dag in,false,true,false
+23,,NeighborhoodLocker,50.83254,4.37247,,,2019-02-05T11:01:32Z,2019-05-21T10:07:43Z,false,,Sans Souci,"Rue Sans Souci 120, 1050 Ixelles",2018-03-30T00:00:00Z,9,0,,XLR0,false,false,false
+52,,NeighborhoodLocker,50.81104,4.3248,,,2019-02-05T11:01:36Z,2019-05-21T10:07:43Z,false,,Globe,"Av. du Globe 4 x rue d'Huart, 1190 Forest",2018-06-13T00:00:00Z,10,0,,VTR0,true,false,false
+31,,Box,50.83614,4.36457,,,2019-02-05T11:01:33Z,2019-02-05T14:55:33Z,false,28894,Solvay,"Rue Solvay x Rue Saint-Boniface, 1050 Ixelles",1970-01-01T00:00:00Z,5,0,,XL07,true,true,false
+330,,BigParking,50.84802,4.34918,,,2019-04-09T12:44:19Z,2019-05-21T10:11:31Z,false,,Bourse,"(M) BOURSE*BEURS, 1000 Grands Parkings",2019-02-07T00:00:00Z,610,18,,GP01,true,false,false
+161,,PrivateParkings,50.834778,4.368113,,,2019-02-05T11:01:51Z,2019-05-21T10:12:07Z,false,,Tulp,"Parking communal, rue de la Tulipe 39A, 1050 Ixelles",1970-01-01T00:00:00Z,50,0,,PP02,false,false,false
+160,,PrivateParkings,50.8277,4.37307,,,2019-02-05T11:01:51Z,2019-05-21T10:12:07Z,false,,Flagey,"Place Flagey, 1050 Ixelles",1970-01-01T00:00:00Z,20,0,,PP03,false,false,false
+221,,Box,50.87455,4.33523,,,2019-02-05T11:01:59Z,2019-06-04T13:36:27Z,false,,Laveleye,"Rue Baron de Laveleye 28, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT06,true,false,false
+24,,Box,50.81967,4.3589,,,2019-02-05T11:01:32Z,,false,,Lepoutre,"Avenue Louis Lepoutre x Rue Camille Lemonnier, 1050 Ixelles",2018-05-25T00:00:00Z,5,0,,XL14,true,false,false
+25,,Box,50.81875,4.38718,,,2019-02-05T11:01:32Z,,false,,Saisons,"Rue Maximilien x Avenue des Saisons, 1050 Ixelles",2018-03-29T00:00:00Z,5,0,,XL13,true,false,false
+26,,Box,50.83321,4.36284,,,2019-02-05T11:01:32Z,,false,,Président,"Rue du Président x Rue Keyenveld, 1050 Ixelles",2018-03-28T00:00:00Z,5,0,,XL12,true,false,false
+27,,Box,50.82243,4.3845,,,2019-02-05T11:01:33Z,,false,,Wytsman,"Rue Juliette Wytsman x Rue Fritz Toussaint, 1050 Ixelles",2017-12-05T00:00:00Z,5,0,,XL11,true,false,false
+28,,Box,50.82567,4.37554,,,2019-02-05T11:01:33Z,,false,,Lanfray,"Rue Lanfray x Rue Antoine Labarre, 1050 Ixelles",1970-01-01T00:00:00Z,5,0,,XL10,true,false,false
+29,,Box,50.83041,4.37441,,,2019-02-05T11:01:33Z,,false,,Kerckx,"Rue Kerckx x Rue Marie-Henriette, 1050 Ixelles",1970-01-01T00:00:00Z,5,0,,XL09,true,false,false
+30,,Box,50.83312,4.38107,,,2019-02-05T11:01:33Z,,false,,Brochet,"Rue du Brochet 54-64, 1050 Ixelles",1970-01-01T00:00:00Z,5,0,,XL08,true,false,false
+32,,Box,50.82355,4.37658,,,2019-02-05T11:01:33Z,,false,,Greyson,"Rue Victor Greyson 2, 1050 Ixelles",1970-01-01T00:00:00Z,5,0,,XL06,true,false,false
+33,,Box,50.82039,4.3634,,,2019-02-05T11:01:33Z,,false,,Mélèzes,"Rue des Mélèzes 63, 1050 Ixelles",1970-01-01T00:00:00Z,5,0,,XL05,true,false,false
+34,,Box,50.83097,4.37088,,,2019-02-05T11:01:34Z,,false,,Maes,"Rue Maes 56, 1050 Ixelles",1970-01-01T00:00:00Z,5,0,,XL04,true,false,false
+319,,Box,50.89005,4.32466,,,2019-04-09T12:44:18Z,,false,,Grijse,"Rue Edouard de Grijse x Rue Jean Baudoux, 1090 Jette",2019-04-04T00:00:00Z,5,0,,JT40,true,false,false
+37,,Box,50.82704,4.38027,,,2019-02-05T11:01:34Z,,false,,Rodin,"Avenue Alphonse Hottat x Avenue Auguste Rodin, 1050 Ixelles",1970-01-01T00:00:00Z,5,0,,XL01,true,false,false
+38,,Box,50.79923,4.41847,,,2019-02-05T11:01:34Z,,false,,Pipette,"Rue de l'Hospice Communal 3, 1170 Watermael-Boitsfort",2019-01-15T00:00:00Z,5,0,,WB14,false,false,false
+39,,Box,50.80997,4.40356,,,2019-02-05T11:01:34Z,,false,,Sauvagine,"Rue des Bégonias 7 x Av. de la Sauvagine, 1170 Watermael-Boitsfort",2019-01-15T00:00:00Z,5,0,,WB13,false,false,false
+40,,Box,50.79295,4.42,,,2019-02-05T11:01:34Z,,false,,Buis,"Rue du Buis x Chaussée de la Hulpe, 1170 Watermael-Boitsfort",1970-01-01T00:00:00Z,5,0,,WB12,true,false,false
+41,,Box,50.7891,4.42107,,,2019-02-05T11:01:34Z,,false,,Heiligenborre,"Heiligenborre 90, 1170 Watermael-Boitsfort",1970-01-01T00:00:00Z,5,0,,WB11,true,false,false
+42,,Box,50.79604,4.4171,,,2019-02-05T11:01:35Z,,false,,Dewolfs,"Rue Philippe Dewolfs 3, 1170 Watermael-Boitsfort",1970-01-01T00:00:00Z,5,0,,WB10,true,false,false
+43,,Box,50.78658,4.42472,,,2019-02-05T11:01:35Z,,false,,Rembucher,"Drève du Rembucher, 1170 Watermael-Boitsfort",1970-01-01T00:00:00Z,5,0,,WB09,true,false,false
+44,,Box,50.81008,4.39429,,,2019-02-05T11:01:35Z,,false,,Mûriers II,"Avenue des Mûriers x Rue du Relais, 1170 Watermael-Boitsfort",1970-01-01T00:00:00Z,5,0,,WB08,true,false,false
+45,,Box,50.79872,4.41805,,,2019-02-05T11:01:35Z,,false,,Payfa,"Place Payfa-Fosseprez, 1170 Watermael-Boitsfort",1970-01-01T00:00:00Z,5,0,,WB07,true,false,false
+46,,Box,50.81013,4.39429,,,2019-02-05T11:01:35Z,,false,,Mûriers I,"Avenue des Mûriers x Rue du Relais, 1170 Watermael-Boitsfort",1970-01-01T00:00:00Z,5,0,,WB06,true,false,false
+47,,Box,50.79372,4.4185,,,2019-02-05T11:01:35Z,,false,,Hulpe,"Chaussée de la Hulpe x Avenue de la Foresterie, 1170 Watermael-Boitsfort",1970-01-01T00:00:00Z,5,0,,WB05,true,false,false
+48,,Box,50.80677,4.40163,,,2019-02-05T11:01:35Z,,false,,Gratès Bien Faire,"Rue Gratès x Rue du Bien-Faire, 1170 Watermael-Boitsfort",1970-01-01T00:00:00Z,5,0,,WB04,true,false,false
+49,,Box,50.80224,4.4145,,,2019-02-05T11:01:36Z,,false,,Garennes,"Rue des Garennes x Rue des Trois-Tilleuls, 1170 Watermael-Boitsfort",1970-01-01T00:00:00Z,5,0,,WB03,true,false,false
+50,,Box,50.80513,4.40655,,,2019-02-05T11:01:36Z,,false,,Coloniale,"Avenue Coloniale x Avenue des Bouleaux, 1170 Watermael-Boitsfort",1970-01-01T00:00:00Z,5,0,,WB02,true,false,false
+51,,Box,50.80444,4.40894,,,2019-02-05T11:01:36Z,,false,,Cerf Volant,"Avenue du Cerf-Volant x Avenue Wiener, 1170 Watermael-Boitsfort",1970-01-01T00:00:00Z,5,0,,WB01,true,false,false
+56,,Box,50.806,4.31926,,,2019-02-05T11:01:37Z,,false,,Kersbeek,"Avenue Général Dumonceau 98, 1190 Forest",1970-01-01T00:00:00Z,5,0,,VT11,true,false,false
+57,,Box,50.82091,4.32783,,,2019-02-05T11:01:37Z,,false,,Charme,"Boulevard Guillaume Van Haelen 71, 1190 Forest",1970-01-01T00:00:00Z,5,0,,VT10,true,false,false
+58,,Box,50.81451,4.33629,,,2019-02-05T11:01:37Z,,false,,Joffre,"Avenue Maréchal Joffre 92, 1190 Forest",1970-01-01T00:00:00Z,5,0,,VT09,true,false,false
+59,,Box,50.8154,4.33349,,,2019-02-05T11:01:37Z,,false,,Rousseau,"à l'angle de l'avenue Jupiter et l'avenue V.Rousseau, 1190 Forest",1970-01-01T00:00:00Z,5,0,,VT08,true,false,false
+60,,Box,50.81198,4.32652,,,2019-02-05T11:01:37Z,,false,,Bourgogne,"Avenue d'Uccle 63, 1190 Forest",1970-01-01T00:00:00Z,5,0,,VT07,true,false,false
+63,,Box,50.8206,4.34479,,,2019-02-05T11:01:37Z,,false,,Albert,"Avenue Albert 56, 1190 Forest",1970-01-01T00:00:00Z,5,0,,VT04,true,false,false
+64,,Box,50.81904,4.32801,,,2019-02-05T11:01:38Z,,false,,Béranger,"Rue Béranger, 1190 Forest",1970-01-01T00:00:00Z,5,0,,VT03,true,false,false
+65,,Box,50.8152,4.32693,,,2019-02-05T11:01:38Z,,false,,Mystère,"Chaussée de Bruxelles 192, 1190 Forest",1970-01-01T00:00:00Z,5,0,,VT02,true,false,false
+66,,Box,50.82379,4.33471,,,2019-02-05T11:01:38Z,,false,,Rochefort,"Place de Rochefort, 1190 Forest",1970-01-01T00:00:00Z,5,0,,VT01,true,false,false
+67,,Box,50.8146,4.36332,,,2019-02-05T11:01:38Z,,false,,Lincoln,"Rue Lincoln 51, 1180 Uccle",2018-12-17T00:00:00Z,5,0,,UK14,false,false,false
+68,,Box,50.78491,4.32861,,,2019-02-05T11:01:38Z,,false,,Silence,"Avenue du Silence 4, 1180 Uccle",2018-12-19T00:00:00Z,5,0,,UK13,true,false,false
+69,,Box,50.81032,4.33692,,,2019-02-05T11:01:38Z,,false,,Mozart,"Avenue Mozart 92, 1180 Uccle",2018-12-18T00:00:00Z,5,0,,UK12,true,false,false
+70,,Box,50.8136,4.3387,,,2019-02-05T11:01:38Z,,false,,Bonniers,"Avenue Oscar Van Goidtsnoven 2, 1180 Uccle",2018-12-18T00:00:00Z,5,0,,UK11,true,false,false
+71,,Box,50.81014,4.35772,,,2019-02-05T11:01:39Z,,false,,Cavell,"Rue Edith Cavell 75, 1180 Uccle",2018-12-17T00:00:00Z,5,0,,UK10,true,false,false
+72,,Box,50.80204,4.3402,,,2019-02-05T11:01:39Z,,false,,Marlow,"Square Georges Marlow, 1180 Uccle",2018-12-19T00:00:00Z,5,0,,UK09,true,false,false
+73,,Box,50.80753,4.35487,,,2019-02-05T11:01:39Z,,false,,Jones,"Rue Roberts Jones x Av. Léo Errera, 1180 Uccle",2017-12-14T00:00:00Z,5,0,,UK08,true,false,false
+74,,Box,50.80722,4.34043,,,2019-02-05T11:01:39Z,,false,,Coghen,"Square Coghen x Avenue Coghen, 1180 Uccle",2017-12-07T00:00:00Z,5,0,,UK07,true,false,false
+76,,Box,50.81404,4.35341,,,2019-02-05T11:01:39Z,,false,,Vanderkindere,"Rue Joseph Cuylitsstraat x Rue Vanderkindere, 1180 Uccle",2017-12-18T00:00:00Z,5,0,,UK05,true,false,false
+78,,Box,50.80526,4.33649,,,2019-02-05T11:01:40Z,,false,,Asselbergs,"Chaussée d'Alsemberg x Rue Alphonse Asselbergs, 1180 Uccle",2017-12-11T00:00:00Z,5,0,,UK03,true,false,false
+80,,Box,50.80261,4.33184,,,2019-02-05T11:01:40Z,,false,,Vossegat,"Avenue du Vossegat, 1180 Uccle",2017-12-11T00:00:00Z,5,0,,UK01,true,false,false
+81,,Box,50.86504,4.37853,,,2019-02-05T11:01:40Z,,false,,Houffalize,"Place de Houffalize x rue de Jérusalem, 1030 Schaerbeek",2018-11-13T00:00:00Z,5,0,,SK45,true,false,false
+82,,Box,50.86786,4.37422,,,2019-02-05T11:01:40Z,,false,,Colignon,"Place Colignon x rue Général Eenens, 1030 Schaerbeek",2018-11-13T00:00:00Z,5,0,,SK43,true,false,false
+36,,Box,50.82693,4.35974,,,2019-02-05T11:01:34Z,2019-02-05T14:55:33Z,false,28895,Faider,"Rue Faider x Rue Paul Emile Janson, 1050 Ixelles",1970-01-01T00:00:00Z,5,0,,XL02,true,true,false
+53,,Box,50.82628,4.32896,,,2019-02-05T11:01:36Z,2019-02-05T14:55:33Z,false,35069,Decoster,"Rue du Monténégro x Rue Decoster, 1190 Forest",2018-10-16T00:00:00Z,5,0,,VT14,true,true,false
+54,,Box,50.81919,4.33641,,,2019-02-05T11:01:36Z,2019-02-05T14:55:33Z,false,34995,Jupiter,"Av. Alexandre Bertrand x Av. Jupiter, 1190 Forest",2018-10-16T00:00:00Z,5,0,,VT13,true,true,false
+55,,Box,50.82667,4.33439,,,2019-02-05T11:01:36Z,2019-02-05T14:55:33Z,false,28885,Monténégro,"Rue de Monténégro x Avenue du Roi, 1190 Forest",1970-01-01T00:00:00Z,5,0,,VT12,true,true,false
+61,,Box,50.82204,4.34071,,,2019-02-05T11:01:37Z,2019-02-05T14:55:33Z,false,28886,Délivrance,"Avenue du Mont Kemmel 6, 1190 Forest",1970-01-01T00:00:00Z,5,0,,VT06,true,true,false
+62,,Box,50.82786,4.33213,,,2019-02-05T11:01:37Z,2019-02-05T14:55:33Z,false,28884,Gênes,"Rue des Moines x Rue de Gênes, 1190 Forest",1970-01-01T00:00:00Z,5,0,,VT05,true,true,false
+75,,Box,50.81458,4.33806,,,2019-02-05T11:01:39Z,2019-02-05T14:55:33Z,false,28897,Oscar,"Av. Maréchal Joffre x Av. Oscar Van Goidtsnoven, 1180 Uccle",2017-12-07T00:00:00Z,5,0,,UK06,true,true,false
+79,,Box,50.80538,4.3383,,,2019-02-05T11:01:40Z,2019-02-05T14:55:33Z,false,28898,Doyenné,"Rue du Doyenné x Rue Verhulst, 1180 Uccle",2017-12-07T00:00:00Z,5,0,,UK02,true,true,false
+83,,Box,50.85855,4.37906,,,2019-02-05T11:01:40Z,2019-02-05T14:55:33Z,false,33960,Duployé,"Square Emile Duployé 5 x av. Paul Deschanel, 1030 Schaerbeek",2018-08-08T00:00:00Z,5,0,,SK42,true,true,false
+84,,Box,50.87352,4.38441,,,2019-02-05T11:01:40Z,2019-02-05T14:55:33Z,false,33298,De Tière,"rue Nestor de Tière x av. Eugène Demolder, 1030 Schaerbeek",2018-08-02T00:00:00Z,5,0,,SK41,true,true,false
+320,,Box,50.87518,4.32499,,,2019-04-09T12:44:18Z,,false,,Wallons 2,"Rue des Wallons x Chaussée de Wemmel, 1090 Jette",2019-04-04T00:00:00Z,5,0,,JT39,true,false,false
+130,,Box,50.82912,4.35275,,,2019-02-05T11:01:46Z,2019-02-05T15:47:51Z,false,28888,Bouvier,"Square Baron Alfred Bouvier, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG20,true,true,false
+93,,Box,50.851538,4.387613,,,2019-02-05T11:01:42Z,,false,,Charbo,"Av Charbo 1, 1030 Schaerbeek",2018-03-28T00:00:00Z,5,0,,SK32,true,false,false
+95,,Box,50.85823,4.40128,,,2019-02-05T11:01:42Z,,false,,Leduc,"Rue Paul Leduc x Rue Camille Wollès, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK30,true,false,false
+96,,Box,50.87618,4.38949,,,2019-02-05T11:01:42Z,,false,,Séverin,"Rue Van Droogenbroeck x Rue Séverin, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK29,true,false,false
+98,,Box,50.85254,4.38883,,,2019-02-05T11:01:42Z,,false,,Marchal,"Place Dailly x Av Felix Marchal, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK27,true,false,false
+99,,Box,50.84983,4.39387,,,2019-02-05T11:01:42Z,,false,,Griottiers,"Square des Griottiers, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK26,true,false,false
+100,,Box,50.85309,4.39193,,,2019-02-05T11:01:42Z,,false,,Topaze,"Av de la Topaze x Av du Diamant, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK25,true,false,false
+101,,Box,50.85068,4.39612,,,2019-02-05T11:01:43Z,,false,,Plasky,"Square Eugène Plasky, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK24,true,false,false
+102,,Box,50.85872,4.38765,,,2019-02-05T11:01:43Z,,false,,Stobbaerts,"Av Jan Stobbaerts x Rue Vandenbussche, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK23,true,false,false
+104,,Box,50.86997,4.37644,,,2019-02-05T11:01:43Z,,false,,Voltaire II,"Av Voltaire 21 x Rue Metsys, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK21,true,false,false
+105,,Box,50.86688,4.37062,,,2019-02-05T11:01:43Z,,false,,Renkin,"Rue Vondel x Rue Renkin, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK20,true,false,false
+106,,Box,50.85561,4.38955,,,2019-02-05T11:01:43Z,,false,,Chazal,"Av Chazal x Rue Lambiotte, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK19,true,false,false
+107,,Box,50.85958,4.38491,,,2019-02-05T11:01:43Z,,false,,Impens,"Rue Impens x Av Eisenhower, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK18,true,false,false
+108,,Box,50.86992,4.37644,,,2019-02-05T11:01:44Z,,false,,Voltaire,"Av Voltaire 21 x Rue Metsys, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK17,true,false,false
+109,,Box,50.85641,4.39147,,,2019-02-05T11:01:44Z,,false,,Patrie,"Square de la Patrie 46, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK16,true,false,false
+110,,Box,50.85297,4.39537,,,2019-02-05T11:01:44Z,,false,,Milcamps,"Av Milcamps x Av de l'Émeraude, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK15,true,false,false
+111,,Box,50.87558,4.38284,,,2019-02-05T11:01:44Z,,false,,Huart Hamoir,"Huart Hamoir x Av Sleeckx, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK14,true,false,false
+112,,Box,50.8626,4.38083,,,2019-02-05T11:01:44Z,,false,,Azalées,"Av Deschanel x Av des Azalées, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK13,true,false,false
+113,,Box,50.86359,4.37511,,,2019-02-05T11:01:44Z,,false,,Bertrand,"Av Louis Bertrand x rue de la Ruche, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK12,true,false,false
+114,,Box,50.86399,4.39403,,,2019-02-05T11:01:44Z,,false,,Rolland,"Arthur Rolland 5, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK11,true,false,false
+115,,Box,50.86482,4.39467,,,2019-02-05T11:01:44Z,,false,,Krains,"Hubert Krains 1, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK10,true,false,false
+116,,Box,50.86728,4.39502,,,2019-02-05T11:01:45Z,,false,,Vanderstappen,"Charles Vanderstappen 2, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK09,true,false,false
+117,,Box,50.8666,4.39613,,,2019-02-05T11:01:45Z,,false,,Richir,"Herman Richir 15, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK08,true,false,false
+118,,Box,50.86589,4.39473,,,2019-02-05T11:01:45Z,,false,,Desmet,"Désiré Desmet 26 x H Krains, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK07,true,false,false
+119,,Box,50.86746,4.39399,,,2019-02-05T11:01:45Z,,false,,De Craene,"De Craene 38 x J Hoste, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK06,true,false,false
+120,,Box,50.87836,4.38379,,,2019-02-05T11:01:45Z,,false,,Anatole France,"Anatole France 46 x Snieders, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK05,true,false,false
+121,,Box,50.86049,4.37966,,,2019-02-05T11:01:45Z,,false,,Deschanel 82,"Av Deschanel 82, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK04,true,false,false
+122,,Box,50.86792,4.39298,,,2019-02-05T11:01:45Z,,false,,Guffens,"Rue Guffens x J Hoste, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK03,true,false,false
+123,,Box,50.86668,4.39383,,,2019-02-05T11:01:46Z,,false,,Foucart,"Foucart x De Craene, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK02,true,false,false
+124,,Box,50.85735,4.37805,,,2019-02-05T11:01:46Z,,false,,Deschanel 183,"Avenue Deschanel 183 x Van Hove, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK01,true,false,false
+131,,Box,50.82958,4.3467,,,2019-02-05T11:01:47Z,,false,,Rome,"Rue de Rome x Rue de Moscou, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG19,true,false,false
+132,,Box,50.8278,4.3479,,,2019-02-05T11:01:47Z,,false,,Morichar,"Rue de Etudiants x Rue de Parme, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG18,true,false,false
+133,,Box,50.8287,4.35064,,,2019-02-05T11:01:47Z,,false,,Victoire,"Rue de la Victoire, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG17,true,false,false
+134,,Box,50.82873,4.33883,,,2019-02-05T11:01:47Z,,false,,Defnet,"Rue Defnet, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG16,true,false,false
+135,,Box,50.82842,4.33796,,,2019-02-05T11:01:47Z,,false,,Tir,"Rue du Tir x Rue de Monténégro, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG15,true,false,false
+136,,Box,50.82277,4.344,,,2019-02-05T11:01:47Z,,false,,Diderich,"Rue Arthur Diderich, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG14,true,false,false
+87,,Box,50.85669,4.37934,,,2019-02-05T11:01:41Z,2019-02-05T14:55:33Z,false,33297,Monrose,"Rue Monrose x Rue Van Hammée, 1030 Schaerbeek",2018-07-31T00:00:00Z,5,0,,SK38,true,true,false
+88,,Box,50.84973,4.40005,,,2019-02-05T11:01:41Z,2019-02-05T14:55:33Z,false,33955,Diamant,"Av. du Diamant 184 x av. Adolphe Lacomblé, 1030 Schaerbeek",2018-08-02T00:00:00Z,5,0,,SK37,true,true,false
+89,,Box,50.85602,4.3839,,,2019-02-05T11:01:41Z,2019-02-05T14:55:33Z,false,33958,Artan,"Place Colonel Bremer x rue Artan, 1030 Schaerbeek",2018-08-07T00:00:00Z,5,0,,SK36,true,true,false
+90,,Box,50.86706,4.37995,,,2019-02-05T11:01:41Z,2019-02-05T14:55:33Z,false,33964,Renan,"Av. Voltaire 120 x av. Ernest Renan, 1030 Schaerbeek",2018-07-31T00:00:00Z,5,0,,SK35,true,true,false
+91,,Box,50.87497,4.38027,,,2019-02-05T11:01:41Z,2019-02-05T14:55:33Z,false,33953,Zola,"Av. Albert Giraud 64 x av. Emile Zola, 1030 Schaerbeek",2018-07-31T00:00:00Z,5,0,,SK34,true,true,false
+92,,Box,50.85175,4.39333,,,2019-02-05T11:01:41Z,2019-02-05T14:55:33Z,false,33956,Mahillon,"Av. Léon Mahillon 58 x av. du Diamant, 1030 Schaerbeek",2018-08-02T00:00:00Z,5,0,,SK33,true,true,false
+94,,Box,50.87441,4.38127,,,2019-02-05T11:01:42Z,2019-02-05T14:55:33Z,false,28882,Sleeckx,"Av Emile Verhaeren x Av Sleeckx, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK31,true,true,false
+97,,Box,50.87454,4.38626,,,2019-02-05T11:01:42Z,2019-02-05T14:55:33Z,false,28881,Riga,"Square François Riga x Avenue Huart Hamoir, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK28,true,true,false
+103,,Box,50.85947,4.385,,,2019-02-05T11:01:43Z,2019-02-05T14:55:33Z,false,28883,Impens II,"Rue Impens x Av Eisenhower, 1030 Schaerbeek",1970-01-01T00:00:00Z,5,0,,SK22,true,true,false
+126,,Box,50.8227,4.3481,,,2019-02-05T11:01:46Z,2019-02-05T14:55:33Z,false,34719,Ducpétiaux 107,"Av. Ducpétiaux 107, 1060 Saint-Gilles",2018-09-27T00:00:00Z,5,0,,SG24,true,true,false
+127,,Box,50.83238,4.34075,,,2019-02-05T11:01:46Z,2019-02-05T14:55:33Z,false,34717,Vlogaert,"Rue Vlogaert 22, 1060 Saint-Gilles",2018-09-27T00:00:00Z,5,0,,SG23,true,true,false
+128,,Box,50.8237,4.34089,,,2019-02-05T11:01:46Z,2019-02-05T14:55:33Z,false,28887,Kemmel,"Avenue du Mont Kemmel x Rue de Savoie, 1060 Saint-Gilles",2017-09-22T00:00:00Z,5,0,,SG22,true,true,false
+129,,Box,50.8312,4.35317,,,2019-02-05T11:01:46Z,2019-02-05T14:55:33Z,false,28889,Loix,"Place Loix x Rue de la Source, 1060 Saint-Gilles",2017-09-22T00:00:00Z,5,0,,SG21,true,true,false
+137,,Box,50.82588,4.34078,,,2019-02-05T11:01:47Z,,false,,Fort (Parc II),"Avenue du Parc x Rue du Fort, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG13,true,false,false
+138,,Box,50.83018,4.3474,,,2019-02-05T11:01:48Z,,false,,Janson II,"Place Marie Janson, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG12,false,false,false
+139,,Box,50.8222,4.34571,,,2019-02-05T11:01:48Z,,false,,Ducpétiaux 131,"Avenue Ducpétiaux 131, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG11,true,false,false
+140,,Box,50.82382,4.35371,,,2019-02-05T11:01:48Z,,false,,Ducpétiaux 2,"Avenue Ducpétiaux 2, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG10,true,false,false
+141,,Box,50.83316,4.34045,,,2019-02-05T11:01:48Z,,false,,Fontainas,"Rue Fontainas x Rue Vlogaert, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG09,true,false,false
+142,,Box,50.83078,4.33364,,,2019-02-05T11:01:48Z,,false,,Roi,"Avenue du Roi x Rue de Mérode, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG08,true,false,false
+143,,Box,50.82447,4.34174,,,2019-02-05T11:01:48Z,,false,,Villas II,"Avenue des Villas 28, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG07,true,false,false
+144,,Box,50.82864,4.35192,,,2019-02-05T11:01:48Z,,false,,Dumont,"Place Hermann Dumont, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG06,true,false,false
+145,,Box,50.82461,4.34223,,,2019-02-05T11:01:48Z,,false,,Villas I,"Avenue des Villas 18, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG05,true,false,false
+146,,Box,50.83269,4.3485,,,2019-02-05T11:01:49Z,,false,,Berckmans,"Avenue Henri Jaspar 108, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG04,true,false,false
+147,,Box,50.8254,4.33917,,,2019-02-05T11:01:49Z,,false,,Parc,"Avenue du Parc 77, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG03,true,false,false
+148,,Box,50.82525,4.34584,,,2019-02-05T11:01:49Z,,false,,Van Meenen,"Place Van Meenen, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG02,true,false,false
+149,,Box,50.83059,4.34645,,,2019-02-05T11:01:49Z,,false,,Janson Parvis,"Rue de Moscou 24, 1060 Saint-Gilles",1970-01-01T00:00:00Z,5,0,,SG01,true,false,false
+150,,P+R,50.82578,4.29828,,,2019-02-05T11:01:49Z,,false,,Bizet,"Ch. de Mons x rue de la Promenade, 1070 Park & Ride",2018-06-12T00:00:00Z,10,0,,PR10,true,false,false
+151,,P+R,50.84878,4.45845,,,2019-02-05T11:01:49Z,,false,,Crainhem 2,"P+R Crainhem, 1200 Park & Ride",2018-02-26T00:00:00Z,10,0,,PR09,true,false,false
+152,,P+R,50.89687,4.32922,,,2019-02-05T11:01:49Z,,false,,Roi Baudouin,"Métro Roi Baudouin, 1020 Park & Ride",2018-02-28T00:00:00Z,10,0,,PR08,true,false,false
+153,,P+R,50.81722,4.4053,,,2019-02-05T11:01:50Z,,false,,Delta,"P+R Delta, 1160 Park & Ride",1970-01-01T00:00:00Z,10,0,,PR07,true,false,false
+154,,P+R,50.81251,4.42825,,,2019-02-05T11:01:50Z,,false,,Herrmann Debroux II,"Avenue Herrmann-Debroux (Metro), 1160 Park & Ride",1970-01-01T00:00:00Z,10,0,,PR06,true,false,false
+155,,P+R,50.81224,4.42832,,,2019-02-05T11:01:50Z,,false,,Herrmann Debroux I,"Avenue Herrmann-Debroux (sous le viaduc), 1160 Park & Ride",1970-01-01T00:00:00Z,10,0,,PR05,true,false,false
+156,,P+R,50.79544,4.31824,,,2019-02-05T11:01:50Z,,false,,Stalle,"P+R Stalle, 1180 Park & Ride",1970-01-01T00:00:00Z,10,0,,PR04,true,false,false
+157,,P+R,50.81575,4.26485,,,2019-02-05T11:01:50Z,,false,,Erasme,"P+R Érasme, 1070 Park & Ride",1970-01-01T00:00:00Z,10,0,,PR03,true,false,false
+158,,P+R,50.81612,4.28881,,,2019-02-05T11:01:50Z,,false,,Ceria,"P+R Ceria (Coovi) - en travaux, PR déplacé BIZET, 1070 Park & Ride",1970-01-01T00:00:00Z,10,0,,PR02,false,false,false
+159,,P+R,50.84876,4.45911,,,2019-02-05T11:01:50Z,,false,,Crainhem,"P+R Crainhem, 1200 Park & Ride",1970-01-01T00:00:00Z,10,0,,PR01,true,false,false
+163,,Box,50.86076,4.31767,,,2019-02-05T11:01:51Z,,false,,Karreveld 2,"Avenue du Karreveld 67, 1080 Molenbeek-Saint-Jean",2018-12-03T00:00:00Z,5,0,,MK19,true,false,false
+164,,Box,50.86425,4.34362,,,2019-02-05T11:01:51Z,,false,,Picard,"Rue Picard 102, 1080 Molenbeek-Saint-Jean",2018-12-03T00:00:00Z,5,0,,MK18,true,false,false
+321,,Box,50.86363,4.37627,,,2019-04-09T12:44:18Z,,false,,Bergé,"Av. Louis Bertrand x Rue Henri Bergé, 1030 Schaerbeek",2019-04-05T00:00:00Z,5,0,,SK50,true,false,false
+167,,Box,50.85438,4.32814,,,2019-02-05T11:01:52Z,,false,,Menteurs,"Rue d'Ostende x Rue de Courtrai, 1080 Molenbeek-Saint-Jean",1970-01-01T00:00:00Z,5,0,,MK15,true,false,false
+168,,Box,50.85368,4.31959,,,2019-02-05T11:01:52Z,,false,,Alouette,"Rue du Lierre x Rue Gulden Bodem, 1080 Molenbeek-Saint-Jean",1970-01-01T00:00:00Z,5,0,,MK14,true,false,false
+169,,Box,50.86254,4.33881,,,2019-02-05T11:01:52Z,,false,,Jacobs,"Rue de l'Intendant 180, 1080 Molenbeek-Saint-Jean",1970-01-01T00:00:00Z,5,0,,MK13,true,false,false
+171,,Box,50.85761,4.33828,,,2019-02-05T11:01:52Z,,false,,Laermans,"Rue Mommaerts x Rue Eugène Laermans, 1080 Molenbeek-Saint-Jean",1970-01-01T00:00:00Z,5,0,,MK11,true,false,false
+172,,Box,50.86854,4.34161,,,2019-02-05T11:01:52Z,,false,,Escaut,"Rue de l'Escaut x boulevard du Jubilé, 1080 Molenbeek-Saint-Jean",1970-01-01T00:00:00Z,5,0,,MK10,true,false,false
+173,,Box,50.8584,4.31861,,,2019-02-05T11:01:52Z,,false,,Karreveld,"Avenue du Karreveld 11, 1080 Molenbeek-Saint-Jean",1970-01-01T00:00:00Z,5,0,,MK08,true,false,false
+174,,Box,50.85657,4.33564,,,2019-02-05T11:01:53Z,,false,,Voltaire,"Place Voltaire, 1080 Molenbeek-Saint-Jean",1970-01-01T00:00:00Z,5,0,,MK07,true,false,false
+175,,Box,50.85655,4.3426,,,2019-02-05T11:01:53Z,,false,,Houilleurs,"Rue des Houilleurs 15 A, 1080 Molenbeek-Saint-Jean",1970-01-01T00:00:00Z,5,0,,MK06,true,false,false
+176,,Box,50.84976,4.32981,,,2019-02-05T11:01:53Z,,false,,Duchesse,"Place de la Duchesse, 1080 Molenbeek-Saint-Jean",1970-01-01T00:00:00Z,5,0,,MK05,true,false,false
+177,,Box,50.86467,4.3369,,,2019-02-05T11:01:53Z,,false,,Haeck,"Rue de Flessingue x Rue Haeck, 1080 Molenbeek-Saint-Jean",1970-01-01T00:00:00Z,5,0,,MK03,true,false,false
+178,,Box,50.85176,4.33347,,,2019-02-05T11:01:53Z,,false,,Verrept Dekeyser,"Rue Verrept-Dekeyser x Rue de l'Eléphant, 1080 Molenbeek-Saint-Jean",1970-01-01T00:00:00Z,5,0,,MK02,true,false,false
+179,,Box,50.86348,4.33742,,,2019-02-05T11:01:53Z,,false,,Jubilé,"Boulevard du Jubilé 52, 1080 Molenbeek-Saint-Jean",1970-01-01T00:00:00Z,5,0,,MK01,true,false,false
+180,,Box,50.87227,4.34815,,,2019-02-05T11:01:53Z,,false,,Drootbeek,"Rue Drootbeek x Rue de Moorslede, 1020 Laeken",1970-01-01T00:00:00Z,5,0,,LA39,true,false,false
+181,,Box,50.88283,4.351674,,,2019-02-05T11:01:53Z,,false,,Médori,"Rue Médori x Rue des Horticulteurs, 1020 Laeken",2017-12-22T00:00:00Z,5,0,,LA38,true,false,false
+182,,Box,50.88442,4.3408,,,2019-02-05T11:01:54Z,,false,,Heymans,"Bd de Smet de Naeyer x Rue Jean Heymans, 1000 Laeken",2018-03-13T00:00:00Z,5,0,,LA34,true,false,false
+183,,Box,50.88011,4.34819,,,2019-02-05T11:01:54Z,,false,,Artistes,"Rue des Artistes (angle Bockstael), 1020 Laeken",1970-01-01T00:00:00Z,5,0,,LA32,true,false,false
+184,,Box,50.87677,4.34711,,,2019-02-05T11:01:54Z,,false,,Bockstael II,"Place Bockstael (droit int)/Rue Tielemans, 1020 Laeken",1970-01-01T00:00:00Z,5,0,,LA31,true,false,false
+185,,Box,50.87679,4.3471,,,2019-02-05T11:01:54Z,,false,,Bockstael I,"Place Bockstael (gauche ext)/Rue Tielemans, 1020 Laeken",1970-01-01T00:00:00Z,5,0,,LA30,true,false,false
+186,,Box,50.8905,4.3412,,,2019-02-05T11:01:54Z,,false,,Reper-Vreven,"Felix Sterkxstraat < Reper Vrevenstraat, 1020 Laeken",1970-01-01T00:00:00Z,5,0,,LA22,true,false,false
+187,,Box,50.89735,4.33509,,,2019-02-05T11:01:54Z,,false,,Heysel,"Keizerin Charlottelaan, aan de ingang van de Metro, 1020 Laeken",1970-01-01T00:00:00Z,5,0,,LA14,true,false,false
+170,,Box,50.8646,4.33377,,,2019-02-05T11:01:52Z,2019-02-05T14:55:33Z,false,28879,Jean Dubrucq,"Avenue Jean Dubrucq 32, 1080 Molenbeek-Saint-Jean",1970-01-01T00:00:00Z,5,0,,MK12,true,true,false
+188,,Box,50.878833,4.326191,,,2019-02-05T11:01:54Z,,false,,CARGO,"Rue Vandenschrieck 59, 1090 Jette",2018-12-20T00:00:00Z,0,0,,JTC0,true,false,false
+331,,Box,50.82994,4.38628,,,2019-05-10T10:53:42Z,,false,,Saint-Antoine,"Place Saint-Antoine, 1040 Etterbeek",2019-05-07T00:00:00Z,5,0,,ET11,true,false,false
+195,,Box,50.86601,4.33192,,,2019-02-05T11:01:55Z,,false,,Ongena,"Rue Ongena x Rue Honoré Longtin, 1090 Jette",2017-12-21T00:00:00Z,5,0,,JT32,true,false,false
+196,,Box,50.86763,4.32573,,,2019-02-05T11:01:56Z,,false,,Broustin,"Avenue Broustin x Rue Vanderborght, 1090 Jette",2017-12-21T00:00:00Z,5,0,,JT31,true,false,false
+198,,Box,50.8731,4.3344,,,2019-02-05T11:01:56Z,,false,,Vandervleet 1,"Avenue Notre Dame de Lourdes x Rue Jacques Vandervleet, 1090 Jette",2017-12-15T00:00:00Z,5,0,,JT29,true,false,false
+200,,Box,50.88503,4.31757,,,2019-02-05T11:01:56Z,,false,,Exposition,"Place de l'Ancienne Barrière x Avenue de l'Exposition, 1090 Jette",2017-12-14T00:00:00Z,5,0,,JT27,true,false,false
+201,,Box,50.87639,4.32217,,,2019-02-05T11:01:56Z,,false,,Legrelle,"Rue stanislas Legrelle x Rue Hubert Van Eepoel, 1090 Jette",2017-12-18T00:00:00Z,5,0,,JT26,true,false,false
+202,,Box,50.87251,4.33279,,,2019-02-05T11:01:56Z,,false,,Mirepoix,"Avenue de Levis Mirepoix x Rue Corneille De Clercq, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT25,true,false,false
+203,,Box,50.87092,4.33351,,,2019-02-05T11:01:56Z,,false,,Corneille II,"Rue Corneille De Clercq 110, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT24,true,false,false
+204,,Box,50.88522,4.3352,,,2019-02-05T11:01:57Z,,false,,Peret II,"Rue Léopold Peret 7, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT23,true,false,false
+206,,Box,50.88048,4.31649,,,2019-02-05T11:01:57Z,,false,,Baeck,"Rue Baeck 143, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT21,true,false,false
+207,,Box,50.87354,4.33823,,,2019-02-05T11:01:57Z,,false,,ND Lourdes,"Av. Notre Dame de Lourdes 67, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT20,true,false,false
+208,,Box,50.86921,4.33265,,,2019-02-05T11:01:57Z,,false,,Longtin,"Rue Honoré Longtin 117, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT19,true,false,false
+209,,Box,50.87847,4.33562,,,2019-02-05T11:01:57Z,,false,,Loossens,"Rue Joseph Loossens 46, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT18,true,false,false
+210,,Box,50.86938,4.32805,,,2019-02-05T11:01:57Z,,false,,Amnesty,"avenue Odon Warland 2, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT17,true,false,false
+211,,Box,50.87183,4.33668,,,2019-02-05T11:01:58Z,,false,,Odon Warland,"Rue Bérré 51, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT16,true,false,false
+212,,Box,50.8789,4.33245,,,2019-02-05T11:01:58Z,,false,,Démineurs,"avenues des démineurs 31, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT15,true,false,false
+213,,Box,50.88253,4.32398,,,2019-02-05T11:01:58Z,,false,,Broekaert,"Rue Valère Broekaert 83, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT14,true,false,false
+214,,Box,50.87796,4.32397,,,2019-02-05T11:01:58Z,,false,,Werrie,"Rue Vandenschrieck 121, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT13,true,false,false
+215,,Box,50.87867,4.32602,,,2019-02-05T11:01:58Z,,false,,Vandenschrieck,"Rue Vandenschrieck 59, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT12,true,false,false
+216,,Box,50.87047,4.33304,,,2019-02-05T11:01:58Z,,false,,Corneille I,"avenue Odon Warland 103, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT11,true,false,false
+217,,Box,50.87094,4.32305,,,2019-02-05T11:01:58Z,,false,,Laeken,"avenue de Laeken 47, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT10,true,false,false
+218,,Box,50.87636,4.33256,,,2019-02-05T11:01:58Z,,false,,Equité-Héroïsme,"Rue de l'Equité 4, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT09,true,false,false
+219,,Box,50.87746,4.33607,,,2019-02-05T11:01:59Z,,false,,Dansette Résistance,"Rue Dansette 30, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT08,true,false,false
+220,,Box,50.87896,4.32731,,,2019-02-05T11:01:59Z,,false,,Van Bortonne,"Rue Van Bortonne 26, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT07,true,false,false
+222,,Box,50.87526,4.33778,,,2019-02-05T11:01:59Z,,false,,Grotte,"Place de la Grotte 9, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT05,true,false,false
+223,,Box,50.87308,4.32892,,,2019-02-05T11:01:59Z,,false,,Faes,"Rue Edouard Faes 10, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT04,true,false,false
+224,,Box,50.88676,4.32134,,,2019-02-05T11:01:59Z,,false,,Capart,"avenue Capart 51, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT03,true,false,false
+225,,Box,50.87465,4.32416,,,2019-02-05T11:01:59Z,,false,,Wallons,"Rue de Wallons 35, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT02,true,false,false
+226,,Box,50.87493,4.32371,,,2019-02-05T11:02:00Z,,false,,Flamands,"Rue des Flamands 39, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT01,true,false,false
+227,,Box,50.89252,4.41762,,,2019-02-05T11:02:00Z,,false,,Cortenbach,"Rue Sainte-Elisabeth x Rue de Cortenbach, 1130 Haren",1970-01-01T00:00:00Z,5,0,,HA37,true,false,false
+228,,Box,50.875838,4.317659,,,2019-02-05T11:02:00Z,,false,,Centenaire,"Sq. du Centenaire x Av. de la Réforme, 1083 Ganshoren",2018-01-12T00:00:00Z,5,0,,GA14,true,false,false
+229,,Box,50.877272,4.314479,,,2019-02-05T11:02:00Z,,false,,Beethoven,"Av. Beethoven x Av. Verdi, 1083 Ganshoren",2018-01-09T00:00:00Z,5,0,,GA13,true,false,false
+230,,Box,50.871007,4.314616,,,2019-02-05T11:02:00Z,,false,,Urbanisme,"Av. Van Overbeke x Rue de l'Urbanisme, 1083 Ganshoren",2018-01-11T00:00:00Z,5,0,,GA12,true,false,false
+231,,Box,50.869302,4.313993,,,2019-02-05T11:02:00Z,,false,,Sippelberg,"Clos du Sippelberg 8, 1083 Ganshoren",2018-01-12T00:00:00Z,5,0,,GA11,true,false,false
+232,,Box,50.867277,4.321153,,,2019-02-05T11:02:00Z,,false,,Sermon,"Av. Broustin x Av. Jaque Sermon, 1083 Ganshoren",2018-01-12T00:00:00Z,5,0,,GA10,true,false,false
+233,,Box,50.873913,4.314015,,,2019-02-05T11:02:01Z,,false,,Gezelle,"Place Guido Gezelle x Drève de Rivieren, 1083 Ganshoren",2018-01-11T00:00:00Z,5,0,,GA09,true,false,false
+234,,Box,50.872549,4.301683,,,2019-02-05T11:02:01Z,,false,,Hongrie,"Av. Marie de Hongrie x Mail, 1083 Ganshoren",2018-01-10T00:00:00Z,5,0,,GA08,true,false,false
+235,,Box,50.87457,4.320382,,,2019-02-05T11:02:01Z,,false,,Fenaison,"Rue de la Fenaison x Rue Heideken, 1083 Ganshoren",2017-04-07T00:00:00Z,5,0,,GA07,true,false,false
+236,,Box,50.868514,4.319315,,,2019-02-05T11:02:01Z,,false,,Riethuisen,"Av. Vital Riethuisen x Av. du Duc Jean, 1083 Ganshoren",2017-04-06T00:00:00Z,5,0,,GA06,true,false,false
+237,,Box,50.876455,4.301872,,,2019-02-05T11:02:01Z,,false,,Vanderveken,"Rue Vanderveken 114, 1083 Ganshoren",2017-04-11T00:00:00Z,5,0,,GA05,true,false,false
+238,,Box,50.870437,4.318285,,,2019-02-05T11:02:01Z,,false,,Duc Jean,"Av. du Duc Jean 100 x Rue Louis Delhove, 1083 Ganshoren",2017-04-06T00:00:00Z,5,0,,GA04,true,false,false
+239,,Box,50.870447,4.311235,,,2019-02-05T11:02:01Z,,false,,Beeckmans,"Rue François Beeckmans 35, 1083 Ganshoren",2017-04-11T00:00:00Z,5,0,,GA03,true,false,false
+240,,Box,50.867662,4.323551,,,2019-02-05T11:02:01Z,,false,,Constitution,"Av. de la Constitution x Av. Broustin, 1083 Ganshoren",2017-04-12T00:00:00Z,5,0,,GA02,true,false,false
+190,,Box,50.87309,4.33106,,,2019-02-05T11:01:55Z,2019-02-05T14:55:33Z,false,35139,Keersmaeker,", 1090 Jette",2019-01-29T00:00:00Z,5,0,,JT37,false,true,false
+191,,Box,50.86966,4.33284,,,2019-02-05T11:01:55Z,2019-02-05T14:55:33Z,false,35129,Longtin 2,", 1090 Jette",2019-01-22T00:00:00Z,5,0,,JT36,false,true,false
+193,,Box,50.8812,4.32664,,,2019-02-05T11:01:55Z,2019-02-05T14:55:33Z,false,35103,Dupré,", 1090 Jette",2019-01-16T00:00:00Z,5,0,,JT34,false,true,false
+197,,Box,50.87181,4.33659,,,2019-02-05T11:01:56Z,2019-02-05T14:55:33Z,false,28902,Vandervleet 2,"Rue Jacques Vandervleet x Avenue Odon Warland, 1090 Jette",2017-12-15T00:00:00Z,5,0,,JT30,true,true,false
+199,,Box,50.87619,4.33024,,,2019-02-05T11:01:56Z,2019-02-05T14:55:33Z,false,28901,Lenoir,"Rue Ferdinand Lenoir x Bd de Smet de Naeyer, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT28,true,true,false
+205,,Box,50.88444,4.33784,,,2019-02-05T11:01:57Z,2019-02-05T14:55:33Z,false,28900,Peret I,"Rue Léopold Peret x Bd de Smet de Naeyer, 1090 Jette",1970-01-01T00:00:00Z,5,0,,JT22,true,true,false
+241,,Box,50.874676,4.317618,,,2019-02-05T11:02:02Z,,false,,Expo,"Rue Louis De Brouckère x Av. de l'Exposition Universelle, 1083 Ganshoren",2017-04-07T00:00:00Z,5,0,,GA01,true,false,false
+242,,Box,50.87532,4.39878,,,2019-02-05T11:02:02Z,,false,,Van Nerom,"Rue H. Van Nerom 15, 1140 Evere",2015-12-11T00:00:00Z,5,0,,EV05,true,false,false
+243,,Box,50.87098,4.39776,,,2019-02-05T11:02:02Z,,false,,Notre Dame,"Avenue Notre-Dame 61, 1140 Evere",2015-12-08T00:00:00Z,5,0,,EV04,true,false,false
+244,,Box,50.87462,4.40319,,,2019-02-05T11:02:02Z,,false,,Oud Kapelleke,"Avenue de l'Oud-Kapelleke x Chaussée de Haecht en face du 1021, 1140 Evere",2015-12-08T00:00:00Z,5,0,,EV03,true,false,false
+245,,Box,50.85747,4.4159,,,2019-02-05T11:02:02Z,,false,,Verriest,"Rue Hugo Verriest 29, 1140 Evere",2015-12-04T00:00:00Z,5,0,,EV02,true,false,false
+246,,Box,50.85669,4.41384,,,2019-02-05T11:02:02Z,,false,,Maquis,"Rue du Maquis 141, 1140 Evere",2015-12-04T00:00:00Z,5,0,,EV01,true,false,false
+322,,Box,50.86104,4.38465,,,2019-04-09T12:44:18Z,,false,,Minnebron,"Av. des Azalées 41 x rue Fontaine d'Amour, 1030 Schaerbeek",2019-04-05T00:00:00Z,5,0,,SK49,true,false,false
+248,,Box,50.83609,4.40145,,,2019-02-05T11:02:03Z,,false,,Taxandres,"Rue Père de Deken (face # 38) x Rue des Taxandres, 1040 Etterbeek",1970-01-01T00:00:00Z,5,0,,ET09,true,false,false
+250,,Box,50.83194,4.38528,,,2019-02-05T11:02:03Z,,false,,Malou,"Avenue Jules Malou x Rue de l'Orient, 1040 Etterbeek",1970-01-01T00:00:00Z,5,0,,ET07,true,false,false
+251,,Box,50.83295,4.39196,,,2019-02-05T11:02:03Z,,false,,Acacias,"Place des Acacias, 1040 Etterbeek",1970-01-01T00:00:00Z,5,0,,ET06,true,false,false
+252,,Box,50.83277,4.40204,,,2019-02-05T11:02:03Z,,false,,Thieffry,"Métro Thieffry, 1040 Etterbeek",1970-01-01T00:00:00Z,5,0,,ET05,true,false,false
+253,,Box,50.83428,4.395413,,,2019-02-05T11:02:03Z,,false,,Rinsdelle II,"Place du Rinsdelle (droite), 1040 Etterbeek",1970-01-01T00:00:00Z,5,0,,ET04,true,false,false
+254,,Box,50.834346,4.395382,,,2019-02-05T11:02:03Z,,false,,Rinsdelle I,"Place du Rinsdelle (gauche), 1040 Etterbeek",1970-01-01T00:00:00Z,5,0,,ET03,true,false,false
+255,,Box,50.83712,4.4,,,2019-02-05T11:02:04Z,,false,,Gare,"Rue de la Gare x rue des Francs, 1040 Etterbeek",1970-01-01T00:00:00Z,5,0,,ET02,true,false,false
+256,,Box,50.836,4.38637,,,2019-02-05T11:02:04Z,,false,,Commune,"Chaussée Saint-Pierre x Parc Keith Haring (ex-square Solidarnosc), 1040 Etterbeek",1970-01-01T00:00:00Z,5,0,,ET01,true,false,false
+258,,Box,50.84893,4.35688,,,2019-02-05T11:02:04Z,,false,,Warmoesberg,"Rue d'Assaut x Rue Montagne aux Herbes Potagères, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX40,true,false,false
+259,,Box,50.85014,4.38335,,,2019-02-05T11:02:04Z,,false,,Pavie,"Rue de l'Inquisition x Rue de Pavie, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX36,true,false,false
+260,,Box,50.84615,4.38182,,,2019-02-05T11:02:04Z,,false,,Martel,"Rue Saint-Quentin x Rue Charles Martel, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX35,true,false,false
+261,,Box,50.85356,4.34641,,,2019-02-05T11:02:04Z,,false,,Briques,"Marché aux Porcs x Quai au Briques, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX33,true,false,false
+262,,Box,50.84717,4.39086,,,2019-02-05T11:02:04Z,,false,,Gueux,"Place des Gueux, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX29,true,false,false
+263,,Box,50.85129,4.34507,,,2019-02-05T11:02:05Z,,false,,Nouveau Marché aux Grains,"Nouveau Marché aux Grains / rue Dansaert, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX28,true,false,false
+264,,Box,50.85473,4.34408,,,2019-02-05T11:02:05Z,,false,,de Witte de Haelen,"De Witte de Haelenstraat, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX27,true,false,false
+265,,Box,50.84506,4.38583,,,2019-02-05T11:02:05Z,,false,,Michel-Ange,"Michelangelolaan < Franklinstraat 50, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX26,true,false,false
+266,,Box,50.84672,4.37685,,,2019-02-05T11:02:05Z,,false,,Ortélius,"Orteliusstraat < Filips de Goedestraat 7, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX25,true,false,false
+267,,Box,50.84857,4.38083,,,2019-02-05T11:02:05Z,,false,,Waterloo Wilson,"John Waterloo Wilsonstraat < Grevelingenstraat 41, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX24,true,false,false
+268,,Box,50.83438,4.34917,,,2019-02-05T11:02:05Z,,false,,Laines,"Wolstraat 81, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX23,true,false,false
+269,,Box,50.845553,4.387254,,,2019-02-05T11:02:05Z,,false,,Franklin,"Franklinstraat < Correggiostraat 70, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX21,true,false,false
+270,,Box,50.85531,4.3468,,,2019-02-05T11:02:06Z,,false,,Bois de Construction,"Timmerhoutkaai 11, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX20,true,false,false
+271,,Box,50.8562,4.35296,,,2019-02-05T11:02:06Z,,false,,Rue de Laeken,"Lakensestraat < Koopliedenstraat 179, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX19,false,false,false
+272,,Box,50.84789,4.38896,,,2019-02-05T11:02:06Z,,false,,Confédérés,"Eedgenotenstraat 102, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX18,true,false,false
+273,,Box,50.83514,4.3517,,,2019-02-05T11:02:06Z,,false,,Jean Jacobs,"Jean Jacobsplein 11, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX17,true,false,false
+274,,Box,50.84487,4.34122,,,2019-02-05T11:02:06Z,,false,,Cureghem,"Kuregemsestraat 41-43, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX16,true,false,false
+275,,Box,50.84423,4.33951,,,2019-02-05T11:02:06Z,,false,,Foulons,"Voldersstraat < Zuidlaan 100, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX15,true,false,false
+276,,Box,50.85754,4.34829,,,2019-02-05T11:02:06Z,,false,,Dixmude 71,"Diksmuidelaan 71, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX12,true,false,false
+277,,Box,50.84495,4.37928,,,2019-02-05T11:02:07Z,,false,,Taciturne,"Willem De Zwijgerstraat 33, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX11,true,false,false
+278,,Box,50.84395,4.34364,,,2019-02-05T11:02:07Z,,false,,Anneessens,"Anneessensplein < Damstraat, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX10,true,false,false
+279,,Box,50.850373,4.385207,,,2019-02-05T11:02:07Z,,false,,Abdication,"Troonafstandsstraat 1, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX09,false,false,false
+280,,Box,50.84388,4.38695,,,2019-02-05T11:02:07Z,,false,,ex-Stévin,"Stevinstraat déplacé avenue Michel-Ange < Kortenberglaan // remplacé par un veloboxx le 27/11/2018, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX08,true,false,false
+281,,Box,50.85011,4.36734,,,2019-02-05T11:02:07Z,,false,,Cultes,"Eredienststraat 22, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX07,true,false,false
+282,,Box,50.84011,4.34258,,,2019-02-05T11:02:07Z,,false,,Stalingrad,"Stalingradlaan 100, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX06,true,false,false
+283,,Box,50.83984,4.34805,,,2019-02-05T11:02:07Z,,false,,Miroir,"Spiegelstraat 27, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX05,true,false,false
+284,,Box,50.84732,4.34022,,,2019-02-05T11:02:07Z,,false,,Senne,"Zennestraat < 't Kintstraat, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX04,true,false,false
+285,,Box,50.8558,4.34742,,,2019-02-05T11:02:08Z,,false,,Commerce 4,"Handelskaai 4 -- remplacé par un veloboxx le 27/11/2018, 1000 Ville de Bruxelles",2018-11-27T00:00:00Z,5,0,,BX03,true,false,false
+286,,Box,50.85724,4.34859,,,2019-02-05T11:02:08Z,,false,,Commerce 50,"Handelskaai 50, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX02,true,false,false
+287,,Box,50.857061,4.34695,,,2019-02-05T11:02:08Z,,false,,Dixmude 41,"Diksmuidelaan 41, 1000 Ville de Bruxelles",1970-01-01T00:00:00Z,5,0,,BX01,true,false,false
+288,,Box,50.86676,4.29845,,,2019-02-05T11:02:08Z,,false,,Ruelens,"Place Oscar Ruelens, 1082 Berchem-Sainte-Agathe",2016-02-25T00:00:00Z,5,0,,BA05,true,false,false
+249,,Box,50.83304,4.3826,,,2019-02-05T11:02:03Z,2019-02-05T14:55:33Z,false,28892,Theux,"Rue de Theux (face # 48) x Rue de Haerne, 1040 Etterbeek",1970-01-01T00:00:00Z,5,0,,ET08,true,true,false
+289,,Box,50.86606,4.30536,,,2019-02-05T11:02:08Z,,false,,Katteput,"rue Katteput x parc de Mulder, 1082 Berchem-Sainte-Agathe",2016-02-25T00:00:00Z,5,0,,BA04,true,false,false
+290,,Box,50.85926,4.30272,,,2019-02-05T11:02:08Z,,false,,Fik Guidon,"rue Fik Guidon x rue de Grand-Bigard, 1082 Berchem-Sainte-Agathe",2016-02-26T00:00:00Z,5,0,,BA03,true,false,false
+291,,Box,50.86102,4.2897,,,2019-02-05T11:02:08Z,,false,,Wilder,"rue du Wilder x rue Louis de Smet, 1082 Berchem-Sainte-Agathe",2016-02-24T00:00:00Z,5,0,,BA02,true,false,false
+292,,Box,50.86358,4.29609,,,2019-02-05T11:02:09Z,,false,,Baudouin,"Place Roi Baudouin, 1082 Berchem-Sainte-Agathe",2016-02-24T00:00:00Z,5,0,,BA01,true,false,false
+309,,Big100,50.85498,4.34173,,,2019-02-05T11:02:11Z,2019-02-05T20:29:05Z,true,35102,Bourse Big gate 4,"Onder de Beurs, 1080 ",2019-02-07T00:00:00Z,100,0,,Bourse 1.1.4,false,true,false
+165,,Box,50.855854,4.316897,,,2019-02-05T11:01:51Z,2019-02-05T15:47:51Z,false,28878,Melpomène,"Rue Melpomène straat 4, 1080 Molenbeek-Saint-Jean",2018-02-23T00:00:00Z,5,0,,MK17,true,true,false
+295,,Box,50.83494,4.30678,,,2019-02-05T11:02:09Z,,false,,Saint Guidon,"Av. Paul Janson x rue de la Procession, 1070 Anderlecht",2018-03-27T00:00:00Z,5,0,,AL11,true,false,false
+296,,Box,50.84063,4.33888,,,2019-02-05T11:02:09Z,,false,,Aviation,"Square de l'Aviation, 1070 Anderlecht",2016-04-01T00:00:00Z,5,0,,AL10,true,false,false
+297,,Box,50.83459,4.32671,,,2019-02-05T11:02:09Z,,false,,Vétérinaires,"Rue des Vétérinaires x Bd de la Révision, 1070 Anderlecht",2016-04-01T00:00:00Z,5,0,,AL09,true,false,false
+298,,Box,50.83815,4.29892,,,2019-02-05T11:02:09Z,,false,,Mercator Algoet,"Rue Mercator x Rue Buffon, 1070 Anderlecht",2016-04-01T00:00:00Z,5,0,,AL08,true,false,false
+299,,Box,50.8237,4.29285,,,2019-02-05T11:02:10Z,,false,,Venizelos,"Avenue Venizelos x Rue P. Schlosser, 1070 Anderlecht",2016-04-01T00:00:00Z,5,0,,AL07,true,false,false
+300,,Box,50.82057,4.28928,,,2019-02-05T11:02:10Z,,false,,Lennik,"Rue des Trèfles x Route de Lennik, 1070 Anderlecht",2016-04-01T00:00:00Z,5,0,,AL06,true,false,false
+301,,Box,50.84622,4.30669,,,2019-02-05T11:02:10Z,,false,,Puccini,"Rue Van Soust x Rue Puccini, 1070 Anderlecht",1970-01-01T00:00:00Z,5,0,,AL05,true,false,false
+302,,Box,50.84388,4.31255,,,2019-02-05T11:02:10Z,,false,,Vétérans Coloniaux,"boulevard Maurice Herbette 1, 1070 Anderlecht",1970-01-01T00:00:00Z,5,0,,AL04,true,false,false
+303,,Box,50.83616,4.31025,,,2019-02-05T11:02:10Z,,false,,Drapeau,"Rue du Drapeau 1, 1070 Anderlecht",1970-01-01T00:00:00Z,5,0,,AL03,true,false,false
+304,,Box,50.83296,4.30292,,,2019-02-05T11:02:10Z,,false,,Janson Meir,"avenue Paul Janson 110, 1070 Anderlecht",1970-01-01T00:00:00Z,5,0,,AL02,true,false,false
+305,,Box,50.82624,4.29646,,,2019-02-05T11:02:10Z,,false,,Debussy,"Rue Claude Debussy 95, 1070 Anderlecht",1970-01-01T00:00:00Z,5,0,,AL01,true,false,false
+307,,Big100,50.85498,4.34173,,,2019-02-05T11:02:11Z,2019-02-05T20:29:05Z,true,35130,Bourse Big gate 2,"Onder de Beurs, 1080 ",2019-02-07T00:00:00Z,100,0,,Bourse 1.1.2,false,true,false
+327,,Box,50.86452,4.30631,,,2019-04-09T12:44:19Z,2019-04-12T01:00:58Z,false,35137,Basilique,"Avenue de la Basilique x Rue du Petit-Berchem, 1082 Berchem-Sainte-Agathe",2019-01-24T00:00:00Z,5,0,,BA06,true,true,false
+323,,Box,50.85644,4.39145,,,2019-04-09T12:44:18Z,,false,,Patrie 2,"Square de la Patrie 46, 1030 Schaerbeek",2019-02-12T00:00:00Z,5,0,,SK48,true,false,false
+308,,Big100,50.85498,4.34173,,,2019-02-05T11:02:11Z,2019-02-05T20:29:05Z,true,35101,Bourse Big gate 3,"Onder de Beurs, 1080 ",2019-02-07T00:00:00Z,100,0,,Bourse 1.1.3,false,true,false
+324,,Box,50.85737,4.37813,,,2019-04-09T12:44:18Z,,false,,Deschanel,"Av. Paul Deschanel 156, 1030 Schaerbeek",2019-02-12T00:00:00Z,5,0,,SK47,true,false,false
+325,,Box,50.86672,4.36625,,,2019-04-09T12:44:18Z,,false,,Vanderlind,"Rue des Palais 367 x rue Vanderlinden 1, 1030 Schaerbeek",2019-02-05T00:00:00Z,5,0,,SK46,true,false,false
+326,,Box,50.86633,4.37534,,,2019-04-09T12:44:19Z,,false,,Pogge,"Place Pogge 374 x rue Vogler, 1030 Schaerbeek",2019-02-05T00:00:00Z,5,0,,SK44,true,false,false
+35,,Box,50.81881,4.35926,,,2019-02-05T11:01:34Z,2019-02-05T14:55:33Z,false,28896,Lemonnier,"Rue Camille Lemonnier 28, 1050 Ixelles",1970-01-01T00:00:00Z,5,0,,XL03,true,true,false
+77,,Box,50.80283,4.35334,,,2019-02-05T11:01:39Z,2019-02-05T14:55:33Z,false,28899,Groeselenberg,"Rue Groeselenberg x Chemin de la Source, 1180 Uccle",2017-12-06T00:00:00Z,5,0,,UK04,true,true,false
+85,,Box,50.85587,4.40069,,,2019-02-05T11:01:40Z,2019-02-05T14:55:33Z,false,33959,Fortin,"Av. Fortin 2 x rue des Compagnons, 1030 Schaerbeek",2018-08-08T00:00:00Z,5,0,,SK40,true,true,false
+86,,Box,50.85731,4.38682,,,2019-02-05T11:01:41Z,2019-02-05T14:55:33Z,false,33957,Rogier,"Av. Rogier 269 x rue Alexandre Markelbach, 1030 Schaerbeek",2018-08-07T00:00:00Z,5,0,,SK39,true,true,false
+125,,Box,50.83547,4.34173,,,2019-02-05T11:01:46Z,2019-02-05T14:55:33Z,false,34720,Russie,"Rue de Russie x Av. de la Porte de Hal, 1060 Saint-Gilles",2018-09-28T00:00:00Z,5,0,,SG25,true,true,false
+166,,Box,50.86252,4.34695,,,2019-02-05T11:01:51Z,2019-02-05T14:55:33Z,false,28880,Lorrain,"Rue Le Lorrain x Rue Bouvier, 1080 Molenbeek-Saint-Jean",2017-12-01T00:00:00Z,5,0,,MK16,true,true,false
+189,,Box,50.87267,4.33257,,,2019-02-05T11:01:55Z,2019-02-05T14:55:33Z,false,35140,Fernand,", 1090 Jette",2019-01-29T00:00:00Z,5,0,,JT38,false,true,false
+192,,Box,50.86737,4.32544,,,2019-02-05T11:01:55Z,2019-02-05T14:55:33Z,false,35104,Vanderborght,", 1090 Jette",2019-01-17T00:00:00Z,5,0,,JT35,false,true,false
+247,,Box,50.82901,4.38436,,,2019-02-05T11:02:02Z,2019-02-05T14:55:33Z,false,28893,Gerlache,"Rue de Haerne x Rue de Gerlache, 1040 Etterbeek",1970-01-01T00:00:00Z,5,0,,ET10,true,true,false
+293,,Box,50.84128,4.33664,,,2019-02-05T11:02:09Z,2019-02-05T14:55:33Z,false,28891,Pequeur,"Sq. Robert Pequeur, rue Brogniez x rue Lambert Crickx, 1070 Anderlecht",2018-03-28T00:00:00Z,5,0,,AL13,true,true,false
+294,,Box,50.8443,4.31562,,,2019-02-05T11:02:09Z,2019-02-05T14:55:33Z,false,28890,Graindor,"Av. Norbert Gille x Bd Jules Graindor, 1070 Anderlecht",2018-03-27T00:00:00Z,5,0,,AL12,true,true,false
+306,,Big100,50.85498,4.34173,,,2019-02-05T11:02:10Z,2019-02-05T14:55:33Z,true,35131,Bourse Big gate 1,"Onder de Beurs, 1080 ",2019-02-07T00:00:00Z,100,0,,Bourse 1.1.1,false,true,false
+310,,Big100,50.85498,4.34173,,,2019-02-05T11:02:11Z,2019-02-05T14:55:33Z,true,35132,Bourse Big gate 5,"Onder de Beurs, 1080 ",2019-02-07T00:00:00Z,100,0,,Bourse 1.1.5,false,true,false
+311,,Big100,50.85498,4.34173,,,2019-02-05T11:02:11Z,2019-02-05T14:55:33Z,true,35135,Bourse Big gate 6,"Onder de Beurs, 1080 ",2019-02-07T00:00:00Z,100,0,,Bourse 1.1.6,false,true,false
+312,,Big100,50.85498,4.34173,,,2019-02-05T11:02:11Z,2019-02-05T14:55:33Z,true,35133,Bourse Big gate 7,"Onder de Beurs, 1080 ",2019-02-07T00:00:00Z,100,0,,Bourse 1.1.7,false,true,false
+313,,Big100,50.85498,4.34173,,,2019-02-05T11:02:11Z,2019-02-05T14:55:33Z,true,35134,Bourse Big gate 9,"Onder de Beurs, 1080 ",2019-02-07T00:00:00Z,100,0,,Bourse 1.1.9,false,true,false
+328,,Box,50.8753,4.3946,,,2019-04-09T12:44:19Z,2019-04-12T01:00:58Z,false,35136,Van Perck,"Rue W. Van Perck 13, 1140 Evere",2019-01-24T00:00:00Z,5,0,,EV06,true,true,false
+332,,Box,50.82705,4.40395,,,2019-05-10T10:53:42Z,,false,,(M) Pétillon,"Métro Pétillon, 1040 Etterbeek",2019-05-07T00:00:00Z,5,0,,ET12,true,false,false
+335,,Box,50.82195,4.36355,,,2019-05-10T10:53:43Z,,false,,Leemans,"Place Albert Leemans 14, 1050 Ixelles",2019-05-13T00:00:00Z,5,0,,XL15,true,false,false
+336,,Box,50.8184,4.35962,,,2019-05-10T10:53:43Z,,false,,Chalon,"Rue Renier Chalon 46, 1050 Ixelles",2019-05-13T00:00:00Z,5,0,,XL16,true,false,false
+333,,Box,50.82803,4.33668,,,2019-05-10T10:53:43Z,2019-05-11T01:00:57Z,false,35141,Bosnie I,"Rue de Bosnie 44, 1060 Saint-Gilles",2019-04-24T00:00:00Z,5,0,,SG26,true,true,false
+334,,Box,50.82801,4.33665,,,2019-05-10T10:53:43Z,2019-05-11T01:00:57Z,false,35142,Bosnie II,"Rue de Bosnie 44, 1060 Saint-Gilles",2019-04-24T00:00:00Z,5,0,,SG27,true,true,false

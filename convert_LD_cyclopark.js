@@ -2,100 +2,77 @@ const fs = require('fs');
 const util = require('util');
 const request = require('request');
 const path = require("path");
+const csv = require('fast-csv');
 const commander = require('commander');
-
-global.program = new commander.Command();
-program.version('0.0.1');
-program.option('-o, --output-folder <folder>', 'The folder to store the parking files.')
-    .option('-l, --live', 'The project is live. This is used to select the proper MongoDB connection string.');
-program.parse(process.argv);
-
 const dbAdapter = require('./database-adapter');
 
-const outputFolder = program.outputFolder || 'output/parkings/';
-if(!fs.existsSync(outputFolder)){
+const writeFile = util.promisify(fs.writeFile);
+const postalCodeRegex = /(\d{4})/;
+const priceRegex = /(\d{2,})/;
+
+program = new commander.Command();
+program.version('1.0.0');
+program.option('-o, --output-folder <folder>', 'The folder to store the parking files.');
+program.parse(process.argv);
+
+const outputFolder = program.outputFolder || 'output/';
+if (!fs.existsSync(outputFolder)) {
     console.error('the specified folder does not exist.', outputFolder);
     process.exit(1);
 }
 
-const writeFile = util.promisify(fs.writeFile);
-
 async function run() {
     var hrstart = process.hrtime();
     console.log("STARTING");
-
-    // Get content from file
-    var contents = fs.readFileSync("data/parkings_201906111038.json");
-    // Define to JSON type
-    var jsonContent = JSON.parse(contents);
-    jsonContent = jsonContent["parkings"];
-    let counter = jsonContent.length;
-    // Get Value from JSON
-    let promises = [];
-    let parkings = [];
-    let profilePromise = getApplicationProfile();
-    profilePromise.catch(error => {
-        console.error(error);
-    });
-
     await dbAdapter.initDbAdapter();
-    await dbAdapter.insertCompany('Cyclopark', function(){});
+    await dbAdapter.insertCompany('Cyclopark');
+    const appProfile = await getApplicationProfile();
 
-    profilePromise.then(jsonLD => {
-        for (i in jsonContent) {
-            let jsonLDResult = insertValuesInJsonLD(jsonContent[i], jsonLD);
+    const csvStream = fs.createReadStream('data/cyclopark_new.csv').pipe(csv.parse({ headers: true }))
 
-            let fileName = (jsonLDResult['ownedBy']['companyName'] + '_' + jsonLDResult['identifier']).replace(/\s/g, '-') + '.jsonld';
-            let location;
-            try {
-                location = {
-                    type: "Point",
-                    coordinates: extractLocationFromJsonld(jsonLDResult)
-                };
-            } catch (e) {
-                console.error("Could not extract location from parking." + e);
-            }
+    for await (const parking of csvStream) {
+        let jsonLDResult = insertValuesInJsonLD(parking, JSON.parse(appProfile));
+        let fileName = (jsonLDResult['ownedBy']['companyName'] + '_' + jsonLDResult['identifier']).replace(/\s/g, '-') + '.jsonld';
+        await writeFile(path.join(outputFolder, fileName), JSON.stringify(jsonLDResult), 'utf8');
+        let location = { type: "Point", coordinates: extractLocationFromJsonld(jsonLDResult) };
+        await dbAdapter.updateOrCreateParking(encodeURIComponent(jsonLDResult['@id']), fileName, true, location);
+        await dbAdapter.updateCompanyParkingIDs('Cyclopark', encodeURIComponent(jsonLDResult['@id']), function () { });
+    }
 
-            writeFile(path.join(outputFolder, fileName), JSON.stringify(jsonLDResult), 'utf8');
-            dbAdapter.updateOrCreateParking(encodeURIComponent(jsonLDResult['@id']), fileName, true, location, function(){});
-            dbAdapter.updateCompanyParkingIDs('Cyclopark', encodeURIComponent(jsonLDResult['@id']), function(){});
-            counter--;
-            console.log(i + "\tDone\t(", counter, "left)");
-            if (counter <= 0) {
-                var hrend = process.hrtime(hrstart);
-                console.info("\nFINISHED! took %ds %dms", hrend[0], hrend[1] / 1000000);
-                //TODO: close db
-            }
-        }
-    });
+    var hrend = process.hrtime(hrstart);
+    console.info("\nFINISHED! took %ds %dms", hrend[0], hrend[1] / 1000000);
+    process.exit();
 }
 
 function extractLocationFromJsonld(jsonld) {
-    let geo = jsonld['@graph'][0]["geo"];
-    let lonlat = [];
-    for (let i = 0; i < geo.length; i++) {
-        if (geo[i]["@type"] === "GeoCoordinates") {
-            lonlat[0] = parseFloat(geo[i]["longitude"]);
-            lonlat[1] = parseFloat(geo[i]["latitude"]);
-        }
-    }
-    return lonlat;
+    let geo = jsonld['@graph'][0]["geo"][0];
+    return [parseFloat(geo['longitude']), parseFloat(geo['latitude'])];
 }
 
-let regex = /(\d{4})/;
-
-function insertValuesInJsonLD(parkingData, applicationProfileString) {
-    let jsonLD = JSON.parse(applicationProfileString);
+function insertValuesInJsonLD(parkingData, jsonLD) {
+    jsonLD['@id'] = 'https://velopark.ilabt.imec.be/data/Cyclopark_' + parkingData.code.replace(/\s/g, '-');
+    jsonLD.dateModified = (new Date()).toISOString();
     jsonLD.identifier = parkingData.code;
-    jsonLD.name = [{"@value": parkingData.name, "@language": "nl"}];
+    jsonLD.name = [{ "@value": parkingData.name, "@language": "nl" }];
+    jsonLD.temporarilyClosed = false;
     jsonLD.ownedBy.companyName = 'Cyclopark';
+    jsonLD.ownedBy['@id'] = `https://${parkingData.website}`;
     jsonLD.operatedBy.companyName = 'Cyclopark';
-    let results = parkingData.legacy_address.match(regex);
-    jsonLD.address.postalCode = results.length ? results[results.length-1] : '';
-    jsonLD.address.streetAddress = parkingData.legacy_address;
+    jsonLD.operatedBy['@id'] = `https://${parkingData.website}`;
+    let postalCode = priceRegex.exec(parkingData.addressNL);
+    jsonLD.address.postalCode = postalCode ? postalCode[0] : '';
+    jsonLD.address.streetAddress = parkingData.addressNL;
     jsonLD.address.country = 'Belgium';
-    jsonLD.startDate = parkingData.installation_date;
-    jsonLD['@graph'][0]['@type'] = "https://velopark.ilabt.imec.be/openvelopark/terms#PublicBicycleParking";
+    jsonLD['hasMap']['url'] = `https://www.openstreetmap.org/#map=18/${parkingData.latitude}/${parkingData.longitude}`;
+    jsonLD['contactPoint']['email'] = parkingData.Mail;
+    jsonLD['contactPoint']['telephone'] = parkingData.Tel;
+    jsonLD['interactionService']['url'] = `https://cycloparking.brussels/fr/contact/`;
+    jsonLD['@graph'][0]['covered'] = true;
+    jsonLD['@graph'][0]['@type'] = determineParkingType(parkingData.parkingTypeName);
+    jsonLD['@graph'][0]['numberOfLevels'] = 1;
+    jsonLD['@graph'][0]['publicAccess'] = !parkingData.parkingTypeName.includes('Privéparking');
+    jsonLD['@graph'][0]['maximumParkingDuration'] = formatValue('maximumParkingDuration', 30, jsonLD['@context']);
+    jsonLD['@graph'][0]['intendedAudience'] = [{ "@language": "nl", "@value": parkingData['Toegankelijk_voor'] }];
     jsonLD['@graph'][0]["openingHoursSpecification"] = [
         {
             "@type": "OpeningHoursSpecification",
@@ -134,38 +111,53 @@ function insertValuesInJsonLD(parkingData, applicationProfileString) {
             "closes": "23:59"
         }
     ];
-    jsonLD['@graph'][0]['maximumParkingDuration'] = formatValue('maximumParkingDuration', 30, jsonLD['@context']);
-    jsonLD['@graph'][0]['allows'][0]['bicycleType'] = "https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle";
-    jsonLD['@graph'][0]['allows'][0]['bicyclesAmount'] = parkingData.capacity_classic;
-    if(parkingData.capacity_cargo > 0) {
-        jsonLD['@graph'][0]['allows'][1] = {};
-        jsonLD['@graph'][0]['allows'][1]['bicycleType'] = "https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle";
-        jsonLD['@graph'][0]['allows'][1]['bicyclesAmount'] = parkingData.capacity_cargo;
+    jsonLD['@graph'][0]['totalCapacity'] = parseInt(parkingData['capacityClassic']) + parseInt(parkingData['capacityCargo']);
+
+    if (parseInt(parkingData['capacityClassic']) > 0) {
+        jsonLD['@graph'][0]['allows'][0]['bicycleType'] = "https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle";
+        jsonLD['@graph'][0]['allows'][0]['bicyclesAmount'] = parseInt(parkingData['capacityClassic']);
+        jsonLD['@graph'][0]['allows'][0]['countingSystem'] = false;
     }
+
+    if (parseInt(parkingData['capacityCargo']) > 0) {
+        if (jsonLD['@graph'][0]['allows'][0]['bicycleType'] !== '') {
+            jsonLD['@graph'][0]['allows'].push({
+                "@type": "AllowedBicycle",
+                "bicycleType": "https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle",
+                "bicyclesAmount": parseInt(parkingData['capacityCargo']),
+                "countingSystem": false
+            });
+        } else {
+            jsonLD['@graph'][0]['allows'][0]['bicycleType'] = "https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle";
+            jsonLD['@graph'][0]['allows'][0]['bicyclesAmount'] = parseInt(parkingData['capacityCargo']);
+            jsonLD['@graph'][0]['allows'][0]['countingSystem'] = false;
+        }
+    } 
+
     jsonLD['@graph'][0]['geo'][0]['latitude'] = parseFloat(parkingData.latitude);
     jsonLD['@graph'][0]['geo'][0]['longitude'] = parseFloat(parkingData.longitude);
-    jsonLD['@graph'][0]['priceSpecification'][0]['freeOfCharge'] = !parkingData.mobib;
+    jsonLD['@graph'][0]['priceSpecification'][0]['freeOfCharge'] = false;
+    let price = priceRegex.exec(parkingData.Prijs);
+    jsonLD['@graph'][0]['priceSpecification'][0]['price'] = price ? parseInt(price[0]) : '';
+    jsonLD['@graph'][0]['priceSpecification'][0]['currency'] = 'EUR';
+    jsonLD['@graph'][0]['priceSpecification'][0]['dueForTime']['timeStartValue'] = 0;
+    jsonLD['@graph'][0]['priceSpecification'][0]['dueForTime']['timeEndValue'] = 1;
+    jsonLD['@graph'][0]['priceSpecification'][0]['dueForTime']['timeUnit'] = 'year';
 
-    //Auto fill
-    jsonLD['@id'] = 'https://velopark.ilabt.imec.be/data/Cyclopark_' + parkingData.code.replace(/\s/g, '-');
-    jsonLD.dateModified = (new Date()).toISOString();
-    // Set values for each parking section
-    for (let i = 0; i < jsonLD['@graph'].length; i++) {
-        // Calculate and set totalCapacity
-        let tc = 0;
-        for (let j = 0; j < jsonLD['@graph'][i]['allows'].length; j++) {
-            tc += jsonLD['@graph'][i]['allows'][j]['bicyclesAmount'] !== '' ? parseInt(jsonLD['@graph'][i]['allows'][j]['bicyclesAmount']) : 0;
-        }
-        jsonLD['@graph'][i]['totalCapacity'] = tc;
-
-    }
-    let lonlat = [jsonLD['@graph'][0]['geo'][0]['longitude'], jsonLD['@graph'][0]['geo'][0]['latitude']];
-    jsonLD['hasMap'] = {
-        "@type": "Map",
-        "url": 'https://www.openstreetmap.org/#map=18/' + lonlat[1] + '/' + lonlat[0]
-    };
     cleanEmptyValues(jsonLD);
     return jsonLD;
+}
+
+function determineParkingType(raw) {
+    if (raw.includes('Fietsparking') || raw.includes('Park + Ride') || raw.includes('Privéparking')) {
+        return 'https://velopark.ilabt.imec.be/openvelopark/terms#PublicBicycleParking';
+    } else if (raw.includes('Buurtparking')) {
+        return 'https://velopark.ilabt.imec.be/openvelopark/terms#ResidentBicycleParking';
+    } else if (raw.includes('Fietsbox')) {
+        return 'https://velopark.ilabt.imec.be/openvelopark/terms#BicycleLocker';
+    } else {
+        throw new Error('Unrecognized parking type: ' + raw);
+    }
 }
 
 function formatValue(name, value, context) {
@@ -245,7 +237,7 @@ function cleanEmptyValues(obj) {
 function getApplicationProfile() {
     return new Promise((resolve, reject) => {
         request({
-            url: 'http://velopark.ilabt.imec.be/openvelopark/application-profile',
+            url: 'https://velopark.ilabt.imec.be/openvelopark/application-profile',
             rejectUnauthorized: false
         }, (error, response, body) => {
             if (error) {
