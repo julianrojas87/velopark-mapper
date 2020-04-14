@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Fietsenstallingen</name>
+    <description/>
+    <Style id="icon-39-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/39-cycling.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-39-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/39-cycling.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-39">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-39-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-39-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-39-nodesc-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/39-cycling.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-39-nodesc-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/39-cycling.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-39-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-39-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-39-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Naamloze laag</name>
+      <Placemark>
+        <name>Engerstraat station-62</name>
+        <description><![CDATA[24/02/2012: fietsen gelabeld -> 14<br>02/03/2012: fietsen gelabeld -> 21<br>05/03/2012: fietsen gelabeld: -> 2<br>30/03/2012: fietsen gelabeld: -> 15, <br>                    aantal -> 36]]></description>
+        <styleUrl>#icon-39</styleUrl>
+        <Point>
+          <coordinates>
+            4.542117,50.892978,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boogstok - 20</name>
+        <description><![CDATA[24/02/2012: fietsen gelabeld -> 0<br>02/03/2012: fietsen gelabeld -> 0<br>05/03/2012: fietsen gelabeld -> 0<br>30/03/2012: fietsen gelabeld -> 0, aantal -> 0]]></description>
+        <styleUrl>#icon-39</styleUrl>
+        <Point>
+          <coordinates>
+            4.539161,50.892764,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sporthal Erps - 30</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.562116,50.904007,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>krantenwinkel De Zavel - 3</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.557293,50.904078,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Apotheek - 5</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.557288,50.903862,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KBC- 7</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.557433,50.903687,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fortis- 5</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.558039,50.904244,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Delhaize - 6</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.558167,50.9041,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kerk Erps- 5</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.558291,50.903493,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rusthuis Erps-Kwerps - 4 baren</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.557655,50.903229,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>station EK- 30</name>
+        <description><![CDATA[24/02/2012: fietsen gelabeld -> Kerselaerenstraat: 7<br>Kouterstraat: 6<br>02/03/2012: fietsen gelabeld -> kerselaerenstraat: 8<br>Kouterstraat: 4<br>05/03/2012: fietsen gelabeld -> Kerselaerenstraat: 10<br>Kouterstraat: 1<br>30/03/2012: fietsen gelabeld -><br>Kerselaerenstraat: 10, aantal: 14<br>Kouterstraat: 5, aantal: 10]]></description>
+        <styleUrl>#icon-39</styleUrl>
+        <Point>
+          <coordinates>
+            4.584947,50.896212,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>speelplein kasteelstraat - 14</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.565506,50.905847,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>station Kerselaerenstraat - 28</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.585204,50.896645,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>halste diestbrug - 28</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.596791,50.905658,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vissegatstraat dokter - 4</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.579754,50.909176,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>kwerps kerk - 5</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.56895,50.904481,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Crèche - 4</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.567094,50.903791,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>School klimop - 5</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.566359,50.903378,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vroegere politie - 14</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.543276,50.888687,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Halte rijskwacht - 5</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.543147,50.888247,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Halte craenenplein - 6</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.538668,50.886998,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>halte kappelleke - 5</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.532171,50.88516,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>School HJ - 57</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.536715,50.889248,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gb- 20</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.540304,50.887793,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fietsenstalling boven - 80</name>
+        <description><![CDATA[24/02/2012: fietsen gelabeld -> 15<br>02/03/2012: fietsen gelabeld -> 12<br>05/03/2012: fietsen gelabeld -> 13<br>30/03/2012: fietsen gelabeld -> 18<br>                    aantal -> 32]]></description>
+        <styleUrl>#icon-39</styleUrl>
+        <Point>
+          <coordinates>
+            4.54245,50.892483,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Station edegemstraat - 20 + baar</name>
+        <description><![CDATA[24/02/2012: fietsen gelabeld -> 12<br>02/03/2012: fietsen gelabeld -> 2<br>05/03/2012: fietsen gelabeld -> 2<br>30/03/2012: fietsen gelabeld -> 9, <br>                    aantal -> 16]]></description>
+        <styleUrl>#icon-39</styleUrl>
+        <Point>
+          <coordinates>
+            4.539671,50.892125,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>halte Erpsveld richting Brussel</name>
+        <description>Fietsenrek: 5 pl</description>
+        <styleUrl>#icon-39</styleUrl>
+        <Point>
+          <coordinates>
+            4.571106,50.891698,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Halte schoonaarde - 5</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.586594,50.893241,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>halte prinsendreef- 5</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.558618,50.89046,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Halte St.Jozef - 5</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.554584,50.889973,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Annonciadestraat, parking speelpleintje-12</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.56881,50.877207,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Annonciadestraat, apotheek Spruyt-3</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.56836,50.877437,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dorpsstraat, Quadrant-2</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.586835,50.88074,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sint-Antoniusstraat, KBC-3</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.586535,50.881268,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sint-Antoniusstraat, Delheize-10</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.585998,50.882054,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sint-Antoniusstraat, Parochie-18</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.585805,50.881986,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dorpsstraat halte gemeentehuis richting Brussel aan Boemerang</name>
+        <description>fietsbeugel:1 st</description>
+        <styleUrl>#icon-39</styleUrl>
+        <Point>
+          <coordinates>
+            4.588723,50.881593,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dorpsstraat, Fintro-3</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.588959,50.881526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dorpsstraat, Cultuurcentrum ME-10</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.589345,50.881756,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Louis Andriesstraat, JH den aap-10</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.592156,50.882108,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wijngaardstraat, GC Colomba-78</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.546237,50.883313,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wijngaardstraat,GC Colomba-21</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.546881,50.882636,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Beekstraat, Berkenhof-60</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.542525,50.88514,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brouwerijstraat, Kerk-8</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.541881,50.886047,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kloosterstraat, Regenboog-15</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.541559,50.885736,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>V.De Walsplein, gemeentehuis-29</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.538748,50.885817,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Craeneplein bushalte-6</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.538791,50.886724,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Craenenplein-20</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.538877,50.886656,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Leuvensesteenweg, Fortis-6</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.539392,50.886941,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Leuvensesteenweg, Adecco-8</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.541388,50.887563,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Leuvenesteenweg, staca-5</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.52538,50.883028,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Leuvensesteenweg, bushalte kapelleke-6</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.532461,50.885045,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Leuvensesteenweg, bushalte rijkswacht-5</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.5448366,50.8885257,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Leuvensesteenweg, bushalte prinsendreef-5</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.558833,50.890298,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Leuvensesteenweg, bushalte Erps veld-5</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.565012,50.89088,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Leuvensesteenweg, bushalte schoonaarde-5</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.589796,50.893411,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Molenbeekplein - 4</name>
+        <styleUrl>#icon-39-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            4.595268,50.916076,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bromplaats</name>
+        <description><![CDATA[24 02 2012: fietsen gelabeld -> 11<br>02/03/2012: fietsen gelabeld -> 6<br>05/03/2012: fietsen gelabeld -> 2<br>30/03/2012: fietsen gelabeld -> 6, <br>                    aantal -> 10]]></description>
+        <styleUrl>#icon-39</styleUrl>
+        <Point>
+          <coordinates>
+            4.542139,50.892653,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Halte Erpsveld Richting Leuven</name>
+        <description>Fietsenrek. 5 pl</description>
+        <styleUrl>#icon-39</styleUrl>
+        <Point>
+          <coordinates>
+            4.571643,50.891583,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Halte Achterenbergstraat richting Brussel</name>
+        <description>Fietsbeugel: 6 st</description>
+        <styleUrl>#icon-39</styleUrl>
+        <Point>
+          <coordinates>
+            4.5401,50.877586,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Schoonaardestraat  richting Leuven aan plakzuil</name>
+        <description>fietsrek: 12 pl</description>
+        <styleUrl>#icon-39</styleUrl>
+        <Point>
+          <coordinates>
+            4.588037,50.892937,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
