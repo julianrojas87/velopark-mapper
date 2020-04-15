@@ -159,7 +159,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Rusthuis Erps-Kwerps - 4 baren</name>
+        <name>Rusthuis Erps Kwerps - 4</name>
         <styleUrl>#icon-39-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -316,7 +316,7 @@
       </Placemark>
       <Placemark>
         <name>halte Erpsveld richting Brussel</name>
-        <description>Fietsenrek: 5 pl</description>
+        <description>5</description>
         <styleUrl>#icon-39</styleUrl>
         <Point>
           <coordinates>
@@ -407,7 +407,7 @@
       </Placemark>
       <Placemark>
         <name>Dorpsstraat halte gemeentehuis richting Brussel aan Boemerang</name>
-        <description>fietsbeugel:1 st</description>
+        <description>1</description>
         <styleUrl>#icon-39</styleUrl>
         <Point>
           <coordinates>
@@ -597,7 +597,7 @@
       </Placemark>
       <Placemark>
         <name>Bromplaats</name>
-        <description><![CDATA[24 02 2012: fietsen gelabeld -> 11<br>02/03/2012: fietsen gelabeld -> 6<br>05/03/2012: fietsen gelabeld -> 2<br>30/03/2012: fietsen gelabeld -> 6, <br>                    aantal -> 10]]></description>
+        <description>11</description>
         <styleUrl>#icon-39</styleUrl>
         <Point>
           <coordinates>
@@ -607,7 +607,7 @@
       </Placemark>
       <Placemark>
         <name>Halte Erpsveld Richting Leuven</name>
-        <description>Fietsenrek. 5 pl</description>
+        <description>5</description>
         <styleUrl>#icon-39</styleUrl>
         <Point>
           <coordinates>
@@ -617,7 +617,7 @@
       </Placemark>
       <Placemark>
         <name>Halte Achterenbergstraat richting Brussel</name>
-        <description>Fietsbeugel: 6 st</description>
+        <description>6</description>
         <styleUrl>#icon-39</styleUrl>
         <Point>
           <coordinates>
@@ -627,7 +627,7 @@
       </Placemark>
       <Placemark>
         <name>Schoonaardestraat  richting Leuven aan plakzuil</name>
-        <description>fietsrek: 12 pl</description>
+        <description>12</description>
         <styleUrl>#icon-39</styleUrl>
         <Point>
           <coordinates>
