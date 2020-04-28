@@ -359,7 +359,7 @@
             },
             "localite": "JAMBES",
             "place_place": 12,
-            "securise_type": "Fermeture par code m\u00e9canique"
+            "securise_type": "electric"
         },
         "geometry": {
             "type": "Point",
@@ -427,7 +427,7 @@
             },
             "localite": "NAMUR",
             "place_place": 20,
-            "securise_type": "ctrl gardien et cam\u00e9ra"
+            "securise_type": "camera + gardien"
         },
         "geometry": {
             "type": "Point",
@@ -1530,7 +1530,7 @@
             },
             "localite": "NAMUR",
             "place_place": 33,
-            "securise_type": "ctrl gardien + cam\u00e9ra"
+            "securise_type": "camera + gardien"
         },
         "geometry": {
             "type": "Point",

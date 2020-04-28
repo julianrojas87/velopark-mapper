@@ -6,6 +6,7 @@ const csv = require('fast-csv');
 const commander = require('commander');
 const dbAdapter = require('./database-adapter');
 
+const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
 program = new commander.Command();
@@ -23,20 +24,18 @@ async function run() {
     var hrstart = process.hrtime();
     console.log("STARTING");
     await dbAdapter.initDbAdapter();
-    await dbAdapter.insertCompany('De Lijn');
     const appProfile = await getApplicationProfile();
 
-    const csvStream = fs.createReadStream('data/delijn/delijn_filtered.csv').pipe(csv.parse({ headers: true }))
+    const parkings = JSON.parse(await readFile('data/namur-mobilitie/namur-velo.json', 'utf8'));
 
     let i = 0;
-    for await (const parking of csvStream) {
+    for (const parking of parkings) {
         console.log(`processing parking ${i}`);
         let jsonLDResult = await insertValuesInJsonLD(parking, JSON.parse(appProfile));
         let fileName = `${jsonLDResult['ownedBy']['companyName'].replace(/\s/g, '-')}_${jsonLDResult['identifier']}.jsonld`;
         await writeFile(path.join(outputFolder, fileName), JSON.stringify(jsonLDResult), 'utf8');
         let location = { type: "Point", coordinates: extractLocationFromJsonld(jsonLDResult) };
         await dbAdapter.updateOrCreateParking(encodeURIComponent(jsonLDResult['@id']), fileName, true, location);
-        await dbAdapter.updateCompanyParkingIDs('De Lijn', encodeURIComponent(jsonLDResult['@id']), function () { });
         i++;
     }
 
@@ -51,30 +50,32 @@ function extractLocationFromJsonld(jsonld) {
 }
 
 async function insertValuesInJsonLD(parkingData, jsonLD) {
-    const code = parkingData['Titel'].split(' ')[0];
-    const name = extractName(parkingData['Titel']);
-    const lat = parkingData['XY Halte Hastus'].split(',')[0];
-    const lon = parkingData['XY Halte Hastus'].split(',')[1];
+    const code = parkingData['recordid'];
+    const name = parkingData.fields['nom_station'];
+    const lat = parkingData.geometry.coordinates[1];
+    const lon = parkingData.geometry.coordinates[0];
 
     let address = await getAddressHERE(lat, lon);
 
-    jsonLD['@id'] = `https://velopark.ilabt.imec.be/data/De-Lijn_${code}`;
+    jsonLD['@id'] = `https://velopark.ilabt.imec.be/data/Namur-Mobilité_${code}`;
     jsonLD.dateModified = (new Date()).toISOString();
     jsonLD.identifier = code;
-    jsonLD.name = [{ "@value": name, "@language": "nl" }];
+    jsonLD.name = [{ "@value": name, "@language": "fr" }];
     jsonLD.temporarilyClosed = false;
-    jsonLD.ownedBy.companyName = 'De Lijn';
-    jsonLD.ownedBy['@id'] = 'https://www.delijn.be/';
-    jsonLD.operatedBy.companyName = 'De Lijn';
-    jsonLD.operatedBy['@id'] = 'https://www.delijn.be/';
+    jsonLD.ownedBy.companyName = 'Namur Mobilité';
+    jsonLD.ownedBy['@id'] = 'https://www.namur.be/fr/ma-ville/mobilite/mobilite';
+    jsonLD.operatedBy.companyName = 'Namur Mobilité';
+    jsonLD.operatedBy['@id'] = 'https://www.namur.be/fr/ma-ville/mobilite/mobilite';
     jsonLD.address.postalCode = address.postalCode;
     jsonLD.address.streetAddress = address.address.split(',')[0];
     jsonLD.address.country = 'Belgium';
     jsonLD['hasMap']['url'] = `https://www.openstreetmap.org/#map=18/${lat}/${lon}`;
-    jsonLD['interactionService']['url'] = 'https://www.delijn.be/en/contact/';
+    jsonLD['contactPoint']['email'] = 'mobilite@ville.namur.be';
+    jsonLD['contactPoint']['telephone'] = '+32 (0) 81 24 60 86';
+    jsonLD['interactionService']['url'] = 'https://www.namur.be/fr/ma-ville/mobilite/mobilite/service-mobilite/service-mobilite';
 
-    jsonLD['@graph'][0]['@id'] = `https://velopark.ilabt.imec.be/data/De-Lijn_${code}#section1`;
-    jsonLD['@graph'][0]['covered'] = false;
+    jsonLD['@graph'][0]['@id'] = `https://velopark.ilabt.imec.be/data/Namur-Mobilité_${code}#section1`;
+    jsonLD['@graph'][0]['covered'] = parkingData.fields['couvert'] === 'Oui';
     jsonLD['@graph'][0]['@type'] = 'https://velopark.ilabt.imec.be/openvelopark/terms#BicycleStand';
     jsonLD['@graph'][0]['numberOfLevels'] = 1;
     jsonLD['@graph'][0]['publicAccess'] = true;
@@ -117,25 +118,35 @@ async function insertValuesInJsonLD(parkingData, jsonLD) {
             "closes": "23:59"
         }
     ];
-    jsonLD['@graph'][0]['totalCapacity'] = 5;
+    jsonLD['@graph'][0]['totalCapacity'] = parkingData.fields['support_place'] + parkingData.fields['place_place'];
     jsonLD['@graph'][0]['allows'][0]['bicycleType'] = "https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle";
-    jsonLD['@graph'][0]['allows'][0]['bicyclesAmount'] = 5;
+    jsonLD['@graph'][0]['allows'][0]['bicyclesAmount'] = parkingData.fields['support_place'] + parkingData.fields['place_place'];
     jsonLD['@graph'][0]['allows'][0]['countingSystem'] = false;
     jsonLD['@graph'][0]['geo'][0]['latitude'] = parseFloat(lat);
     jsonLD['@graph'][0]['geo'][0]['longitude'] = parseFloat(lon);
+
+    if (parkingData.fields['securise'] === 'Oui') {
+
+        if (parkingData.fields['securise_type'] === 'electric') {
+            jsonLD['@graph'][0]['amenityFeature'][0] = {
+                "@type": 'https://velopark.ilabt.imec.be/openvelopark/terms#ElectronicAccess'
+            }
+        }
+
+        if(parkingData.fields['securise_type'] === 'camera + gardien') {
+            jsonLD['@graph'][0]['amenityFeature'][0] = {
+                "@type": 'https://velopark.ilabt.imec.be/openvelopark/terms#PersonnelSupervision'
+            }
+            jsonLD['@graph'][0]['amenityFeature'][1] = {
+                "@type": 'https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance'
+            }
+        }
+    }
+
     jsonLD['@graph'][0]['priceSpecification'][0]['freeOfCharge'] = true;
 
     cleanEmptyValues(jsonLD);
     return jsonLD;
-}
-
-function extractName(title) {
-    let name = '';
-    for (let i = 1; i < title.split(" ").length; i++) {
-        name = name.concat(` ${title.split(" ")[i]}`);
-    }
-
-    return name;
 }
 
 function getAddressHERE(lat, lon, attempts = 3) {
