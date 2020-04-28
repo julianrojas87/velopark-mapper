@@ -1,0 +1,427 @@
+Entiteit,Gemeente,Deelgemeente,Titel,Station?,Ligging,XY Halte Hastus,GPS (locatie),Fietsbeugels (aantal),Overdekte fietsenstalling
+Vlaams-Brabant,AARSCHOT,AARSCHOT,307729 Aarschot Demervallei,,,"50.983623,4.837784","4;50.9836346,4.8386126",Meer dan 5,Ja
+Vlaams-Brabant,AFFLIGEM,ESSENE,300162 Essene Koudenberg,,Brusselbaan,"50.911712,4.130789","3;50.9117611,4.1307222",Meer dan 5,Ja
+Vlaams-Brabant,AFFLIGEM,ESSENE,308790 Essene OLV-Kerk,,Ternatsestraat,"50.901437,4.13665","6;50.9013344,4.1366296",Meer dan 5,Ja
+Vlaams-Brabant,ANDERLECHT,ANDERLECHT,300785 Anderlecht Sint-Guido,,Paul jansonlaan,"50.834451,4.305114","9;50.83458,4.3053174",Meer dan 5,Ja
+Oost-Vlaanderen,ANTWERPEN,ANTWERPEN,204266 Antwerpen Van Eedenplein perron 1a,,Blancefloerlaan,"51.220695,4.386598","4;51.2207624,4.3866521",Meer dan 5,Ja
+Oost-Vlaanderen,ANTWERPEN,ANTWERPEN,204273 Antwerpen Van Eedenplein perron 3,,Blancefloerlaan,"51.220697,4.386739","4;51.2208294,4.3868619",Meer dan 5,Ja
+Oost-Vlaanderen,ANTWERPEN,ANTWERPEN,205280 Antwerpen P+R Linkeroever,,Blancefloerlaan,"51.219718,4.362042","4;51.2198683,4.3626855",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,102726 Antwerpen Halewijn,,,"51.220352,4.37953","3;51.2204449,4.3791702",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,102727 Antwerpen Halewijn,,,"51.220316,4.379556","3;51.2203311,4.3796961",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,102770 Antwerpen Harmonie,,Mechelsesteenweg,"51.201466,4.412823","4;51.2013369,4.4130547",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,102775 Antwerpen Harmonie,,Mechelsesteenweg,"51.201603,4.41274","4;51.2014111,4.4129267",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,104033 Antwerpen P+R Linkeroever,,Blancefloerlaan,"51.220415,4.362897","4;51.2202859,4.3627051",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,104034 Antwerpen P+R Linkeroever,,Blancefloerlaan,"51.219794,4.363087","4;51.2199834,4.3629715",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,104732 Antwerpen Van Eeden Metro,,,"51.22082,4.386622","4;51.2210172,4.3863375",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,104733 Antwerpen Van Eeden Metro,,,"51.220802,4.386896","4;51.2211547,4.3863694",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,102179 Antwerpen P+R Olympiade,,Populierenlaan,"51.184081,4.391672","3;51.1839597,4.3921472",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,102750 Antwerpen Harmonie,,Mechelsesteenweg,"51.201191,4.413014","4;51.2013413,4.4130764",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,102765 Antwerpen P+R Olympiade,,Populierenlaan,"51.184,4.392906","4;51.1838807,4.3928431",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,102790 Antwerpen P+R Olympiade,,Populierenlaan,"51.183811,4.393083","5;51.1839251,4.3929945",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,102938 Antwerpen P+R Olympiade,,Populierenlaan,"51.184174,4.391772","3;51.1841365,4.3916804",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,103064 Antwerpen P+R Linkeroever,,Blancefloerlaan,"51.219776,4.362921","3;51.2200512,4.3630519",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,104031 Antwerpen P+R Linkeroever,,Blancefloerlaan,"51.22041,4.362947","3;51.2202332,4.3625152",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,104032 Antwerpen P+R Linkeroever,,Blancefloerlaan,"51.220416,4.362895","3;51.2202175,4.3624901",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,104108 Antwerpen Halewijn,,Blancefloerlaan,"51.220148,4.379391","4;51.2203104,4.3793396",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,104109 Antwerpen Halewijn,,Blancefloerlaan,"51.220571,4.379385","4;51.2204895,4.3795947",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,104377 Antwerpen Van Eedenplein,,Frederik van eedenplein,"51.221065,4.386064","4;51.221079,4.3861351",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,104955 Antwerpen Hondurasstraat,,Canadalaan,"51.24982,4.421902","4;51.2497967,4.4217826",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,105395 Antwerpen AZ Stuivenberg,,Pothoekstraat,"51.222925,4.436729","4;51.2230901,4.4366961",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,107445 Antwerpen F. Rooseveltplaats perron 35,,Unknown,"51.22,4.416837","6;51.2199158,4.4169812",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,107470 Antwerpen F. Rooseveltplaats perron 33,,Franklin rooseveltplaats,"51.220106,4.416845","4;51.2199646,4.4170637",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,ANTWERPEN,103283 Antwerpen M HKA,,WAALSEKAAI,"51.210841,4.39019","10;51.2110643,4.3905333",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,DEURNE (ANTWERPEN),101145 Deurne Antwerp stadion,,Ter heydelaan,"51.228466,4.469477","6;51.2284143,4.4695553",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,DEURNE (ANTWERPEN),102708 Borsbeek Silsburg,,Herentalsebaan,"51.203805,4.482797","3;51.2039184,4.4827832",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,DEURNE (ANTWERPEN),103070 Deurne Jozef Verboven,,Boekenberglei,"51.200635,4.459863","4;51.2005331,4.4602578",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,DEURNE (ANTWERPEN),104225 Deurne Jozef Verboven,,Boekenberglei,"51.200425,4.460345","3;51.200512,4.4600525",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,DEURNE (ANTWERPEN),104910 Deurne Ruggeveldlaan,,Ruggeveldlaan,"51.231404,4.479279","3;51.2315558,4.4792129",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,DEURNE (ANTWERPEN),105055 Borsbeek Silsburg,,Herentalsebaan,"51.203793,4.482803","3;51.2037747,4.4828589",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,DEURNE (ANTWERPEN),105085 Deurne Sportpaleis,,Bisschoppenhoflaan,"51.229852,4.443647","3;51.2297543,4.4436527",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,DEURNE (ANTWERPEN),105100 Deurne Sportpaleis,,N129,"51.230295,4.442926","6;51.2303421,4.442995",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,HOBOKEN,102435 Hoboken Sportcentrum Sorghvliedt,,Krijgsbaan,"51.167273,4.35396","3;51.1672783,4.3539475",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,HOBOKEN,105020 Hoboken P+R Schoonselhof,,Unknown,"51.169289,4.362516","4;51.16929,4.362506",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,HOBOKEN,106085 Hoboken Zwaantjes,,Sint-bernardsesteenweg,"51.183112,4.372646","5;51.1832742,4.3727835",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,HOBOKEN,106100 Hoboken Zwaantjes,,Sint-bernardsesteenweg,"51.183172,4.37247","3;51.1830191,4.3724711",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,MERKSEM,104096 Merksem P+R Merksem,,Bredabaan,"51.25878,4.462491","6;51.2586461,4.4627485",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,MERKSEM,104097 Merksem P+R Merksem,,Bredabaan,"51.258767,4.462724","4;51.2588717,4.4629709",Meer dan 5,Ja
+Antwerpen,ANTWERPEN,MERKSEM,104098 Merksem P+R Merksem,,Bredabaan,"51.258778,4.463352","3;51.2588852,4.4633894",Meer dan 5,Ja
+Antwerpen,BEERSE,BEERSE,106206 Beerse Lilsedijk,,Antwerpseweg,"51.30827,4.840783","4;51.3082102,4.8406892",Meer dan 5,Ja
+Antwerpen,BEERSE,BEERSE,106211 Beerse Gierleseweg,,Turnhoutseweg,"51.310387,4.857071","4;51.3104842,4.8574404",Meer dan 5,Ja
+Antwerpen,BEERSE,VLIMMEREN,106197 Vlimmeren Statiestraat,,Antwerpseweg,"51.301686,4.782201","4;51.3017758,4.7817869",Meer dan 5,Ja
+Antwerpen,BEERSE,VLIMMEREN,109186 Vlimmeren Kerk,,Kerkstraat,"51.295645,4.781155","4;51.2956956,4.7812512",Meer dan 5,Ja
+Vlaams-Brabant,BEERSEL,BEERSEL,300348 Beersel Gemeenteplein,,Hoogstraat,"50.766713,4.308532","4;50.7668671,4.3085377",Meer dan 5,Ja
+Limburg,BERINGEN,BERINGEN MIJN,400534 Koersel Beringen Mijnen,,Koolmijnlaan,"51.070922,5.220662","4;51.0709484,5.2206927",Meer dan 5,Ja
+Limburg,BERINGEN,PAAL (BERINGEN),400590 Paal Dorp,,Paalsesteenweg,"51.040266,5.174743","4;51.0403087,5.1747455",Meer dan 5,Ja
+Limburg,BERINGEN,PAAL (BERINGEN),400591 Paal Dorp,,Paalsesteenweg,"51.040172,5.175023","4;51.0401994,5.1748535",Meer dan 5,Ja
+Oost-Vlaanderen,BERLARE,OVERMERE,203535 Overmere Klappeldonk,,Dendermondse steenweg,"51.050841,3.975184","4;51.050875,3.9752059",Meer dan 5,Ja
+Vlaams-Brabant,BERTEM,BERTEM,300496 Bertem Oud Station,,Tervuursesteenweg,"50.864968,4.626922","4;50.8649291,4.6273075",Meer dan 5,Ja
+Vlaams-Brabant,BERTEM,BERTEM,300498 Bertem Oud Station,,Tervuursesteenweg,"50.86532,4.627871","4;50.8650663,4.6274323",Meer dan 5,Ja
+Oost-Vlaanderen,BEVEREN-WAAS,BEVEREN-WAAS,204293 Beveren-Waas Viergemeet,,Kloosterstraat,"51.215357,4.262506","4;51.2151808,4.2627487",Meer dan 5,Ja
+Oost-Vlaanderen,BEVEREN-WAAS,BEVEREN-WAAS,204294 Beveren-Waas Gravendreef,,N70,"51.213589,4.259393","6;51.2136035,4.2594887",Meer dan 5,Ja
+Oost-Vlaanderen,BEVEREN-WAAS,BEVEREN-WAAS,204299 Beveren-Waas Grote Heidestraat,,Gentseweg,"51.200099,4.229131","4;51.2002237,4.2293167",Meer dan 5,Ja
+Oost-Vlaanderen,BEVEREN-WAAS,BEVEREN-WAAS,205293 Beveren-Waas Viergemeet,,Kloosterstraat,"51.215268,4.26255","4;51.2152083,4.2626007",Meer dan 5,Ja
+Oost-Vlaanderen,BEVEREN-WAAS,KIELDRECHT,204030 Kieldrecht Sportpleinstraat,,Kouterstraat,"51.293724,4.171216","4;51.2937046,4.1710619",Meer dan 5,Ja
+Oost-Vlaanderen,BEVEREN-WAAS,MELSELE,204290 Melsele Spoorweglaan,,Grote baan,"51.220061,4.282592","4;51.2201377,4.2826556",Meer dan 5,Ja
+Oost-Vlaanderen,BEVEREN-WAAS,VERREBROEK,204040 Verrebroek Dorp,,Verheyenplein,"51.25543,4.188826","4;51.255459,4.1888044",Meer dan 5,Ja
+Vlaams-Brabant,BIERBEEK,BIERBEEK,307859 Bierbeek De Borre,,Speelpleinstraat,"50.827047,4.754989","3;50.827042,4.7549061",Meer dan 5,Ja
+Vlaams-Brabant,BIERBEEK,KORBEEK-LO,300564 Bierbeek Sint-Kamillus,,Krijkelberg,"50.852148,4.751794","10;50.8522117,4.7517486",Meer dan 5,Ja
+Vlaams-Brabant,BIERBEEK,KORBEEK-LO,300575 Korbeek-Lo Centrum,,Vengerstraat,"50.860126,4.761041","3;50.8601621,4.7626052",Meer dan 5,Ja
+Vlaams-Brabant,BIERBEEK,LOVENJOEL,300558 Bierbeek Langestraat,,Lovenjoelsestraat,"50.842575,4.788402","3;50.8430671,4.788226",Meer dan 5,Ja
+West-Vlaanderen,BLANKENBERGE,UITKERKE,506019 Blankenberge Sint-Amanduskerk,,Kerkstraat,"51.304494,3.141799","4;51.30434064,3.14204356",Meer dan 5,Ja
+Antwerpen,BOECHOUT,VREMDE,102746 Vremde Don Bosco,,Broechemsesteenweg,"51.172753,4.544269","4;51.172727,4.5442313",Meer dan 5,Ja
+Antwerpen,BORSBEEK,BORSBEEK,107360 Borsbeek Dorp,,De robianostraat,"51.193918,4.486064","4;51.1939709,4.4861142",Meer dan 5,Ja
+Oost-Vlaanderen,BRAKEL (OOST-VLAANDEREN),NEDERBRAKEL,208001 Nederbrakel Markt,,Neerstraat,"50.803636,3.765309","4;50.803809,3.7653961",Meer dan 5,Ja
+Antwerpen,BRASSCHAAT,BRASSCHAAT,105434 Brasschaat Lage Kaart,,Kaartseplein,"51.303504,4.485906","4;51.3033838,4.4858139",Meer dan 5,Ja
+Antwerpen,BRASSCHAAT,BRASSCHAAT,105724 Brasschaat Oudstrijderslei,,Bredabaan,"51.272457,4.468598","3;51.272389,4.4684954",Meer dan 5,Ja
+Antwerpen,BRASSCHAAT,BRASSCHAAT,105727 Brasschaat Voshollei,,Bredabaan,"51.27577,4.472462","3;51.2756578,4.4723913",Meer dan 5,Ja
+Antwerpen,BRASSCHAAT,BRASSCHAAT,105732 Brasschaat Zegersdreef,,Bredabaan,"51.284401,4.482633","3;51.2842786,4.4826612",Meer dan 5,Ja
+Antwerpen,BRASSCHAAT,BRASSCHAAT,105739 Brasschaat Door Verstraetelei,,Bredabaan,"51.293159,4.49485","3;51.293071,4.4949575",Meer dan 5,Ja
+Antwerpen,BRASSCHAAT,BRASSCHAAT,105743 Brasschaat Prins Kavellei,,Bredabaan,"51.296381,4.497554","3;51.2963294,4.4976752",Meer dan 5,Ja
+Antwerpen,BRASSCHAAT,BRASSCHAAT,105746 Brasschaat Torenhof,,Bredabaan,"51.303798,4.503747","3;51.3038396,4.5038244",Meer dan 5,Ja
+Antwerpen,BRASSCHAAT,BRASSCHAAT,105748 Brasschaat Pauwelslei,,Bredabaan,"51.307588,4.506949","3;51.3074829,4.506865",Meer dan 5,Ja
+Antwerpen,BRASSCHAAT,BRASSCHAAT,109836 Brasschaat Dr. Roosensplein,,Dokter roosensplein,"51.287785,4.485978","4;51.2877076,4.4860545",Meer dan 5,Ja
+Antwerpen,BRASSCHAAT,BRASSCHAAT,109958 Brasschaat Kerk Miksebaan,,Miksebaan,"51.289879,4.49307","4;51.2898177,4.493081",Meer dan 5,Ja
+Antwerpen,BRASSCHAAT,MARIA-TER-HEIDE,105751 Brasschaat Bethaniëlei,,Bredabaan,"51.31286,4.512845","3;51.3129357,4.5128906",Meer dan 5,Ja
+Antwerpen,BRASSCHAAT,MARIA-TER-HEIDE,105756 Brasschaat Maria Ter Heide Kerk,,Bredabaan,"51.323271,4.520085","3;51.3232693,4.5201896",Meer dan 5,Ja
+Antwerpen,BRASSCHAAT,MARIA-TER-HEIDE,105759 Brasschaat Sint-Jobsteenweg,,Bredabaan,"51.327946,4.522482","6;51.3279887,4.5225658",Meer dan 5,Ja
+Antwerpen,BRECHT,SINT-JOB-IN-'T-GOOR,108801 Sint-Job-in-'t-Goor Kristus Koning Kerklei,,BETHANIËNLEI,"51.292497,4.586296","4;51.2925401,4.5862606",Meer dan 5,Ja
+Antwerpen,BRECHT,SINT-JOB-IN-'T-GOOR,108802 Sint-Job-in-'t-Goor Lochtenbergplein,,Lochtenbergplein,"51.301526,4.560865","10;51.3015095,4.5609486",Meer dan 5,Ja
+Antwerpen,BRECHT,SINT-LENAARTS,105536 Sint-Lenaarts J. Cardijnlaan,,Dorpsstraat,"51.348928,4.676772","3;51.3490308,4.6766884",Meer dan 5,Ja
+West-Vlaanderen,BRUGGE,BRUGGE,502719 Brugge B-Park,,Unknown,"51.250141,3.198466","10;51.2501036,3.1986787",Meer dan 5,Ja
+West-Vlaanderen,BRUGGE,SINT-PIETERS-OP-DE-DIJK,502083 Brugge A.Z. Sint-Jan,,Ruddershove,"51.220855,3.193018","4;51.2211283,3.1932014",Meer dan 5,Ja
+West-Vlaanderen,DAMME,SIJSELE,507768 Sijsele Kazerne,,Dorpsstraat,"51.202996,3.314755","4;51.2030571,3.314735",Meer dan 5,Ja
+Oost-Vlaanderen,DE PINTE,DE PINTE,209952 De Pinte Groenpark,,Groenstraat,"50.992604,3.646201","4;50.9925611,3.6461519",Meer dan 5,Ja
+Oost-Vlaanderen,DENDERMONDE,DENDERMONDE,206885 Sint-Gillis-Bij-Dendermonde Halte Sint-Gillis,,Buisstraat,"51.021559,4.118242","4;51.0215983,4.1181681",Meer dan 5,Ja
+Oost-Vlaanderen,DESTELBERGEN,DESTELBERGEN,202243 Destelbergen Burgemeester Libbrechtstraat,,Burgemeester j. cardonstraat,"51.057652,3.798351","9;51.0579109,3.7983483",Meer dan 5,Ja
+Oost-Vlaanderen,DESTELBERGEN,HEUSDEN (DESTELBERGEN),202462 Heusden Tramstraat,,Meersstraat,"51.033169,3.803008","3;51.0331109,3.8029892",Meer dan 5,Ja
+Limburg,DIEPENBEEK,DIEPENBEEK,401531 Diepenbeek Waardestraat,,Steenweg,"50.913148,5.408403","9;50.9129347,5.4086892",Meer dan 5,Ja
+West-Vlaanderen,DIKSMUIDE,NIEUWKAPELLE,503634 Nieuwkapelle Kerk,,Loostraat,"50.99916,2.799673","4;50.9992576,2.7995345",Meer dan 5,Ja
+Vlaams-Brabant,DILBEEK,DILBEEK,301290 Dilbeek Kalenbergstraat,,Ninoofsesteenweg,"50.843843,4.263418","10;50.8438073,4.2634203",Meer dan 5,Ja
+Vlaams-Brabant,DILBEEK,DILBEEK,301309 Dilbeek Stelplaats,,Ninoofsesteenweg,"50.843341,4.255688","10;50.8431677,4.2557401",Meer dan 5,Ja
+Vlaams-Brabant,DILBEEK,SCHEPDAAL,301351 Schepdaal Goudveerdegem,,Ninoofsesteenweg,"50.836511,4.174003","10;50.8365324,4.1740088",Meer dan 5,Ja
+Antwerpen,DUFFEL,DUFFEL,106958 Duffel Onze-Lieve-Vrouwlaan,,Onze lieve vrouwlaan,"51.092059,4.510786","4;51.09213,4.510768",Meer dan 5,Ja
+Antwerpen,DUFFEL,DUFFEL,108699 Duffel Itterbeek,,Itterbeek,"51.108387,4.55124","4;51.1084767,4.5514006",Meer dan 5,Ja
+Antwerpen,EDEGEM,EDEGEM,102900 Edegem Gemeentehuis,,Hovestraat,"51.155499,4.446155","3;51.1556412,4.4463537",Meer dan 5,Ja
+Antwerpen,EDEGEM,EDEGEM,102995 Edegem J. Notéstraat,,JEAN NOTÉSTRAAT,"51.147972,4.447837","3;51.1479705,4.4478501",Meer dan 5,Ja
+Antwerpen,EDEGEM,EDEGEM,105170 Edegem Sint-Goriksplein,,Ernest jouretlaan,"51.148901,4.454834","3;51.1488425,4.4547997",Meer dan 5,Ja
+Antwerpen,EDEGEM,EDEGEM,105510 Edegem Ter Tommenstraat,,Prins boudewijnlaan,"51.163703,4.427445","3;51.1634891,4.4276268",Meer dan 5,Ja
+Antwerpen,ESSEN,HEIKANT (ESSEN),104261 Essen Heemhuis,,Moerkantsebaan,"51.458122,4.442306","10;51.4579761,4.4424628",Meer dan 5,Ja
+Oost-Vlaanderen,EVERGEM,EVERGEM,210008 Evergem Brielken,,BRIELKEN,"51.110497,3.699168","4;51.1105009,3.6991696",Meer dan 5,Ja
+Oost-Vlaanderen,EVERGEM,EVERGEM,200001 Evergem Brielken,,,"51.110533,3.699448","4;51.110388,3.6995171",Meer dan 5,Ja
+Oost-Vlaanderen,EVERGEM,EVERGEM,200002 Evergem Spoorwegstraat,,,"51.107476,3.705323","4;51.1074431,3.7054947",Meer dan 5,Ja
+Antwerpen,GEEL,GEEL,102966 Geel AZ St Dimpna Hoofdingang,,Jan-baptist stessensstraat,"51.159687,5.000187","4;51.1597965,5.0003372",Meer dan 5,Ja
+Vlaams-Brabant,GELDENAKEN,GELDENAKEN,302415 Geldenaken Gare Autobus Quai 8,,Rue de septembre,"50.722864,4.877194","3;50.7234009,4.8772628",Meer dan 5,Ja
+Oost-Vlaanderen,GENT,GENT,202607 Gent Arcelor Mittal,,Unknown,"51.18203,3.831572","3;51.1819343,3.8314259",Meer dan 5,Ja
+Oost-Vlaanderen,GENT,GENTBRUGGE,200090 Gentbrugge Moscou,,Jozef vervaenestraat,"51.029453,3.751019","4;51.0293281,3.7508394",Meer dan 5,Ja
+Oost-Vlaanderen,GENT,SINT-AMANDSBERG,200241 Sint-Amandsberg P+R Oostakker,,Antwerpsesteenweg,"51.074302,3.777965","5;51.0742813,3.777954",Meer dan 5,Ja
+Oost-Vlaanderen,GENT,SINT-AMANDSBERG,202136 Sint-Amandsberg P+R Oostakker,,Antwerpsesteenweg,"51.074605,3.778353","4;51.074613,3.7783631",Meer dan 5,Ja
+Oost-Vlaanderen,GENT,SINT-DENIJS-WESTREM,200319 Sint-Denijs-Westrem Dorp,,Oudeheerweg,"51.020137,3.668632","8;51.0202016,3.6686211",Meer dan 5,Ja
+Oost-Vlaanderen,GENT,SINT-DENIJS-WESTREM,201319 Sint-Denijs-Westrem Dorp,,Krijzeltand,"51.01973,3.668752","6;51.0199246,3.6687674",Meer dan 5,Ja
+Oost-Vlaanderen,GENT,ZWIJNAARDE,211082 Zwijnaarde Bibliotheek,,HEERWEG-ZUID,"51.001781,3.712999","4;51.0019164,3.7129775",Meer dan 5,Ja
+Oost-Vlaanderen,GENT,ZWIJNAARDE,210107 Zwijnaarde Bibliotheek,,HEERWEG-ZUID,"51.001981,3.713093","4;51.0019651,3.7131252",Meer dan 5,Ja
+West-Vlaanderen,GISTEL,GISTEL,501112 Gistel Stadhuis,,Heyvaertlaan,"51.153855,2.961924","3;51.15389576,2.96172431",Meer dan 5,Ja
+West-Vlaanderen,GISTEL,GISTEL,506112 Gistel Stadhuis,,Heyvaertlaan,"51.153667,2.962001","3;51.15364915,2.96202198",Meer dan 5,Ja
+West-Vlaanderen,GISTEL,GISTEL,506503 Gistel Stadhuis,,Heyvaertlaan,"51.153678,2.961978","3;51.15359687,2.96208249",Meer dan 5,Ja
+Antwerpen,GOIRLE,GOIRLE,101688 Goirle Dorpsstraat,,Dorpsstraat,"51.523026,5.064825","4;51.5229928,5.0647848",Meer dan 5,Ja
+Antwerpen,GOIRLE,GOIRLE,101689 Goirle Dorpsstraat,,Dorpsstraat,"51.523134,5.064811","4;51.5229648,5.0648097",Meer dan 5,Ja
+Vlaams-Brabant,GOOIK,LEERBEEK,301656 Leerbeek Stelplaats Kaai 7,,,"50.780908,4.120794","4;50.7809855,4.1207942",Meer dan 5,Ja
+Vlaams-Brabant,GOOIK,LEERBEEK,301657 Leerbeek Stelplaats Kaai 3,,,"50.780918,4.120893","4;50.7809125,4.1208371",Meer dan 5,Ja
+Vlaams-Brabant,GOOIK,LEERBEEK,301658 Leerbeek Stelplaats Kaai 5,,,"50.781196,4.12092","4;50.781246,4.1209814",Meer dan 5,Ja
+Vlaams-Brabant,GOOIK,LEERBEEK,301659 Leerbeek Stelplaats Kaai 1,,,"50.78116,4.120977","10;50.781243,4.1210796",Meer dan 5,Ja
+Vlaams-Brabant,GOOIK,LEERBEEK,301891 Leerbeek Stelplaats Kaai 2,,,"50.781043,4.120949","4;50.7810697,4.1209568",Meer dan 5,Ja
+Vlaams-Brabant,GOOIK,LEERBEEK,301892 Leerbeek Stelplaats Kaai 4,,,"50.780773,4.120766","5;50.7807697,4.1208195",Meer dan 5,Ja
+Vlaams-Brabant,GOOIK,LEERBEEK,301893 Leerbeek Stelplaats Kaai 6,,,"50.781061,4.120864","5;50.7811895,4.1207471",Meer dan 5,Ja
+Vlaams-Brabant,GOOIK,LEERBEEK,301894 Leerbeek Stelplaats Kaai 8,,,"50.780782,4.120681","4;50.7807744,4.120671",Meer dan 5,Ja
+Vlaams-Brabant,GOOIK,OETINGEN,301666 Oetingen Kerk,,Kloosterstraat,"50.773462,4.063015","4;50.773552,4.06296",Meer dan 5,Ja
+Vlaams-Brabant,GRIMBERGEN,GRIMBERGEN,303466 Grimbergen Stelplaats Perron 1,,,"50.935829,4.363147","10;50.9357893,4.3635353",Meer dan 5,Ja
+Vlaams-Brabant,GRIMBERGEN,GRIMBERGEN,303467 Grimbergen Stelplaats Perron 2,,,"50.935839,4.363433","10;50.9357854,4.3634453",Meer dan 5,Ja
+Vlaams-Brabant,HAACHT,HAACHT,301836 Haacht kerk,,Markt,"50.976798,4.6379","4;50.976788,4.6380073",Meer dan 5,Ja
+Limburg,HAM (LIMBURG),DE WARANDE,402798 Oostham Warande,,N141,"51.10568,5.195669","4;51.1056151,5.195618",Meer dan 5,Ja
+Limburg,HAM (LIMBURG),OOSTHAM,402795 Oostham Schoolstraat,,Stationsstraat,"51.103787,5.176199","5;51.1036942,5.1759715",Meer dan 5,Ja
+Oost-Vlaanderen,HAMME (OOST-VLAANDEREN),HAMME (OOST-VLAANDEREN),204128 Hamme Hooirt,,Damstraat,"51.086607,4.13783","7;51.0866178,4.138177",Meer dan 5,Ja
+Oost-Vlaanderen,HAMME (OOST-VLAANDEREN),HAMME (OOST-VLAANDEREN),205122 Hamme Roodkruisstraat,,Drapstraat,"51.100344,4.143049","4;51.1003863,4.1430165",Meer dan 5,Ja
+Oost-Vlaanderen,HAMME (OOST-VLAANDEREN),HAMME (OOST-VLAANDEREN),205129 Hamme Theet,,Theet,"51.079242,4.129703","4;51.0792877,4.1297538",Meer dan 5,Ja
+Oost-Vlaanderen,HAMME (OOST-VLAANDEREN),HAMME (OOST-VLAANDEREN),214004 Hamme Marktplein,,ROODKRUISSTRAAT,"51.100187,4.138828","4;51.1002384,4.1389227",Meer dan 5,Ja
+Limburg,HAMONT-ACHEL,HAMONT,402836 Hamont Kerk,,Burg,"51.252141,5.547149","4;51.2522916,5.5471212",Meer dan 5,Ja
+Limburg,HAMONT-ACHEL,HAMONT,402856 Hamont Stadswaag,,Stationsstraat,"51.249358,5.543658","4;51.24931,5.543691",Meer dan 5,Ja
+West-Vlaanderen,HARELBEKE,BAVIKHOVE,508037 Bavikhove Plaats,,Bavikhovedorp,"50.874865,3.310526","4;50.8748753,3.3105321",Meer dan 5,Ja
+West-Vlaanderen,HARELBEKE,HULSTE,508274 Hulste Tivoli,,Vlietestraat,"50.88226,3.300915","5;50.8822888,3.3009071",Meer dan 5,Ja
+Limburg,HECHTEL-EKSEL,HECHTEL,407345 Hechtel Welsh Guardplein,,Peerderbaan,"51.125182,5.369022","4;51.125251,5.3690543",Meer dan 5,Ja
+Antwerpen,HEMIKSEM,HEMIKSEM,105969 Hemiksem Callebeekstraat,,Provinciale steenweg,"51.144679,4.338431","4;51.1446771,4.3383233",Meer dan 5,Ja
+Antwerpen,HEMIKSEM,HEMIKSEM,105976 Hemiksem Delvauxstraat,,Heuvelstraat,"51.135813,4.335062","3;51.1357735,4.3351242",Meer dan 5,Ja
+Antwerpen,HERENTALS,HERENTALS,107062 Herentals Markt - Grote Markt,,HOFKWARTIER,"51.177921,4.835876","10;51.1778815,4.8358004",Meer dan 5,Ja
+Antwerpen,HERENTALS,HERENTALS,107063 Herentals Markt - Grote Markt,,HOFKWARTIER,"51.178012,4.835688","10;51.1779232,4.8357633",Meer dan 5,Ja
+Antwerpen,HERENTHOUT,HERENTHOUT,108202 Herenthout J. Cardijnlaan,,Molenstraat,"51.140529,4.762445","4;51.1404805,4.7624708",Meer dan 5,Ja
+West-Vlaanderen,HEUVELLAND,NIEUWKERKE,509337 Nieuwkerke Plaats,,Markt,"50.745471,2.825689","4;50.7454682,2.8257387",Meer dan 5,Ja
+Limburg,HOUTHALEN-HELCHTEREN,HOUTHALEN,404488 Houthalen Koolmijnlaan,,Grote baan,"51.022002,5.374347","4;51.021833,5.3741948",Meer dan 5,Ja
+Limburg,HOUTHALEN-HELCHTEREN,HOUTHALEN,404529 Houthalen Park & Ride,,N715,"51.015716,5.372292","6;51.0158598,5.3721724",Meer dan 5,Ja
+Limburg,HOUTHALEN-HELCHTEREN,HOUTHALEN,404530 Houthalen Park & Ride,,N715,"51.01532,5.372184","4;51.0152032,5.3719531",Meer dan 5,Ja
+Limburg,HOUTHALEN-HELCHTEREN,HOUTHALEN,408164 Houthalen NAC,,Pastorijstraat,"51.028633,5.373273","4;51.0284921,5.3732374",Meer dan 5,Ja
+Limburg,HOUTHALEN-HELCHTEREN,HOUTHALEN,408165 Houthalen NAC,,Pastorijstraat,"51.028155,5.373454","10;51.0282175,5.3732416",Meer dan 5,Ja
+Vlaams-Brabant,HULDENBERG,HULDENBERG,302303 Huldenberg Gemeenteplein,,Gemeenteplein,"50.789382,4.583421","10;50.7895448,4.5839737",Meer dan 5,Ja
+Vlaams-Brabant,HULDENBERG,NEERIJSE,302345 Neerijse Den Tek,,Wolfshaegen,"50.796515,4.626726","4;50.7965001,4.6267632",Meer dan 5,Ja
+Vlaams-Brabant,HULDENBERG,NEERIJSE,302351 Neerijse Kerk,,Dorpsstraat,"50.817616,4.625831","7;50.817647,4.6256982",Meer dan 5,Ja
+Vlaams-Brabant,HULDENBERG,NEERIJSE,302368 Neerijse Weg naar Sint-Agatha-Rode,,Wolfshaegen,"50.788289,4.624842","4;50.7880875,4.624775",Meer dan 5,Ja
+Vlaams-Brabant,HULDENBERG,SINT-AGATHA-RODE,302389 Sint-Agatha-Rode Dorp,,Potterstraat,"50.785674,4.633211","4;50.7855426,4.6334503",Meer dan 5,Ja
+Oost-Vlaanderen,HULST,HULST,205439 Hulst Busstation,,Zandstraat,"51.285699,4.053207","3;51.2856768,4.0530001",Meer dan 5,Ja
+West-Vlaanderen,ICHTEGEM,EERNEGEM,506094 Eernegem Kerk,,Stationsstraat,"51.129544,3.027017","5;51.1294969,3.0270238",Meer dan 5,Ja
+West-Vlaanderen,ICHTEGEM,ICHTEGEM,502208 Ichtegem De Engel,,Zuidstraat,"51.104296,3.0331","4;51.1043379,3.0331264",Meer dan 5,Ja
+West-Vlaanderen,IZEGEM,IZEGEM,505947 Izegem De Plataan,,VIJVERHOF,"50.909062,3.200929","10;50.909071,3.2009728",Meer dan 5,Ja
+West-Vlaanderen,JABBEKE,JABBEKE,507221 Jabbeke Garage Cools,,Dorpsstraat,"51.181371,3.088087","4;51.1814416,3.0881488",Meer dan 5,Ja
+Antwerpen,KALMTHOUT,NIEUWMOER,104284 Nieuwmoer Spreeuwstraat,,Prelaat deckersstraat,"51.432991,4.518079","4;51.4331169,4.5181756",Meer dan 5,Ja
+Antwerpen,KALMTHOUT,NIEUWMOER,105899 Nieuwmoer Dorpplaats,,Nieuwmoer dorp,"51.432035,4.514328","4;51.4319964,4.5142813",Meer dan 5,Ja
+Vlaams-Brabant,KAMPENHOUT,BERG (KAMPENHOUT),302454 Berg Lelle,,Haachtsesteenweg,"50.928372,4.525951","5;50.92830207,4.52577153",Meer dan 5,Ja
+Vlaams-Brabant,KAMPENHOUT,BERG (KAMPENHOUT),302456 Berg Oud Station,,Haachtsesteenweg,"50.931668,4.534559","4;50.9317441,4.5346013",Meer dan 5,Ja
+Vlaams-Brabant,KAMPENHOUT,BERG (KAMPENHOUT),302467 Kampenhout Kerkstraat,,Haachtsesteenweg,"50.937296,4.548553","3;50.9373517,4.5486781",Meer dan 5,Ja
+Vlaams-Brabant,KAMPENHOUT,KAMPENHOUT,302466 Kampenhout Kerkstraat,,Haachtsesteenweg,"50.937622,4.549806","5;50.93756614,4.54982763",Meer dan 5,Ja
+Vlaams-Brabant,KAMPENHOUT,KAMPENHOUT,302469 Kampenhout Oud Station,,Haachtsesteenweg,"50.940528,4.556864","3;50.9405447,4.5567452",Meer dan 5,Ja
+Vlaams-Brabant,KAMPENHOUT,KAMPENHOUT,302472 Kampenhout Relst,,Haachtsesteenweg,"50.950782,4.583707","5;50.95071899,4.58358562",Meer dan 5,Ja
+Vlaams-Brabant,KAMPENHOUT,KAMPENHOUT,302476 Kampenhout Ruisbeek,,Haachtsesteenweg,"50.943841,4.565774","5;50.94373798,4.56582975",Meer dan 5,Ja
+Antwerpen,KAPELLEN (ANTWERPEN),KAPELLEN (ANTWERPEN),105404 Kapellen Valkenlaan,,Antwerpsesteenweg,"51.297715,4.440061","3;51.2978614,4.4400292",Meer dan 5,Ja
+Antwerpen,KAPELLEN (ANTWERPEN),KAPELLEN (ANTWERPEN),105406 Kapellen Valkenlaan,,Antwerpsesteenweg,"51.298455,4.439682","3;51.2984695,4.4397258",Meer dan 5,Ja
+Antwerpen,KAPELLEN (ANTWERPEN),KAPELLEN (ANTWERPEN),105836 Kapellen Zilverhoeklaan,,Antwerpsesteenweg,"51.305355,4.434748","3;51.3054298,4.4347519",Meer dan 5,Ja
+Vlaams-Brabant,KEERBERGEN,KEERBERGEN,302552 Keerbergen Kerk,,Haachtsebaan,"51.004336,4.629068","4;51.0044129,4.6290793",Meer dan 5,Ja
+West-Vlaanderen,KNOKKE-HEIST,KNOKKE (KNOKKE-HEIST),501149 Knokke Het Zwin,,Graaf leon lippensdreef,"51.358621,3.351138","3;51.35880684,3.35086688",Meer dan 5,Ja
+West-Vlaanderen,KNOKKE-HEIST,WESTKAPELLE,506456 Knokke AZ Zeno,,NATIËNLAAN,"51.327545,3.292418","5;51.3276414,3.2921145",Meer dan 5,Ja
+West-Vlaanderen,KOKSIJDE,OOSTDUINKERKE,506738 Oostduinkerke Duinpark,,Albert i laan,"51.134326,2.684575","10;51.1344128,2.6846593",Meer dan 5,Ja
+West-Vlaanderen,KORTRIJK,KORTRIJK,510021 Kortrijk Busterminal 3 perron 32,,MINISTER TACKLAAN,"50.823734,3.264109","4;50.8236962,3.2645418",Meer dan 5,Ja
+West-Vlaanderen,KORTRIJK,KORTRIJK,510020 Kortrijk Busterminal 3 perron 33,,MINISTER TACKLAAN,"50.823792,3.264799","4;50.8237095,3.2645371",Meer dan 5,Ja
+West-Vlaanderen,KORTRIJK,KORTRIJK,510022 Kortrijk Busterminal 3 perron 31,,MINISTER TACKLAAN,"50.82372,3.263694","4;50.8237113,3.2636451",Meer dan 5,Ja
+West-Vlaanderen,KORTRIJK,MARKE,503532 Marke Plaats,,Markekerkstraat,"50.807164,3.233136","4;50.8072477,3.2326987",Meer dan 5,Ja
+Oost-Vlaanderen,KRUIBEKE,BAZEL,204647 Steendorp Hemelrijkstraat,,Kapelstraat,"51.133052,4.277252","4;51.1330307,4.277317",Meer dan 5,Ja
+Oost-Vlaanderen,KRUIBEKE,KRUIBEKE,205633 Kruibeke Scheldelei,,LANGESTRAAT,"51.176079,4.315807","4;51.176066,4.3157777",Meer dan 5,Ja
+Oost-Vlaanderen,KRUIBEKE,KRUIBEKE,205635 Kruibeke Mercatorstraat,,Bazelstraat,"51.167268,4.310567","4;51.1672569,4.3105788",Meer dan 5,Ja
+Oost-Vlaanderen,KRUIBEKE,KRUIBEKE,205636 Kruibeke Moortelstraat,,Bazelstraat,"51.162093,4.305951","4;51.1621426,4.3059094",Meer dan 5,Ja
+Oost-Vlaanderen,KRUISHOUTEM,KRUISHOUTEM,218026 Kruishoutem Nieuw Plein Perron 1,,NIEUW PLEIN,"50.902824,3.526507","4;50.9030468,3.5268548",Meer dan 5,Ja
+Oost-Vlaanderen,KRUISHOUTEM,KRUISHOUTEM,218027 Kruishoutem Nieuw Plein Perron 2,,NIEUW PLEIN,"50.902885,3.526611","4;50.9029359,3.5266186",Meer dan 5,Ja
+Limburg,LAAKDAL,VORST (LAAKDAL),405088 Vorst Markt,,MARKT,"51.080745,5.020888","7;51.0807033,5.0208771",Meer dan 5,Ja
+Oost-Vlaanderen,LAARNE,KALKEN,202518 Kalken Belindestraat,,Nerenweg,"51.037438,3.899926","5;51.0374538,3.9000593",Meer dan 5,Ja
+Oost-Vlaanderen,LAARNE,KALKEN,202519 Kalken Steenbeekstraat,,Nerenweg,"51.036202,3.90494","4;51.0361759,3.9049658",Meer dan 5,Ja
+Oost-Vlaanderen,LAARNE,KALKEN,202521 Kalken Kerk,,Nerenweg,"51.036367,3.917048","4;51.0363557,3.9170642",Meer dan 5,Ja
+Oost-Vlaanderen,LAARNE,KALKEN,202528 Kalken Gaverstraatje,,Gaverstraat,"51.044474,3.929011","4;51.0445327,3.9290138",Meer dan 5,Ja
+Oost-Vlaanderen,LAARNE,KALKEN,203520 Kalken Bieststraat,,Nerenweg,"51.035796,3.911713","4;51.0358261,3.9118152",Meer dan 5,Ja
+Oost-Vlaanderen,LAARNE,KALKEN,203521 Kalken Kerk,,NERENWEG,"51.036318,3.916998","4;51.0362614,3.9168998",Meer dan 5,Ja
+Limburg,LANAKEN,LANAKEN,409403 Zutendaal Bessemer,,Trichterweg,"50.921985,5.606826","4;50.9219768,5.6068196",Meer dan 5,Ja
+Vlaams-Brabant,LENNIK,EIZERINGEN,304488 Sint-Kwintens-Lennik Eizeringen kruispunt,,Ninoofsesteenweg,"50.835151,4.14793","6;50.8349926,4.1475494",Meer dan 5,Ja
+Limburg,LEOPOLDSBURG,HEPPEN,405568 Heppen Kerk,,Dorpsstraat,"51.108902,5.22902","5;51.1088447,5.2290974",Meer dan 5,Ja
+Vlaams-Brabant,LEUVEN,HEVERLEE,304184 Heverlee Kasteel Arenberg,,Celestijnenlaan,"50.860942,4.682238","4;50.8609971,4.6823226",Meer dan 5,Ja
+Vlaams-Brabant,LEUVEN,HEVERLEE,302862 Heverlee Sint-Albertus College,,GELDENAAKSEBAAN,"50.85573,4.721492","5;50.855704,4.721678",Meer dan 5,Ja
+Vlaams-Brabant,LEUVEN,KESSEL-LO,302949 Kessel-Lo Gemeenteplein,,Gemeenteplein,"50.890832,4.729871","6;50.8908302,4.7298929",Meer dan 5,Ja
+Vlaams-Brabant,LEUVEN,LEUVEN,305442 Leuven Rector De Somerplein zone A,,Rector de somerplein,"50.879188,4.70298","9;50.8792488,4.7031515",Meer dan 5,Ja
+Vlaams-Brabant,LEUVEN,LEUVEN,302988 Leuven Gasthuisberg Kliniek Perron 4,,Unknown,"50.878804,4.675277","10;50.8787434,4.67535",Meer dan 5,Ja
+Vlaams-Brabant,LEUVEN,LEUVEN,308674 Leuven Gasthuisberg Kliniek Perron 5,,Unknown,"50.878802,4.675163","16;50.8787386,4.6754612",Meer dan 5,Ja
+Vlaams-Brabant,LEUVEN,LEUVEN,302987 Leuven Gasthuisberg Kliniek Perron 3,,Unknown,"50.878821,4.675346","7;50.8787796,4.675382",Meer dan 5,Ja
+Antwerpen,LIER,LIER,103716 Lier De Mol,,Aarschotsesteenweg,"51.125217,4.573557","4;51.1252329,4.5735983",Meer dan 5,Ja
+Antwerpen,LIER,LIER,106940 Lier Wachthalte perron 9,,Unknown,"51.135674,4.563128","4;51.1356761,4.562923",Meer dan 5,Ja
+Antwerpen,LIER,LIER,107312 Lier Veemarkt perron 1,,Unknown,"51.128542,4.58278","4;51.1284987,4.5829807",Meer dan 5,Ja
+Antwerpen,LILLE,GIERLE,109149 Gierle Kerk,,Singel,"51.26702,4.868171","4;51.2669857,4.8682243",Meer dan 5,Ja
+Antwerpen,LILLE,LILLE,109201 Lille Dorp,,Poederleese weg,"51.238316,4.824295","4;51.2381954,4.8245278",Meer dan 5,Ja
+Antwerpen,LILLE,POEDERLEE,109208 Poederlee Dorp,,Dorp,"51.22853,4.835432","4;51.2285287,4.8353873",Meer dan 5,Ja
+Antwerpen,LILLE,WECHELDERZANDE,107451 Wechelderzande Kerk,,Gebroeders de winterstraat,"51.263598,4.785822","4;51.2636894,4.7859297",Meer dan 5,Ja
+Limburg,LOMMEL,GROTE BARRIER,405815 Grote-Barrier Grote-Barrier,,Fabrieksstraat,"51.235905,5.377076","4;51.2358632,5.3770847",Meer dan 5,Ja
+Limburg,LOMMEL,LOMMEL,405791 Lommel Donkerstraat,,Klachtloopstraat,"51.231362,5.302397","4;51.2314818,5.3025548",Meer dan 5,Ja
+Limburg,LOMMEL,LOMMEL-WERKPLAATSEN,405794 Werkplaatsen Dorperheide,,N712,"51.229352,5.265646","9;51.2293851,5.2659739",Meer dan 5,Ja
+Limburg,LOMMEL,LUTLOMMEL,405800 Lutlommel Enneven,,Lutlommel,"51.231684,5.340846","4;51.2316388,5.3408381",Meer dan 5,Ja
+Limburg,LOMMEL,LUTLOMMEL,405850 Lutlommel Lutlommel,,Lutlommel,"51.232057,5.334361","4;51.2320147,5.3344512",Meer dan 5,Ja
+Limburg,LOMMEL,LUTLOMMEL,405853 Lutlommel School,,Lutlommel,"51.232402,5.350792","4;51.232503,5.3506957",Meer dan 5,Ja
+Vlaams-Brabant,LONDERZEEL,LONDERZEEL,303387 Londerzeel Rustoord,,Kerkhofstraat,"51.002578,4.306276","4;51.0025556,4.3062758",Meer dan 5,Ja
+Vlaams-Brabant,LONDERZEEL,MALDEREN,308799 Malderen Dorp,,Jozef vermaesenplein,"51.020421,4.243574","3;50.9081829,4.4143957",Meer dan 5,Ja
+Oost-Vlaanderen,LOVENDEGEM,LOVENDEGEM,201691 Lovendegem Appensvoorde,,Appensvoordestraat,"51.098295,3.638281","10;51.0984644,3.6384026",Meer dan 5,Ja
+Oost-Vlaanderen,LOVENDEGEM,LOVENDEGEM,202369 Lovendegem Triestlaan,,Molendreef,"51.098315,3.610302","10;51.0984062,3.6103131",Meer dan 5,Ja
+Limburg,MAASMECHELEN,MAASMECHELEN,410131 Maasmechelen Carpoolparking,,N78,"50.954273,5.69426","10;50.9543515,5.6942172",Meer dan 5,Ja
+Vlaams-Brabant,MACHELEN (VLAAMS-BRABANT),DIEGEM,304129 Machelen Korenberg,,Unknown,"50.896329,4.455644","4;50.8964158,4.4553782",Meer dan 5,Ja
+Vlaams-Brabant,MACHELEN (VLAAMS-BRABANT),DIEGEM,308791 Diegem Woluwelaan,,Woluwelaan,"50.895913,4.434966","4;50.8960876,4.4349991",Meer dan 5,Ja
+Vlaams-Brabant,MACHELEN (VLAAMS-BRABANT),MACHELEN (VLAAMS-BRABANT),303590 Machelen Heirbaan,,Luchthavenlaan,"50.918165,4.448327","5;50.91811454,4.44832464",Meer dan 5,Ja
+Vlaams-Brabant,MACHELEN (VLAAMS-BRABANT),MACHELEN (VLAAMS-BRABANT),303828 Machelen Cargo Discount P1,,Vliegveld,"50.906224,4.460645","3;50.9063499,4.4606763",Meer dan 5,Ja
+Oost-Vlaanderen,MALDEGEM,KLEIT,202225 Maldegem Halledreef,,Halledreef,"51.181515,3.450335","4;51.1816355,3.4501876",Meer dan 5,Ja
+Oost-Vlaanderen,MALDEGEM,MALDEGEM,202059 Maldegem Markt perron 1,,Marktstraat,"51.208765,3.445931","5;51.2085069,3.4458851",Meer dan 5,Ja
+Antwerpen,MALLE,OOSTMALLE,106184 Oostmalle Busstation perron 4,,Antwerpsesteenweg,"51.301015,4.729849","4;51.3010085,4.7300091",Meer dan 5,Ja
+Antwerpen,MALLE,OOSTMALLE,106187 Oostmalle Busstation perron 2,,Antwerpsesteenweg,"51.301173,4.729125","4;51.3011816,4.7291088",Meer dan 5,Ja
+Antwerpen,MALLE,OOSTMALLE,109560 Oostmalle Busstation perron 1,,Antwerpsesteenweg,"51.301417,4.728665","10;51.3015091,4.7285757",Meer dan 5,Ja
+Antwerpen,MALLE,OOSTMALLE,109860 Oostmalle Busstation perron 3,,Antwerpsesteenweg,"51.301309,4.729202","10;51.3012682,4.7292453",Meer dan 5,Ja
+Antwerpen,MALLE,WESTMALLE,106112 Westmalle Olmenlei,,Antwerpsesteenweg,"51.274953,4.651283","6;51.2750016,4.6512473",Meer dan 5,Ja
+Antwerpen,MALLE,WESTMALLE,106125 Westmalle Schaggeleweg,,Antwerpsesteenweg,"51.297245,4.689658","10;51.2972157,4.6894634",Meer dan 5,Ja
+Antwerpen,MALLE,WESTMALLE,106126 Westmalle Schaggeleweg,,Antwerpsesteenweg,"51.297098,4.689666","10;51.297007,4.6893311",Meer dan 5,Ja
+Antwerpen,MECHELEN,MECHELEN,102978 Mechelen Rode Kruisplein,,Guido gezellelaan,"51.033073,4.472454","4;51.0330058,4.4724939",Meer dan 5,Ja
+Antwerpen,MECHELEN,MECHELEN,105189 Mechelen Veemarkt,,Biest,"51.029188,4.484519","5;51.029045,4.484575",Meer dan 5,Ja
+Antwerpen,MECHELEN,MECHELEN,109492 Mechelen Technopolis,,Technologielaan,"51.002443,4.470116","4;51.0023693,4.4704116",Meer dan 5,Ja
+Antwerpen,MECHELEN,MECHELEN,109800 Mechelen Technopolis,,UNKNOWN,"51.002361,4.470809","4;51.0023135,4.4706596",Meer dan 5,Ja
+Limburg,MEEUWEN-GRUITRODE,WIJSHAGEN,406986 Wijshagen Kerkstraat,,Wijshagerkiezel,"51.105001,5.561781","4;51.1050324,5.5617343",Meer dan 5,Ja
+Vlaams-Brabant,MEISE,MEISE,303700 Meise Boechtstraat,,N277,"50.935598,4.329735","9;50.9357195,4.3295103",Meer dan 5,Ja
+Vlaams-Brabant,MEISE,MEISE,303748 Meise Van Dievoetlaan,,Nieuwelaan,"50.94092,4.324307","4;50.9409313,4.324446",Meer dan 5,Ja
+Vlaams-Brabant,MEISE,MEISE,303749 Meise Van Dievoetlaan,,Nieuwelaan,"50.94047,4.324813","4;50.9403613,4.3251815",Meer dan 5,Ja
+Vlaams-Brabant,MEISE,WOLVERTEM,303779 Wolvertem Meusegem,,Veilinglaan,"50.963739,4.29334","4;50.9638421,4.2932865",Meer dan 5,Ja
+Vlaams-Brabant,MEISE,WOLVERTEM,303793 Wolvertem Robbeek,,Veilinglaan,"50.97382,4.272932","4;50.9738177,4.2730201",Meer dan 5,Ja
+Oost-Vlaanderen,MELLE,MELLE,203940 Melle Gemeenteplein,,Brusselsesteenweg,"51.003838,3.799747","4;51.0037414,3.7999091",Meer dan 5,Ja
+Vlaams-Brabant,MERCHTEM,MERCHTEM,303872 Peizegem Tuinbouwschool,,Kouter,"50.979884,4.230051","5;50.9799865,4.2301944",Meer dan 5,Ja
+Oost-Vlaanderen,MERELBEKE,MERELBEKE,201895 Merelbeke Carpool Park & Ride E40-E17,,Heidestraat,"51.003725,3.763791","4;51.0038352,3.7633459",Meer dan 5,Ja
+Oost-Vlaanderen,MERELBEKE,MERELBEKE,203849 Merelbeke Lembergsesteenweg,,Lamstraat,"50.98934,3.762939","4;50.989416,3.763004",Meer dan 5,Ja
+Oost-Vlaanderen,MERELBEKE,SCHELDERODE,203823 Schelderode Kerk,,Gaversesteenweg,"50.97083,3.71446","4;50.9708258,3.7146437",Meer dan 5,Ja
+West-Vlaanderen,MEULEBEKE,MEULEBEKE,505663 Meulebeke Ter Deeve,,Bonestraat,"50.953348,3.293852","4;50.953538,3.293876",Meer dan 5,Ja
+Oost-Vlaanderen,MOERBEKE-WAAS,MOERBEKE-WAAS,204089 Moerbeke-Waas Terwest,,Terweststraat,"51.172318,3.924744","3;51.1722452,3.9246206",Meer dan 5,Ja
+Oost-Vlaanderen,MOERBEKE-WAAS,MOERBEKE-WAAS,205085 Moerbeke-Waas Korte Damstraat,,Hospicestraat-ter moere,"51.174706,3.946342","3;51.1746741,3.946242",Meer dan 5,Ja
+West-Vlaanderen,MOORSLEDE,MOORSLEDE,508622 Moorslede Kerk,,MARKTSTRAAT,"50.891736,3.062156","10;50.8917357,3.0621248",Meer dan 5,Ja
+Antwerpen,MORTSEL,MORTSEL,102395 Mortsel Vredebaan,,Antwerpsestraat,"51.173186,4.445093","4;51.1731313,4.4450139",Meer dan 5,Ja
+Antwerpen,MORTSEL,MORTSEL,105905 Mortsel Vredebaan,,Antwerpsestraat,"51.172844,4.445061","4;51.1731277,4.444861",Meer dan 5,Ja
+Antwerpen,MORTSEL,MORTSEL,107795 Mortsel Hof Savelkoul,,Liersesteenweg,"51.167874,4.477813","4;51.1680955,4.4776344",Meer dan 5,Ja
+Oost-Vlaanderen,NAZARETH,EKE,209724 Eke Dorp,,Stationsstraat,"50.956668,3.642333","4;50.9565838,3.6423744",Meer dan 5,Ja
+Oost-Vlaanderen,NAZARETH,NAZARETH,208731 Nazareth Dorp,,Dorp,"50.95974,3.597237","16;50.959658,3.5973329",Meer dan 5,Ja
+Oost-Vlaanderen,NAZARETH,NAZARETH,209731 Nazareth Dorp,,Dorp,"50.959594,3.596202","4;50.9597223,3.5964546",Meer dan 5,Ja
+Limburg,NEERPELT,GROTE HEIDE,406916 Neerpelt Grote Heide Kerk,,Grote heide,"51.246804,5.43911","5;51.24686076,5.4389376",Meer dan 5,Ja
+Limburg,NEERPELT,SINT-HUIBRECHTS-LILLE,406957 Sint-Huibrechts-Lille Centrum,,Jos verlindenstraat,"51.227316,5.481535","5;51.22753444,5.48144763",Meer dan 5,Ja
+Oost-Vlaanderen,NEVELE,NEVELE,202786 Nevele Stelplaats,,Graaf van hoornestraat,"51.032682,3.544116","4;51.0326165,3.5439469",Meer dan 5,Ja
+Oost-Vlaanderen,NEVELE,NEVELE,203785 Nevele Markt,,Cyriel buyssestraat,"51.032733,3.549081","4;51.0329697,3.5492874",Meer dan 5,Ja
+Oost-Vlaanderen,NEVELE,POESELE,202789 Poesele Beentjesstraat,,Bredeweg,"51.037893,3.516245","4;51.037858,3.5162192",Meer dan 5,Ja
+Antwerpen,NIEL (ANTWERPEN),NIEL (ANTWERPEN),102013 Niel Maria Boodschap,,Wirixdreef,"51.108789,4.321369","4;51.108836,4.3213688",Meer dan 5,Ja
+Antwerpen,NIEL (ANTWERPEN),NIEL (ANTWERPEN),105989 Niel Stationsstraat,,Antwerpsestraat,"51.112272,4.331578","4;51.1123043,4.3315374",Meer dan 5,Ja
+Antwerpen,NIJLEN,BEVEL,107077 Bevel Kerk,,Bevel-dorp,"51.136663,4.683303","4;51.1367232,4.6831103",Meer dan 5,Ja
+Oost-Vlaanderen,NINOVE,MEERBEKE,207981 Meerbeke Stelplaats,,Brusselsesteenweg,"50.828867,4.037028","8;50.8289545,4.037361",Meer dan 5,Ja
+West-Vlaanderen,OOSTENDE,OOSTENDE,506302 Oostende Az Damiaan-Gouwelozestraat,,Gouwelozestraat,"51.218084,2.93306","5;51.2181162,2.9330356",Meer dan 5,Ja
+West-Vlaanderen,OOSTENDE,ZANDVOORDE (OOSTENDE),506502 Zandvoorde Kapittelstraat,,GISTELSESTEENWEG,"51.192279,2.961148","4;51.192364,2.9610264",Meer dan 5,Ja
+Antwerpen,OUD-TURNHOUT,OUD-TURNHOUT,107141 Oud-Turnhout Molenbergen,,Steenweg op mol,"51.314957,4.987859","4;51.3149877,4.9878321",Meer dan 5,Ja
+West-Vlaanderen,OUDENBURG,WESTKERKE,506482 Westkerke Kerk,,Gistelsesteenweg,"51.164508,3.015007","3;51.16455949,3.01497208",Meer dan 5,Ja
+Limburg,OVERPELT,LINDEL,407343 Lindel Kerk,,Lindelsebaan,"51.193945,5.40296","5;51.1938074,5.4029688",Meer dan 5,Ja
+Limburg,PEER,KLEINE-BROGEL,409861 Kleine-Brogel Dommellaan,,Dommellaan,"51.176524,5.451785","4;51.1764867,5.4517809",Meer dan 5,Ja
+Antwerpen,PUTTE (BIJ MECHELEN),BEERZEL,108102 Beerzel Kerk,,Beerzelplein,"51.0575,4.671207","4;51.0575094,4.6711594",Meer dan 5,Ja
+Antwerpen,PUTTE (BIJ MECHELEN),PUTTE (BIJ MECHELEN),108091 Putte Markt,,Waversesteenweg,"51.059136,4.62818","4;51.0592089,4.6281393",Meer dan 5,Ja
+Antwerpen,RANST,BROECHEM,106422 Broechem Van Den Nestlaan,,Antwerpsesteenweg,"51.182503,4.593095","10;51.1827781,4.5924952",Meer dan 5,Ja
+Antwerpen,RANST,BROECHEM,106423 Broechem Van Den Nestlaan,,Antwerpsesteenweg,"51.182504,4.593132","10;51.1828089,4.5926504",Meer dan 5,Ja
+Antwerpen,RANST,RANST,106416 Ranst Lieve Vrouwestraat,,Doggenhoutstraat,"51.188109,4.562673","10;51.1881338,4.5626825",Meer dan 5,Ja
+Antwerpen,RAVELS,WEELDE,106642 Weelde Gemeentehuis,,Gemeentelaan,"51.410868,5.005586","4;51.4107037,5.0058287",Meer dan 5,Ja
+Antwerpen,RETIE,RETIE,107574 Retie Markt,,MARKT,"51.267134,5.084539","3;51.2670519,5.0845081",Meer dan 5,Ja
+Limburg,RIEMST,RIEMST,407651 Riemst Busstation perron 1,,Gemeenteplein,"50.81187,5.596293","4;50.8118386,5.5963092",Meer dan 5,Ja
+Limburg,RIEMST,RIEMST,407652 Riemst Busstation perron 2,,Gemeenteplein,"50.811909,5.596234","4;50.8119698,5.596482",Meer dan 5,Ja
+Limburg,RIEMST,RIEMST,407653 Riemst Busstation perron 3,,Gemeenteplein,"50.81196,5.596252","6;50.8120113,5.5963187",Meer dan 5,Ja
+Antwerpen,RIJKEVORSEL,RIJKEVORSEL,105558 Rijkevorsel Kerk,,Dorp,"51.349859,4.760338","10;51.3498739,4.7603931",Meer dan 5,Ja
+West-Vlaanderen,ROESELARE,OEKENE,503635 Oekene Dorp,,Plaats,"50.920329,3.160778","12;50.9202753,3.1605815",Meer dan 5,Ja
+Vlaams-Brabant,ROTSELAAR,ROTSELAAR,304315 Rotselaar Rotonde,,Aarschotsesteenweg,"50.939118,4.736218","3;50.9391081,4.7362489",Meer dan 5,Ja
+Antwerpen,RUMST,REET,106803 Reet Kerk,,Unknown,"51.100621,4.41369","4;51.100678,4.4137273",Meer dan 5,Ja
+Antwerpen,RUMST,RUMST,103042 Rumst Busstation,,Molenbergstraat,"51.078819,4.423088","4;51.0788099,4.4231705",Meer dan 5,Ja
+Antwerpen,RUMST,RUMST,106809 Rumst Busstation,,Molenbergstraat,"51.078869,4.423108","4;51.079028,4.4232256",Meer dan 5,Ja
+Antwerpen,RUMST,RUMST,106810 Rumst Busstation,,Molenbergstraat,"51.078847,4.423144","4;51.0788912,4.4231929",Meer dan 5,Ja
+Antwerpen,RUMST,RUMST,106814 Rumst Hof Ten Eiken,,Tiburstraat,"51.083605,4.441429","4;51.0836228,4.44129",Meer dan 5,Ja
+Antwerpen,SCHELLE,SCHELLE,105981 Schelle Kerk,,Fabiolalaan,"51.129131,4.335935","4;51.1291697,4.3358193",Meer dan 5,Ja
+Antwerpen,SCHELLE,SCHELLE,105987 Schelle Tolhuisstraat,,Fabiolalaan,"51.119407,4.334555","4;51.1197103,4.3346161",Meer dan 5,Ja
+Vlaams-Brabant,SCHERPENHEUVEL-ZICHEM,SCHERPENHEUVEL,308827 Scherpenheuvel OLV Ster der Zee,,PRINS ALEXANDERSTRAAT,"50.980572,4.965727","4;50.9805258,4.9656094",Meer dan 5,Ja
+Vlaams-Brabant,SCHERPENHEUVEL-ZICHEM,SCHERPENHEUVEL-ZICHEM,301262 Kaggevinne Koebaan,,Diestsestraat,"50.978941,5.003429","10;50.9790151,5.0034518",Meer dan 5,Ja
+Vlaams-Brabant,SCHERPENHEUVEL-ZICHEM,ZICHEM,308640 Zichem Kerk,,N212,"51.001665,4.98436","6;51.0017237,4.9845127",Meer dan 5,Ja
+Antwerpen,SCHILDE,S-GRAVENWEZEL,105691 's-Gravenwezel Veldlei,,GILLÈS DE PÉLICHYLEI,"51.26057,4.558519","4;51.2605839,4.5583427",Meer dan 5,Ja
+Antwerpen,SCHILDE,S-GRAVENWEZEL,105694 's-Gravenwezel Philippedreef,,Philippedreef,"51.250501,4.569895","6;51.2504739,4.5695672",Meer dan 5,Ja
+Antwerpen,SCHILDE,SCHILDE,104077 Schilde Gemeentehuis,,Brasschaatsebaan,"51.240569,4.577411","4;51.240539,4.5774297",Meer dan 5,Ja
+Antwerpen,SCHILDE,SCHILDE,105703 Schilde Brasschaatsebaan,,Schoolstraat,"51.237981,4.579554","4;51.2380688,4.5796161",Meer dan 5,Ja
+Antwerpen,SCHILDE,SCHILDE,106064 Schilde Kasteeldreef,,N12,"51.231696,4.553551","10;51.2317136,4.5535703",Meer dan 5,Ja
+Antwerpen,SCHILDE,SCHILDE,106067 Schilde Goudbloemlaan,,N12,"51.233702,4.560679","10;51.2336985,4.5607653",Meer dan 5,Ja
+Antwerpen,SCHILDE,SCHILDE,106069 Schilde Termalenbaan,,N12,"51.236841,4.571555","10;51.2368259,4.5715933",Meer dan 5,Ja
+Antwerpen,SCHILDE,SCHILDE,106071 Schilde Termalenbaan,,N12,"51.236372,4.570474","10;51.2364737,4.5703827",Meer dan 5,Ja
+Antwerpen,SCHILDE,SCHILDE,106073 Schilde Brasschaatsebaan,,Turnhoutsebaan,"51.238674,4.578392","10;51.2386258,4.5779361",Meer dan 5,Ja
+Antwerpen,SCHILDE,SCHILDE,106076 Schilde Wisselstraat,,Turnhoutsebaan,"51.242763,4.587979","10;51.2428897,4.5882365",Meer dan 5,Ja
+Antwerpen,SCHILDE,SCHILDE,106078 Schilde Schanslaan,,N12,"51.246286,4.596872","10;51.2462824,4.5970245",Meer dan 5,Ja
+Antwerpen,SCHILDE,SCHILDE,106080 Schilde Klein Waterstraat,,Turnhoutsebaan,"51.249494,4.604995","10;51.2499149,4.6058548",Meer dan 5,Ja
+Antwerpen,SCHILDE,SCHILDE,106082 Halle Eikenlaan,,Turnhoutsebaan,"51.252963,4.613773","10;51.2529288,4.6138668",Meer dan 5,Ja
+Antwerpen,SCHOTEN,SCHOTEN,105458 Schoten Th. V. Cauwenberghslei,,Paalstraat,"51.252574,4.501288","4;51.2526062,4.5012165",Meer dan 5,Ja
+Antwerpen,SCHOTEN,SCHOTEN,105462 Schoten Blangenoisstraat,,Paalstraat,"51.256395,4.504609","10;51.2562787,4.5043908",Meer dan 5,Ja
+Antwerpen,SCHOTEN,SCHOTEN,105467 Schoten Eksterdreef,,Paalstraat,"51.26326,4.508868","10;51.2630787,4.5088975",Meer dan 5,Ja
+Antwerpen,SCHOTEN,SCHOTEN,105666 Schoten Lindenlei,,Villerslei,"51.252198,4.513732","4;51.2521765,4.5136936",Meer dan 5,Ja
+Antwerpen,SCHOTEN,SCHOTEN,105677 Schoten A. Nahonlei,,Alfons servaislei,"51.254899,4.534789","4;51.2548827,4.5348224",Meer dan 5,Ja
+Antwerpen,SCHOTEN,SCHOTEN,105682 Schoten Koningshof,,Alice nahonlei,"51.265115,4.537773","4;51.2652679,4.5379227",Meer dan 5,Ja
+Antwerpen,SCHOTEN,SCHOTEN,109891 Schoten Gemeentehuis,,Markt,"51.251086,4.497923","4;51.2510705,4.4979821",Meer dan 5,Ja
+Antwerpen,SCHOTEN,ZWAAN,105479 Schoten Spaans Wijnhuis,,Brechtsebaan,"51.293569,4.546223","4;51.2936198,4.5461491",Meer dan 5,Ja
+Oost-Vlaanderen,SINT-GILLIS-WAAS,SINT-GILLIS-WAAS,204251 Sint-Gillis-Waas Sint-Helena,,Blokstraat,"51.222381,4.124877","4;51.2228792,4.1255239",Meer dan 5,Ja
+Oost-Vlaanderen,SINT-GILLIS-WAAS,SINT-GILLIS-WAAS,205251 Sint-Gillis-Waas Sint-Helena,,Blokstraat,"51.222388,4.124947","3;51.2229149,4.1258005",Meer dan 5,Ja
+Oost-Vlaanderen,SINT-GILLIS-WAAS,SINT-PAUWELS,204374 Sint-Pauwels Bagonielaan,,Zandstraat,"51.199126,4.082276","3;51.1991709,4.0823149",Meer dan 5,Ja
+Antwerpen,SINT-KATELIJNE-WAVER,SINT-KATELIJNE-WAVER,108863 Sint-Katelijne-Waver Kerk,,Markt,"51.070386,4.532251","4;51.0703752,4.5322024",Meer dan 5,Ja
+Vlaams-Brabant,SINT-LAMBRECHTS-WOLUWE,SINT-LAMBRECHTS-WOLUWE,306159 Sint-Lambrechts-Woluwe Kraainem Metro,,Wezembeeklaan,"50.848821,4.45875","10;50.8488824,4.458998",Meer dan 5,Ja
+Oost-Vlaanderen,SINT-LIEVENS-HOUTEM,VLIERZELE,206545 Vlierzele Hemelrijk,,Oordegemstraat,"50.932284,3.901439","4;50.932331,3.9014606",Meer dan 5,Ja
+Oost-Vlaanderen,SINT-NIKLAAS,SINT-NIKLAAS,205700 Sint-Niklaas Stadskliniek,,Lodewijk de meesterstraat,"51.163587,4.151849","10;51.1636144,4.151884",Meer dan 5,Ja
+Oost-Vlaanderen,SINT-NIKLAAS,SINT-NIKLAAS,205714 Sint-Niklaas Uitgang Noordlaan,,Noordlaan,"51.172552,4.144374","11;51.1722172,4.1437998",Meer dan 5,Ja
+Oost-Vlaanderen,SINT-NIKLAAS,SINT-NIKLAAS,205103 Sint-Niklaas Atheneum/Zwembad,,Parklaan,"51.156458,4.15353","4;51.1563822,4.1535842",Meer dan 5,Ja
+West-Vlaanderen,SPIERE-HELKIJN,SPIERE,504000 Spiere Kerk,,Robecijnplein,"50.718407,3.35518","4;50.7182501,3.3551335",Meer dan 5,Ja
+Antwerpen,STABROEK,DRIEHOEK,105266 Stabroek Moretuslei,,Kasteeldreef,"51.353109,4.394643","3;51.3531076,4.3948266",Meer dan 5,Ja
+Antwerpen,STABROEK,STABROEK,105269 Hoevenen Krekelberg,,Hoge weg,"51.314541,4.39524","3;51.314446,4.3953729",Meer dan 5,Ja
+Antwerpen,STABROEK,STABROEK,109605 Hoevenen 's Hertogendijk,,Hoge weg,"51.326458,4.384114","3;51.326364,4.3844876",Meer dan 5,Ja
+Oost-Vlaanderen,STEKENE,KEMZEKE,204375 Kemzeke Dorp,,Stationsstraat,"51.206965,4.075261","4;51.2069491,4.0752431",Meer dan 5,Ja
+Oost-Vlaanderen,STEKENE,KLEIN SINAAI,204406 Stekene Klein Sinaai,,Brugse heirweg,"51.181606,3.991012","4;51.181502,3.9910487",Meer dan 5,Ja
+Oost-Vlaanderen,STEKENE,KLEIN SINAAI,205406 Stekene Klein Sinaai,,Brugse heirweg,"51.181385,3.989981","4;51.1813536,3.9898898",Meer dan 5,Ja
+Oost-Vlaanderen,STEKENE,STEKENE,204391 Stekene Kerk,,Polenlaan,"51.206469,4.041516","4;51.2064355,4.041317",Meer dan 5,Ja
+Oost-Vlaanderen,STEKENE,STEKENE,204399 Stekene Dienstencentrum Koningshei,,Koewacht,"51.224271,3.988966","3;51.2242698,3.9889362",Meer dan 5,Ja
+Oost-Vlaanderen,TEMSE,TEMSE,204654 Temse Gasthuisstraat,,Kouterstraat,"51.127687,4.214816","4;51.1275778,4.2148971",Meer dan 5,Ja
+Limburg,TESSENDERLO,TESSENDERLO,408302 Tessenderlo Molenstraat I,,Diesterstraat,"51.058084,5.088981","10;51.0577188,5.0888909",Meer dan 5,Ja
+Vlaams-Brabant,TIELT-WINGE,SINT-MARTENSKERK,305007 Tielt-Winge Gemeentehuis,,Blerebergstraat,"50.935783,4.909284","18;50.9358599,4.9093237",Meer dan 5,Ja
+Vlaams-Brabant,TIELT-WINGE,TIELT-WINGE,305027 Tielt-Winge Stelplaats Perron 4,,,"50.921326,4.91251","4;50.9215127,4.9125885",Meer dan 5,Ja
+Vlaams-Brabant,TIELT-WINGE,TIELT-WINGE,305029 Tielt-Winge Stelplaats Perron 5,,,"50.921428,4.912361","4;50.9213881,4.912437",Meer dan 5,Ja
+Vlaams-Brabant,TIELT-WINGE,TIELT-WINGE,305030 Tielt-Winge Stelplaats Perron 1,,,"50.921238,4.912613","4;50.9213873,4.9125631",Meer dan 5,Ja
+Vlaams-Brabant,TIELT-WINGE,TIELT-WINGE,305031 Tielt-Winge Stelplaats Perron 2,,,"50.921051,4.91216","4;50.9211537,4.9122858",Meer dan 5,Ja
+West-Vlaanderen,TORHOUT,TORHOUT,507505 Torhout Normaalschool,,KAREL DE GOEDELAAN,"51.068887,3.103046","10;51.0688887,3.1030655",Meer dan 5,Ja
+Vlaams-Brabant,TREMELO,TREMELO,303980 Tremelo Vinneweg,,Pastoor van winkelstraat,"50.992013,4.708201","3;50.9918007,4.7080811",Meer dan 5,Ja
+Antwerpen,TURNHOUT,TURNHOUT,108909 Turnhout Graatakker,,Graatakker,"51.313063,4.94865","4;51.3130888,4.9485768",Meer dan 5,Ja
+Antwerpen,VORSELAAR,SASSENHOUT,106483 Vorselaar Doornboom,,Poederleeseweg,"51.210622,4.818104","4;51.2107567,4.8182728",Meer dan 5,Ja
+Antwerpen,VORSELAAR,VORSELAAR,106473 Vorselaar Dorp,,Markt,"51.201784,4.773576","4;51.2017682,4.7735783",Meer dan 5,Ja
+Antwerpen,VOSSELAAR,VOSSELAAR,103684 Vosselaar Sportcentrum,,Diepvenneke,"51.301589,4.893297","4;51.3016702,4.8932059",Meer dan 5,Ja
+Antwerpen,VOSSELAAR,VOSSELAAR,106218 Vosselaar Dennendreef,,Antwerpsesteenweg,"51.312979,4.875667","4;51.3130049,4.8757067",Meer dan 5,Ja
+Antwerpen,VOSSELAAR,VOSSELAAR,106220 Vosselaar Dorp,,Antwerpsesteenweg,"51.314446,4.886193","4;51.3145004,4.8863463",Meer dan 5,Ja
+Oost-Vlaanderen,WACHTEBEKE,OVERSLAG (WACHTEBEKE),202603 Wachtebeke Overslag,,Overslag,"51.199264,3.887333","4;51.2004858,3.8888172",Meer dan 5,Ja
+Oost-Vlaanderen,WACHTEBEKE,WACHTEBEKE,202604 Wachtebeke Persijnplein,,Meersstraat,"51.16867,3.858888","4;51.1686047,3.8588662",Meer dan 5,Ja
+West-Vlaanderen,WAREGEM,DESSELGEM,503120 Desselgem Toren,,Gentseweg,"50.8811,3.361844","3;50.8810686,3.3619517",Meer dan 5,Ja
+West-Vlaanderen,WAREGEM,WAREGEM,504379 Waregem Carpool,,Franklin rooseveltlaan,"50.87357,3.440293","4;50.8736364,3.440357",Meer dan 5,Ja
+West-Vlaanderen,WAREGEM,WAREGEM,508858 Waregem Renbaan,,Holstraat,"50.883668,3.438179","4;50.8838122,3.4378333",Meer dan 5,Ja
+Vlaams-Brabant,WEMMEL,WEMMEL,305415 Wemmel Markt,,Steenweg op merchtem,"50.9082,4.306059","10;50.9082538,4.3059667",Meer dan 5,Ja
+Vlaams-Brabant,WEMMEL,WEMMEL,305416 Wemmel Markt,,Steenweg op brussel,"50.907529,4.306457","3;50.9074107,4.3063621",Meer dan 5,Ja
+Antwerpen,WESTERLO,HEULTJE,108293 Heultje Hoog Heultje,,Hoog heulaantje,"51.072129,4.835369","4;51.0720734,4.8354425",Meer dan 5,Ja
+Antwerpen,WESTERLO,HEULTJE,108296 Heultje Hoge Akkers,,Gravin de merodestraat,"51.077319,4.83469","4;51.0772577,4.8347278",Meer dan 5,Ja
+Antwerpen,WESTERLO,HEULTJE,109305 Heultje Kerk dorp,,Heultjedorp,"51.087867,4.837561","4;51.0879632,4.8376353",Meer dan 5,Ja
+Antwerpen,WESTERLO,OEVEL,108788 Oevel Trienenkantlaan,,Tongerlostraat,"51.126881,4.907019","4;51.1268705,4.9069528",Meer dan 5,Ja
+Antwerpen,WESTERLO,OOSTERWIJK,108741 Oosterwijk Busselen,,Olenseweg,"51.126799,4.867355","4;51.1268028,4.8673983",Meer dan 5,Ja
+Antwerpen,WESTERLO,VOORTKAPEL,108743 Voortkapel Nieuwebaan,,Nieuwebaan,"51.117583,4.867979","4;51.1176164,4.868032",Meer dan 5,Ja
+Antwerpen,WESTERLO,VOORTKAPEL,108746 Voortkapel Centrum,,Nieuwebaan,"51.115469,4.862656","5;51.1155108,4.8624902",Meer dan 5,Ja
+Antwerpen,WESTERLO,VOORTKAPEL,108748 Voortkapel Stwg. Voortkapel,,Ter voort,"51.112108,4.86545","4;51.1121445,4.8654425",Meer dan 5,Ja
+Antwerpen,WESTERLO,WESTERLO,109642 Westerlo de Merodedreef,,De merodedreef,"51.089326,4.91231","5;51.0894039,4.9123785",Meer dan 5,Ja
+Antwerpen,WESTERLO,WESTERLO,109643 Westerlo de Merodedreef,,De merodedreef,"51.089182,4.912411","4;51.0892367,4.9124925",Meer dan 5,Ja
+West-Vlaanderen,WEVELGEM,MOORSELE,508615 Moorsele Standbeeld,,SECRETARIS VANMARCKELAAN,"50.839039,3.164944","4;50.8391501,3.1651471",Meer dan 5,Ja
+West-Vlaanderen,WEVELGEM,WEVELGEM,508873 Wevelgem Plaats,,Vanackerestraat,"50.808744,3.182773","3;50.8086062,3.1820889",Meer dan 5,Ja
+Vlaams-Brabant,WEZEMBEEK-OPPEM,WEZEMBEEK-OPPEM,307831 Tervuren Terminus tram 44,,Leuvensesteenweg,"50.829884,4.514362","4;50.8295197,4.5133028",Meer dan 5,Ja
+Oost-Vlaanderen,WICHELEN,SERSKAMP,207593 Serskamp Nieuwstraat,,Anker,"50.992302,3.921403","4;50.9923702,3.9213209",Meer dan 5,Ja
+Oost-Vlaanderen,WICHELEN,WICHELEN,200157 Wichelen Molenkouter,,DREEFSTRAAT,"51.011942,3.968161","4;51.0119112,3.9681155",Meer dan 5,Ja
+Antwerpen,WIJNEGEM,WIJNEGEM,106038 Wijnegem Shopping Center,,N112,"51.223673,4.502237","3;51.2237104,4.501905",Meer dan 5,Ja
+Antwerpen,WIJNEGEM,WIJNEGEM,106046 Wijnegem Dorp,,Turnhoutsebaan,"51.227582,4.523444","10;51.2276361,4.5235823",Meer dan 5,Ja
+West-Vlaanderen,WINGENE,BEER,505696 Wingene Sint-Jan,,UNKNOWN,"51.061758,3.3172","10;51.0617827,3.3171915",Meer dan 5,Ja
+West-Vlaanderen,WINGENE,HILLE,502802 Zwevezele Hille,,WINGENESTEENWEG,"51.04827,3.228232","6;51.0481664,3.228081",Meer dan 5,Ja
+West-Vlaanderen,WINGENE,WINGENE,505694 Wingene De Schakel,,De schakel,"51.0626,3.287858","5;51.0627422,3.2876777",Meer dan 5,Ja
+West-Vlaanderen,WINGENE,WINGENE,507712 Wingene Kaplote,,Heilig sacramentstraat,"51.057315,3.284076","4;51.057229,3.2841141",Meer dan 5,Ja
+Antwerpen,WOMMELGEM,HULGENRODE,102843 Wommelgem Silsburg,,Van strydoncklaan,"51.204016,4.483391","10;51.2040804,4.4832584",Meer dan 5,Ja
+Antwerpen,WOMMELGEM,WOMMELGEM,103036 Wommelgem Vremdesteenweg,,Kempenlaan,"51.19753,4.529468","10;51.1975861,4.5293222",Meer dan 5,Ja
+Antwerpen,WOMMELGEM,WOMMELGEM,103037 Wommelgem Vremdesteenweg,,Kempenlaan,"51.197284,4.530197","10;51.1972981,4.5301047",Meer dan 5,Ja
+Antwerpen,WOMMELGEM,WOMMELGEM,106402 Wommelgem Molenbaan,,Sint-damiaanstraat,"51.199786,4.518929","10;51.1997886,4.5189206",Meer dan 5,Ja
+Antwerpen,WUUSTWEZEL,BRAKEN,105801 Wuustwezel Stelplaats,,Loenhoutse steenweg,"51.408353,4.612419","3;51.408555,4.6122571",Meer dan 5,Ja
+Antwerpen,WUUSTWEZEL,GOOREIND,105773 Wuustwezel Bosduinstraat,,Bredabaan,"51.352396,4.545623","3;51.3524216,4.5457181",Meer dan 5,Ja
+Antwerpen,WUUSTWEZEL,GOOREIND,105783 Wuustwezel Verellenlaan,,Bredabaan,"51.354778,4.548523","3;51.3548762,4.5486749",Meer dan 5,Ja
+Antwerpen,WUUSTWEZEL,WUUSTWEZEL,105788 Wuustwezel Martendijk,,Bredabaan,"51.363872,4.559694","3;51.3639681,4.5597325",Meer dan 5,Ja
+Antwerpen,WUUSTWEZEL,WUUSTWEZEL,105793 Wuustwezel Dorp,,Bredabaan,"51.390396,4.592034","3;51.3903626,4.5920935",Meer dan 5,Ja
+Antwerpen,ZANDHOVEN,PULDERBOS,106446 Pulderbos Dorp,,Dorp,"51.218222,4.691007","4;51.2182892,4.6910344",Meer dan 5,Ja
+Vlaams-Brabant,ZAVENTEM,ZAVENTEM,305558 Zaventem Luchthaven Perron A,,Unknown,"50.898047,4.482065","35;50.898264,4.4816781",Meer dan 5,Ja
+Vlaams-Brabant,ZAVENTEM,ZAVENTEM,308652 Zaventem Luchthaven Perron B,,Unknown,"50.898126,4.481982","78;50.8981367,4.4819984",Meer dan 5,Ja
+West-Vlaanderen,ZEDELGEM,ZUIDWEGE,502549 Zedelgem New Holland,,LÉON CLAEYSSTRAAT,"51.130185,3.161327","5;51.1302138,3.1613042",Meer dan 5,Ja
+Oost-Vlaanderen,ZELZATE,ZELZATE,202436 Zelzate Busstation perron 6,,Westkade,"51.200821,3.808132","4;51.2008973,3.8084666",Meer dan 5,Ja
+Oost-Vlaanderen,ZELZATE,ZELZATE,202588 Zelzate Busstation perron 1,,Westkade,"51.201076,3.807996","4;51.2011615,3.808371",Meer dan 5,Ja
+Oost-Vlaanderen,ZELZATE,ZELZATE,202719 Zelzate Busstation perron 4,,Westkade,"51.200906,3.808087","3;51.2010959,3.8084279",Meer dan 5,Ja
+Antwerpen,ZOERSEL,SINT-ANTONIUS (ZOERSEL),106083 Halle Eikenlaan,,Kapellei,"51.253112,4.614585","10;51.2528046,4.6137553",Meer dan 5,Ja
+Antwerpen,ZOERSEL,SINT-ANTONIUS (ZOERSEL),106084 Sint-Antonius Joostens,,Kapellei,"51.258875,4.626705","10;51.2588473,4.6266109",Meer dan 5,Ja
+Antwerpen,ZOERSEL,SINT-ANTONIUS (ZOERSEL),106091 Sint-Antonius Bibliotheek,,Handelslei,"51.265344,4.636124","10;51.2653065,4.6360763",Meer dan 5,Ja
+Antwerpen,ZOERSEL,SINT-ANTONIUS (ZOERSEL),106093 Sint-Antonius Bethaniëlei,,Handelslei,"51.269171,4.642154","10;51.2692124,4.6422187",Meer dan 5,Ja
+Antwerpen,ZOERSEL,ZOERSEL,106166 Zoersel P+R Zoersel,,N14,"51.246121,4.703221","10;51.2460456,4.7031143",Meer dan 5,Ja
+Antwerpen,ZOERSEL,ZOERSEL,106167 Zoersel P+R Zoersel,,N14,"51.246131,4.703468","4;51.245991,4.7032581",Meer dan 5,Ja
+Antwerpen,ZOERSEL,ZOERSEL,106171 Zoersel Drengel,,Zandstraat,"51.257108,4.710712","4;51.2570998,4.7105597",Meer dan 5,Ja
+Antwerpen,ZOERSEL,ZOERSEL,106174 Zoersel Dorp,,Dorp,"51.27002,4.713353","4;51.2699747,4.7133794",Meer dan 5,Ja
+Oost-Vlaanderen,ZOMERGEM,ZOMERGEM,201714 Zomergem Sportcentrum,,Den boer,"51.122627,3.561788","4;51.1225345,3.5616466",Meer dan 5,Ja
+Limburg,ZONHOVEN,ZONHOVEN,409261 Zonhoven De Waerde,,Waardstraat,"51.005667,5.385827","9;51.0059346,5.3856451",Meer dan 5,Ja
+Limburg,ZONHOVEN,ZONHOVEN,409290 Zonhoven Dorpsplein,,Dorpsplein,"50.994447,5.367211","4;50.994406,5.3673194",Meer dan 5,Ja
+Limburg,ZONHOVEN,ZONHOVEN,409291 Zonhoven Dorpsplein,,Dorpsplein,"50.994339,5.367062","4;50.9943608,5.3671215",Meer dan 5,Ja
+Oost-Vlaanderen,ZULTE,ZULTE,201563 Zulte Standbeeld,,Staatsbaan,"50.921312,3.443072","3;50.9207446,3.4422124",Meer dan 5,Ja
+Oost-Vlaanderen,ZWIJNDRECHT,BURCHT,205611 Burcht Kaai,,Koningin astridlaan,"51.202098,4.350392","4;51.2021846,4.3504798",Meer dan 5,Ja
+Oost-Vlaanderen,ZWIJNDRECHT,BURCHT,205612 Burcht Kerkplein,,Dorpstraat,"51.201624,4.34575","4;51.201608,4.3457253",Meer dan 5,Ja
+Oost-Vlaanderen,ZWIJNDRECHT,ZWIJNDRECHT,204287 Zwijndrecht P+R Melsele perron 2,,Beversebaan,"51.219536,4.306737","4;51.2194259,4.3050758",Meer dan 5,Ja
+Oost-Vlaanderen,ZWIJNDRECHT,ZWIJNDRECHT,205287 Zwijndrecht P+R Melsele perron 6,,Beversebaan,"51.219266,4.306832","4;51.2191537,4.3051529",Meer dan 5,Ja
+Antwerpen,ZWIJNDRECHT,ZWIJNDRECHT,104404 Zwijndrecht Verbrandendijk,,Verbrandendijk,"51.219576,4.340795","4;51.2196789,4.3405798",Meer dan 5,Ja
+Antwerpen,ZWIJNDRECHT,ZWIJNDRECHT,104409 Zwijndrecht Verbrandendijk,,N70,"51.219828,4.341998","3;51.2197731,4.342039",Meer dan 5,Ja
+Antwerpen,ZWIJNDRECHT,ZWIJNDRECHT,104416 Zwijndrecht Dorp,,Unknown,"51.219503,4.326193","4;51.2194186,4.3256514",Meer dan 5,Ja
+Antwerpen,ZWIJNDRECHT,ZWIJNDRECHT,104422 Zwijndrecht P+R Melsele,,,"51.219353,4.305232","3;51.2193847,4.3052363",Meer dan 5,Ja
+Antwerpen,ZWIJNDRECHT,ZWIJNDRECHT,104424 Zwijndrecht P+R Melsele,,,"51.219287,4.305329","3;51.2192533,4.3053106",Meer dan 5,Ja
