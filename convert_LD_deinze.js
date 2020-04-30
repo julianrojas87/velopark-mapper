@@ -213,6 +213,7 @@ function insertValuesInJsonLD(parkingData, fac, ser, sec, bik, ent, shp, jsonLD)
         }
 
         section['priceSpecification'] = [{
+            "@type": "PriceSpecification",
             "freeOfCharge": true
         }];
 
