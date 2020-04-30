@@ -107,7 +107,8 @@ function extractLocationFromJsonld(jsonld) {
 }
 
 function insertValuesInJsonLD(parkingData, fac, ser, sec, bik, ent, shp, jsonLD) {
-    jsonLD['@id'] = `https://velopark.ilabt.imec.be/data/${parkingData['Naam organisatie']}_${parkingData['Locale ID']}`;
+    const owner = parkingData['E_Naam Organisatie'].replace(/\s/g, '-');
+    jsonLD['@id'] = `https://velopark.ilabt.imec.be/data/${owner}_${parkingData['Locale ID']}`;
     jsonLD.dateModified = (new Date()).toISOString();
     jsonLD.identifier = parkingData['Locale ID'];
     jsonLD.name = [{ "@value": parkingData.NAAM, "@language": "nl" }];
@@ -137,7 +138,7 @@ function insertValuesInJsonLD(parkingData, fac, ser, sec, bik, ent, shp, jsonLD)
     let i = 1;
     for (const f of fac) {
         let section = {};
-        section['@id'] = `https://velopark.ilabt.imec.be/data/${parkingData['Naam organisatie']}_${parkingData['Locale ID']}#section${i}`;
+        section['@id'] = `https://velopark.ilabt.imec.be/data/${owner}_${parkingData['Locale ID']}#section${i}`;
         section['@type'] = getSectionType(f['Type Parking']);
         section['sectionName'] = f['Sectie Naam'];
         section['covered'] = f['Overdekt'] === 'JA';
@@ -279,7 +280,7 @@ async function loadGeoJson(path) {
     let map = new Map();
     const gj = JSON.parse(await readFile(path, 'utf8'));
     for (const f of gj.features) {
-        if (f.geometry.type === 'Polygon') {
+        /*if (f.geometry.type === 'Polygon') {
             let cs = [];
             for (c of f.geometry.coordinates[0]) {
                 cs.push(merc.inverse(c));
@@ -287,7 +288,7 @@ async function loadGeoJson(path) {
             f.geometry.coordinates = [cs];
         } else {
             f.geometry.coordinates = merc.inverse(f.geometry.coordinates);
-        }
+        }*/
 
         if (map.has(f.properties['Locale_ID'].toString())) {
             map.get(f.properties['Locale_ID'].toString()).push(f);
