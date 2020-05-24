@@ -24,7 +24,7 @@ async function run() {
     var hrstart = process.hrtime();
     console.log("STARTING");
     // Get content from file
-    var contents = fs.readFileSync("data/new_nmbs_epsg3857.json");
+    var contents = fs.readFileSync("data/nmbs/nmbs_v3_epsg3857.geojson");
     // Define to JSON type
     var jsonContent = JSON.parse(contents).features;
     let counter = jsonContent.length;
@@ -131,6 +131,8 @@ function insertValuesInJsonLD(parkingData, applicationProfileString) {
     let jsonLD = JSON.parse(applicationProfileString);
     jsonLD.identifier = parkingData.localIdentifier;
     jsonLD.name = [{ "@value": parkingData.name, "@language": "nl" }];
+    jsonLD.temporarilyClosed = false;
+    jsonLD.ownedBy['@id'] = 'https://www.belgiantrain.be/';
     jsonLD.ownedBy.companyName = 'NMBS';
     jsonLD.operatedBy.companyName = parkingData.organizationName2;
     jsonLD.address.postalCode = parkingData.postalCode;
