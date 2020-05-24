@@ -42,8 +42,8 @@ async function run() {
 
     for (let rp of jsonContent) {
         let p = rp['properties'];
-        if (!parkingIDs.has(p['IDfietsens'])) {
-            parkingIDs.add(p['IDfietsens']);
+        if (!parkingIDs.has(p['FID'])) {
+            parkingIDs.add(p['FID']);
             parkings[i] = {};
 
             let lat = rp['geometry']['coordinates'][1];
@@ -51,7 +51,7 @@ async function run() {
             let address = await getAddressHERE(i, lat, lon);
 
             parkings[i].name = p['tblalgemen'] + " " + p['tblintermo'];
-            parkings[i].localIdentifier = p['IDfietsens'];
+            parkings[i].localIdentifier = p['FID'];
             parkings[i].address = address.address.split(',')[0];
             parkings[i].postalCode = address.postalCode;
             parkings[i].country = "Belgium";
@@ -102,7 +102,7 @@ async function run() {
             await dbAdapter.updateOrCreateParking(encodeURIComponent(jsonLDResult['@id']), fileName, true, location);
             await dbAdapter.updateCompanyParkingIDs('NMBS', encodeURIComponent(jsonLDResult['@id']));
         } else {
-            console.log('Parking ID already exists:' + p['IDfietsens']);
+            console.log('Parking ID already exists:' + p['FID']);
         }
         counter--;
         console.log(i + "\tDone\t(", counter, "left)");
