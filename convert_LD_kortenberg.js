@@ -80,7 +80,7 @@ async function map(p, jsonLD) {
     jsonLD.address.streetAddress = address.address.split(',')[0];
     jsonLD.address.country = 'Belgium';
     jsonLD['hasMap']['url'] = `https://www.openstreetmap.org/#map=18/${lat}/${lon}`;
-    jsonLD['contactPoint']['email'] = 'mobility@kortenberg.be';
+    jsonLD['contactPoint']['email'] = 'mobiliteit@kortenberg.be';
     jsonLD['contactPoint']['telephone'] = '027553070';
     jsonLD['@graph'][0]['@type'] = "https://velopark.ilabt.imec.be/openvelopark/terms#PublicBicycleParking";
     jsonLD['@graph'][0]['publicAccess'] = true;
