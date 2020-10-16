@@ -384,14 +384,14 @@ function cleanEmptyValues(obj) {
             } else if (obj[`${keys[i]}`].length == 0) {
                 delete obj[`${keys[i]}`];
             }
-        } else if (typeof obj[`${keys[i]}`] == 'object') {
+        } else if (typeof obj[`${keys[i]}`] == 'object' && obj[`${keys[i]}`] !== null) {
             cleanEmptyValues(obj[`${keys[i]}`]);
             let k = Object.keys(obj[`${keys[i]}`]);
             if (k.length == 0 || (k.length == 1 && k[0] == '@type')) {
                 delete obj[`${keys[i]}`];
             }
         } else {
-            if (obj[`${keys[i]}`] === '') {
+            if (!obj[`${keys[i]}`] || obj[`${keys[i]}`] === '') {
                 delete obj[`${keys[i]}`];
             }
         }
