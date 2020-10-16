@@ -2,6 +2,7 @@ const fs = require('fs');
 const util = require('util');
 const request = require('request');
 const path = require("path");
+const SphericalMercator = require('@mapbox/sphericalmercator');
 const commander = require('commander');
 
 global.program = new commander.Command();
@@ -24,7 +25,7 @@ async function run() {
     var hrstart = process.hrtime();
     console.log("STARTING");
     // Get content from file
-    var contents = fs.readFileSync("data/nmbs/nmbs_v3_epsg3857.geojson");
+    var contents = fs.readFileSync("data/nmbs/nmbs_v4_epsg3857.geojson");
     // Define to JSON type
     var jsonContent = JSON.parse(contents).features;
     let counter = jsonContent.length;
@@ -37,21 +38,26 @@ async function run() {
     await dbAdapter.insertCompany('NMBS', function () { });
     await dbAdapter.deleteAllFromCompany('NMBS');
 
+    const merc = new SphericalMercator();
     let jsonLD = await getApplicationProfile();
     let i = 0;
 
     for (let rp of jsonContent) {
         let p = rp['properties'];
-        if (!parkingIDs.has(p['FID'])) {
-            parkingIDs.add(p['FID']);
+        if (!parkingIDs.has(p['OBJECTID_1'])) {
+            parkingIDs.add(p['OBJECTID_1']);
             parkings[i] = {};
 
+            // Convert XY to decimal coordinates
+            rp['geometry']['coordinates'] = merc.inverse(rp['geometry']['coordinates']);
+            
             let lat = rp['geometry']['coordinates'][1];
             let lon = rp['geometry']['coordinates'][0];
+
             let address = await getAddressHERE(i, lat, lon);
 
             parkings[i].name = p['tblalgemen'] + " " + p['tblintermo'];
-            parkings[i].localIdentifier = p['FID'];
+            parkings[i].localIdentifier = p['OBJECTID_1'];
             parkings[i].address = address.address.split(',')[0];
             parkings[i].postalCode = address.postalCode;
             parkings[i].country = "Belgium";
@@ -102,7 +108,7 @@ async function run() {
             await dbAdapter.updateOrCreateParking(encodeURIComponent(jsonLDResult['@id']), fileName, true, location);
             await dbAdapter.updateCompanyParkingIDs('NMBS', encodeURIComponent(jsonLDResult['@id']));
         } else {
-            console.log('Parking ID already exists:' + p['FID']);
+            console.log('Parking ID already exists:' + p['OBJECTID_1']);
         }
         counter--;
         console.log(i + "\tDone\t(", counter, "left)");
@@ -460,156 +466,5 @@ function getAddressHERE(i, lat, lon, attempts = 3) {
         });
     });
 }
-
-function getAddressGoogle(i, lat, lon, attempts = 3) {
-    let requestOptions = {
-        url: 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + lat + ',' + lon + '&result_type=street_address&key=AIzaSyCK6rvg1XXk2ebo44SOoRjmGStFV0tJEZU',
-        headers: {
-            'User-Agent': 'request'
-        }
-    };
-
-    return new Promise((resolve, reject) => {
-        request(requestOptions, (error, response, body) => {
-            if (error) {
-                console.warn(i, "Request failed, attempts left: ", attempts);
-                if (attempts > 0) {
-                    setTimeout(function () {
-                        getAddressGoogle(i, lat, lon, attempts - 1).then(res => {
-                            resolve(res)
-                        }).catch(e => {
-                            reject(e)
-                        });
-                    }, 300 + Math.random() * 400);
-                } else {
-                    console.error(i, "getAddress Failed for id " + i, error, response);
-                    reject(error);
-                }
-            } else {
-                try {
-                    //console.log(body);
-                    let bodyObj = JSON.parse(body);
-                    console.log(bodyObj);
-
-                    //find address
-                    let address;
-                    let index = 0;
-                    while (!bodyObj.results[index].types.includes("street_address") && index < bodyObj.results.length) {
-                        index++;
-                    }
-                    if (index === bodyObj.results.length) {
-                        console.error(i, "No address found in response from Google");
-                    } else {
-                        address = bodyObj.results[index].formatted_address;
-                    }
-
-                    //find postal code
-                    let postalCode;
-                    let addressComponents = bodyObj.results[index].address_components;
-                    let componentIndex = 0;
-                    while (!addressComponents[componentIndex].types.includes("postal_code") && componentIndex < addressComponents.length) {
-                        console.log(componentIndex, ":", addressComponents[componentIndex]);
-                        componentIndex++;
-                    }
-                    if (componentIndex === addressComponents.length) {
-                        console.error(i, "No postal code found in response from Google");
-                    } else {
-                        postalCode = addressComponents[componentIndex].long_name;
-                        console.log("postcode:", postalCode);
-                    }
-
-                    resolve({ id: i, address: address, postalCode: postalCode });
-                } catch (e) {
-                    console.log(i, "Request failed, attempts left: ", attempts);
-                    if (attempts > 0) {
-                        setTimeout(function () {
-                            getAddressGoogle(i, lat, lon, attempts - 1).then(res => {
-                                resolve(res)
-                            }).catch(e => {
-                                reject(e)
-                            });
-                        }, 300 + Math.random() * 400);
-                    } else {
-                        reject(e);
-                    }
-                }
-            }
-        });
-    });
-}
-
-function getAddressNominatim(i, lat, lon, attempts = 10) {
-    let requestOptions = {
-        url: 'https://nominatim.openstreetmap.org/reverse?format=json&lat=' + lat + "&lon=" + lon,
-        headers: {
-            'User-Agent': 'request'
-        }
-    };
-
-    return new Promise((resolve, reject) => {
-        request(requestOptions, (error, response, body) => {
-            if (error) {
-                console.warn(i, "Request failed, attempts left: ", attempts);
-                if (attempts > 0) {
-                    setTimeout(function () {
-                        getAddressNominatim(i, lat, lon, attempts - 1).then(res => {
-                            resolve(res)
-                        }).catch(e => {
-                            reject(e)
-                        });
-                    }, 300 + Math.random() * 400);
-                } else {
-                    console.error(i, "getAddress Failed for id " + i, error, response);
-                    reject(error);
-                }
-            } else {
-                try {
-                    //console.log(body);
-                    let bodyObj = JSON.parse(body);
-                    resolve({ id: i, address: bodyObj.display_name, postalCode: bodyObj.address.postcode });
-                } catch (e) {
-                    console.log(i, "Request failed, attempts left: ", attempts);
-                    if (attempts > 0) {
-                        setTimeout(function () {
-                            getAddressNominatim(i, lat, lon, attempts - 1).then(res => {
-                                resolve(res)
-                            }).catch(e => {
-                                reject(e)
-                            });
-                        }, 300 + Math.random() * 400);
-                    } else {
-                        reject(e);
-                    }
-                }
-            }
-        });
-    });
-}
-
-/*function getPostalCode(i, city){
-    let requestOptions = {
-        url : 'http://opzoeken-postcode.be/' + city + '.json',
-        headers: {
-            'User-Agent' : 'request'
-        }
-    };
-
-    return new Promise((resolve, reject) => {
-        request(requestOptions, (error, response, body) => {
-            if(error){
-                reject(error);
-            } else {
-                //console.log(city, body);
-                let postcodes = JSON.parse(body);
-                if (postcodes.length) {
-                    //console.log(JSON.parse(body)[0]['Postcode']['postcode_deelgemeente']);
-                    resolve({id : i, postalCode: JSON.parse(body)[0]['Postcode']['postcode_deelgemeente']});
-                } else {
-                    resolve({id : i, postalCode: null});
-                }
-            }
-        });
-    });
-}*/
 
 run();
